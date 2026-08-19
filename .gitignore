@@ -1,0 +1,50 @@
+# ── Secrets & credentials ──────────────────────────────────────────
+.env
+credentials.json
+*.pem
+*.key
+service_account*.json
+
+# ── Python ─────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+.venv/
+venv/
+env/
+.planning/
+
+# ── ChromaDB / vector store ────────────────────────────────────────
+data/chroma_db/
+data/new_carrier_runs/
+
+# ── Scratch / one-off script run output ───────────────────────────
+# Dumps from individual create_freight_*, migrate_*, etc. runs — not stable artifacts.
+scripts/*_result.json
+
+# ── macOS ──────────────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ── IDE / editor ───────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ── Claude Code internals ──────────────────────────────────────────
+.claude/
+
+# ── Logs & temp ────────────────────────────────────────────────────
+*.log
+*.tmp
+.pytest_cache/
+.mypy_cache/
+htmlcov/
+.coverage

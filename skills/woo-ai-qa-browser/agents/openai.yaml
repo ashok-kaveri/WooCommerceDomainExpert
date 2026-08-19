@@ -1,0 +1,3 @@
+display_name: Woo AI QA Browser
+short_description: Verify dashboard-generated Woo test cases in the real browser with Computer Use, automation knowledge, and safe cleanup. Ask QA before running explicit non-WooCommerce cards through the current WooCommerce flow.
+default_prompt: Verify this Woo test case in the real browser using Computer Use, reuse the dashboard AI QA Verifier flow and existing automation patterns, ask QA when a non-WooCommerce platform is explicitly mentioned, and give me a concise pass/fail result with evidence and cleanup status. If QA confirms, run the available WooCommerce flow and keep the reported platform visible in evidence.

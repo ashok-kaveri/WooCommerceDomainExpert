@@ -1,0 +1,82 @@
+# Woo Carrier Knowledge Research
+
+This file describes the current carrier-knowledge inputs used by the Woo expert. It is not a future backlog.
+
+## Current Source Coverage
+
+The repo already has broad Woo source coverage from:
+- `docs/kb_snapshots/`
+- `docs/tc_snapshots/woo-regression-master-sheet.md`
+- local wiki at `~/Documents/woo-wiki/wiki`
+- local automation repo at `~/Documents/ups-woo-automation`
+- code search across backend, frontend, and automation source
+
+## Carrier Coverage Confirmed
+
+The automation repo currently includes carrier env coverage for:
+- Amazon Shipping
+- Australia Post
+- Blue Dart
+- FedEx
+- MyPost
+- UPS
+- USPS
+- USPS Stamps
+
+The broader documentation set also includes support material for additional carriers and carrier families such as:
+- DHL
+- Canada Post
+- Purolator
+- PostNord
+- EasyPost or USPS via EasyPost
+
+## Operating Rule For Card Interpretation
+
+Cards should be interpreted with this rule:
+- if the card clearly mentions a carrier, treat it as carrier-specific
+- if the card does not mention a carrier, treat it as generic
+- generic cards should use a stable default carrier path unless retrieved context says the scenario must stay carrier-neutral or explicitly multi-carrier
+
+This matters because many Woo features are shared platform behaviors:
+- order import and order grid
+- label generation
+- packaging settings
+- WooCommerce fulfillment and tracking sync
+- rate automation and request log
+- product settings
+- general settings flows
+
+## Navigation Facts
+
+Common navigation patterns in Woo:
+- top tabs such as `ORDERS`, `LABELS`, and `PICKUP`
+- hamburger-menu flows such as `Products`, `Carriers`, and `General Settings`
+- WordPress admin verification for orders, fulfillment, tracking, and products when needed
+
+## Current Implementation
+
+Shared carrier knowledge is implemented in:
+- [pipeline/carrier_knowledge.py](pipeline/carrier_knowledge.py:1)
+
+It provides:
+- supported carrier profiles
+- alias matching
+- carrier-specific vs generic card detection
+- default generic-carrier guidance
+- carrier env path resolution for automation order creation
+
+It is currently used by:
+- [pipeline/user_story_writer.py](pipeline/user_story_writer.py:1)
+- [pipeline/domain_validator.py](pipeline/domain_validator.py:1)
+- [pipeline/smart_ac_verifier.py](pipeline/smart_ac_verifier.py:1)
+- [pipeline/order_creator.py](pipeline/order_creator.py:1)
+- [pipeline/handoff_docs.py](pipeline/handoff_docs.py:1)
+
+## Practical Conclusion
+
+The repo already has the right source inputs for multi-carrier reasoning.
+
+The important rule for future agents is:
+- keep carrier knowledge explicit
+- keep it reused across validation, QA planning, automation setup, issue diagnosis, and handoff output
+- do not downgrade the repo back to single-carrier assumptions just to mirror FedEx

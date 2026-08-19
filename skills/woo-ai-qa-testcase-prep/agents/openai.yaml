@@ -1,0 +1,3 @@
+display_name: Woo AI QA Testcase Prep
+short_description: Turn a Trello card or feature story into detailed Woo test cases with platform-aware steps. Default to WooCommerce when no platform is explicit.
+default_prompt: Read this Trello card or feature request, use the Woo Domain Expert project knowledge plus existing automation patterns, and generate detailed AI QA Agent-ready test cases for Chrome verification, not Trello or CSV publishing.

@@ -1,0 +1,2744 @@
+{
+  "8-common-shipping-mistakes-need-avoid.md": {
+    "plugin": "general",
+    "sha256": "bdbe53fcefc2479232ec06872ec605ff65d73e56c19ab5b779fcc3be6cffaef2",
+    "title": "Most Common Shipping Mistakes You Need To Avoid",
+    "url": "https://www.pluginhive.com/knowledge-base/8-common-shipping-mistakes-need-avoid/"
+  },
+  "8-great-tips-improve-sales-woocommerce-store-christmas-holiday-season.md": {
+    "plugin": "general",
+    "sha256": "52a075e8ccc22502efa16c43dd05fba0d85ffafb6323078a19770cc1c720152f",
+    "title": "Great Tips to Sale in WooCommerce Store during Holiday Season",
+    "url": "https://www.pluginhive.com/knowledge-base/8-great-tips-improve-sales-woocommerce-store-christmas-holiday-season/"
+  },
+  "accept-payments-in-multiple-currencies-for-your-woocommerce-bookings.md": {
+    "plugin": "bookings",
+    "sha256": "0e435f89f5281fd577021cfb8bf92e6efd9efb2aa977b73e375e6b2a913894af",
+    "title": "Accept Payments in Multiple Currencies for your WooCommerce Bookings",
+    "url": "https://www.pluginhive.com/knowledge-base/accept-payments-in-multiple-currencies-for-your-woocommerce-bookings/"
+  },
+  "add-additional-cost-shipping-service-based-shipping-class.md": {
+    "plugin": "general",
+    "sha256": "070d75af52153586c0b1ecd24cced54c12a774ae67304fc277414c123aff73dc",
+    "title": "Add an Additional Cost to the Shipping Service based on WooCommerce Shipping Class",
+    "url": "https://www.pluginhive.com/knowledge-base/add-additional-cost-shipping-service-based-shipping-class/"
+  },
+  "add-custom-description-label-printing.md": {
+    "plugin": "general",
+    "sha256": "d5f87998370ddf0ca14a86b0fbd5d63d2968bea8442a619c9d1cd9b90c458a12",
+    "title": "Add the custom description during label printing",
+    "url": "https://www.pluginhive.com/knowledge-base/add-custom-description-label-printing/"
+  },
+  "add-custom-text-delivery-estimates-format-fedex-shipping-plugin.md": {
+    "plugin": "estimated-delivery",
+    "sha256": "c69d071828119605e99c5e334459018c564cc4f0bac5ce8c512a2ed5a47372b8",
+    "title": "How to Add Custom Text in Delivery Estimates Format using PluginHive Plugin for FedEx Shipping?",
+    "url": "https://www.pluginhive.com/knowledge-base/add-custom-text-delivery-estimates-format-fedex-shipping-plugin/"
+  },
+  "add-dry-ice-weight-to-woocommerce-fedex-shipments.md": {
+    "plugin": "fedex",
+    "sha256": "101b4d1a707e7c6f64878a065ff7822f329f89362d2373c9239d083dfb8bca91",
+    "title": "How to Ship Frozen Food With WooCommerce FedEx Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/add-dry-ice-weight-to-woocommerce-fedex-shipments/"
+  },
+  "add-extra-charges-shipping-rates-using-woocommerce-multi-carrier-shipping-plugin.md": {
+    "plugin": "multi-carrier",
+    "sha256": "0bc3133a5d72d5dd8f32f3690470a6449423527b2bd2a02d43afa8ce0b68ab61",
+    "title": "Add Extra Charges to the Shipping Rates in WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/add-extra-charges-shipping-rates-using-woocommerce-multi-carrier-shipping-plugin/"
+  },
+  "add-pallet-special-padding-cost-ups-ltl-freight-shipments-woocommerce-store.md": {
+    "plugin": "ups",
+    "sha256": "aea6b9ab0cf56aa08ff45cd52c235535901e027af516a92ef5feb7142b7d1631",
+    "title": "Add Pallet and Special Padding cost to UPS LTL Freight shipments for Woocommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/add-pallet-special-padding-cost-ups-ltl-freight-shipments-woocommerce-store/"
+  },
+  "add-purchase-order-po-invoice-customer-reference-department-numbers.md": {
+    "plugin": "general",
+    "sha256": "e929e38bc6e1a5bcd4443ad2dfa28b4bb0b2765fb5aa6fa87165a3fd33b94c77",
+    "title": "Add Purchase Order(PO), Invoice, Customer Reference, and Department numbers to your WooCommerce Shipping Labels",
+    "url": "https://www.pluginhive.com/knowledge-base/add-purchase-order-po-invoice-customer-reference-department-numbers/"
+  },
+  "added-36-line-try-add-rows-im-faced-error-action-failed.md": {
+    "plugin": "general",
+    "sha256": "9597874826968cec5250790dbb0770fc5d412124c880a172c5937c3d44b562ae",
+    "title": "I added 36 line and when I try to add more rows I\u2019m faced with this error \"action failed",
+    "url": "https://www.pluginhive.com/knowledge-base/added-36-line-try-add-rows-im-faced-error-action-failed/"
+  },
+  "adding-lettermail-parcel-together-canada-post-shipping-calculation.md": {
+    "plugin": "canada-post",
+    "sha256": "7d0d4c13f3567554510aee6a176053b62ba3e4862ca61042e9ecb8571e010b53",
+    "title": "Ship Canada Post Lettermail & Parcel together on WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/adding-lettermail-parcel-together-canada-post-shipping-calculation/"
+  },
+  "adjust-size-ups-shipping-label.md": {
+    "plugin": "ups",
+    "sha256": "eb2df23d23abeaa5dbe2c190218f642c42da0fafc740f358e5858b22c1f31213",
+    "title": "How to Adjust the Size of UPS Shipping Label?",
+    "url": "https://www.pluginhive.com/knowledge-base/adjust-size-ups-shipping-label/"
+  },
+  "advanced-add-ons-to-extend-woocommerce-ups-shipping-plugins-functionality.md": {
+    "plugin": "ups",
+    "sha256": "c6e499fd3d66c1f31e326c480789587153039e6baa99bab70fae6bccf04d0523",
+    "title": "Advanced Add-Ons to Extend WooCommerce UPS Shipping Plugin\u2019s Functionality",
+    "url": "https://www.pluginhive.com/knowledge-base/advanced-add-ons-to-extend-woocommerce-ups-shipping-plugins-functionality/"
+  },
+  "alcohol-support-major-improvements-fedex-shipping-plugin.md": {
+    "plugin": "fedex",
+    "sha256": "90c0cf2dc157578f5e7bfc1e558d364eb4ec7f8a6e20819adcca304bece1dfd7",
+    "title": "WooCommerce FedEx Shipping Plugin 4.0.3: Alcohol Support & Improvements",
+    "url": "https://www.pluginhive.com/knowledge-base/alcohol-support-major-improvements-fedex-shipping-plugin/"
+  },
+  "allow-customers-choose-among-multiple-shipping-options-using-woocommerce-table-rate-shipping-pro.md": {
+    "plugin": "table-rate",
+    "sha256": "642d8d89d7334f330fbe3a88d786b7308509e919edb3761b87fb654357b6fbc5",
+    "title": "WooCommerce Multiple Shipping options with Table Rate Shipping",
+    "url": "https://www.pluginhive.com/knowledge-base/allow-customers-choose-among-multiple-shipping-options-using-woocommerce-table-rate-shipping-pro/"
+  },
+  "allow-customers-choose-shipping-service-different-carriers-using-woocommerce-multi-carrier-shipping-plugin.md": {
+    "plugin": "multi-carrier",
+    "sha256": "d8c562106c5aac804f8f1ec6cf311dbdeae56647e8a1218f16077e958aaffe75",
+    "title": "Offer WooCommerce Shipping Options from Different Carriers",
+    "url": "https://www.pluginhive.com/knowledge-base/allow-customers-choose-shipping-service-different-carriers-using-woocommerce-multi-carrier-shipping-plugin/"
+  },
+  "always-seems-overlook-fedex-ground-not-include-option-checkout.md": {
+    "plugin": "fedex",
+    "sha256": "587cd2945a5f76a700662ef570377961c4f164ae8ecf16c08d05a27494f728b4",
+    "title": "It always seems to overlook the FedEx Ground and not include it as an option at checkout",
+    "url": "https://www.pluginhive.com/knowledge-base/always-seems-overlook-fedex-ground-not-include-option-checkout/"
+  },
+  "amazon-shipping-deliver-to-counter-for-woocommerce.md": {
+    "plugin": "amazon-shipping",
+    "sha256": "ad523d7dac93aee9dcef11c4b7e4ac37baf510e7e1477524352bfa3554800340",
+    "title": "Amazon Shipping Deliver to Counter for WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/amazon-shipping-deliver-to-counter-for-woocommerce/"
+  },
+  "amazon-shipping-guide-for-woocommerce.md": {
+    "plugin": "amazon-shipping",
+    "sha256": "b872b37edef559abcdf0f8b7db99c4c6eb04862348350e47e2bea0cd7777c272",
+    "title": "WooCommerce Amazon Shipping Guide",
+    "url": "https://www.pluginhive.com/knowledge-base/amazon-shipping-guide-for-woocommerce/"
+  },
+  "assign-staff-members-and-maintain-availability-using-woocommerce-bookings.md": {
+    "plugin": "bookings",
+    "sha256": "6b96c29acea420a5ff9aa58cbea4501ea796ee6d932f7bd9537758ff55986e91",
+    "title": "Staff Management with WooCommerce Bookings Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/assign-staff-members-and-maintain-availability-using-woocommerce-bookings/"
+  },
+  "attach-ups-mrn-with-orders-using-woocommerce-ups-shipping.md": {
+    "plugin": "ups",
+    "sha256": "dfa156edc8f9b281967ab0bcfd387ab019aaf4474535bce35d9148ee01edba17",
+    "title": "Attach UPS MRN (Movement Reference Number) with WooCommerce Order",
+    "url": "https://www.pluginhive.com/knowledge-base/attach-ups-mrn-with-orders-using-woocommerce-ups-shipping/"
+  },
+  "automatic-label-generation-woocommerce.md": {
+    "plugin": "general",
+    "sha256": "769eaf19ca5afe56d28000688552b18a7f84cec6204fa06145e00bbff7565224",
+    "title": "Auto-Printing WooCommerce Shipping Labels for UPS and FedEx",
+    "url": "https://www.pluginhive.com/knowledge-base/automatic-label-generation-woocommerce/"
+  },
+  "automatic-print-shipping-label-woocommerce-ups-plugin.md": {
+    "plugin": "ups",
+    "sha256": "d3892da97ccd7669dabaa5dc4beb8437b05a53d9fd5ef258b4afe5e3896489ba",
+    "title": "Auto-Print WooCommerce Shipping Labels for UPS Shipments",
+    "url": "https://www.pluginhive.com/knowledge-base/automatic-print-shipping-label-woocommerce-ups-plugin/"
+  },
+  "best-order-fulfilment-process-woocommerce-dropshipping.md": {
+    "plugin": "general",
+    "sha256": "d6ed978ef0cf29619f059efc6d488917a461b443532a400c70ad7a79285ce6bf",
+    "title": "WooCommerce Order Fulfilment -Carriers Model vs Dropshipping.",
+    "url": "https://www.pluginhive.com/knowledge-base/best-order-fulfilment-process-woocommerce-dropshipping/"
+  },
+  "best-woocommerce-canada-post-shipping-plugin.md": {
+    "plugin": "canada-post",
+    "sha256": "53f4b747bcf730ff25a3c475ed7409eee222f406b3ce0506b11c1b124dc2ccde",
+    "title": "Best WooCommerce Canada Post Shipping plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/best-woocommerce-canada-post-shipping-plugin/"
+  },
+  "book-gaming-slots-online-with-woocommerce-bookings-plugin.md": {
+    "plugin": "bookings",
+    "sha256": "4500957f73f9613eecfe0c17c8f4a12c0d45f0c322a7050b7d2fdfbc43c7372b",
+    "title": "How to Book Gaming Slots Online with Bookings and Appointments for WooCommerce Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/book-gaming-slots-online-with-woocommerce-bookings-plugin/"
+  },
+  "book-meal-slots-and-provide-different-meal-selections-using-woocommerce-bookings-plugin.md": {
+    "plugin": "bookings",
+    "sha256": "dc9517f9c2decc1b56f6cb852ff69e6e3f39301a975b917f149665bff35819d8",
+    "title": "Book Meal Slots & Provide Multiple Meal Selections to Customers",
+    "url": "https://www.pluginhive.com/knowledge-base/book-meal-slots-and-provide-different-meal-selections-using-woocommerce-bookings-plugin/"
+  },
+  "box-packing-calculation-shipping-rates-based-weights-dimensions-2.md": {
+    "plugin": "general",
+    "sha256": "c8c7f477419c98d9570a6aa1d3a9ac51a2b3b5f68b7a75aff315fefa6db3898a",
+    "title": "UPS Box Packing \u2013 Calculation of shipping rates based on weights and dimensions",
+    "url": "https://www.pluginhive.com/knowledge-base/box-packing-calculation-shipping-rates-based-weights-dimensions-2/"
+  },
+  "box-packing-calculation-shipping-rates-based-weights-dimensions.md": {
+    "plugin": "general",
+    "sha256": "b09438c76a2fdb79bef5e4f87304786f00809011e7727e889967af743ade3ec5",
+    "title": "WooCommerce FedEx Plugin: Calculate Rates by Weight & Dimensions",
+    "url": "https://www.pluginhive.com/knowledge-base/box-packing-calculation-shipping-rates-based-weights-dimensions/"
+  },
+  "calculate-price-based-per-item-shipping-rates-using-woocommerce-table-rate-shipping-pro.md": {
+    "plugin": "table-rate",
+    "sha256": "e6ff6df7a793f78f9b53a0c3e441148a28fea3bbfb5c9addf008872cd6c1ead7",
+    "title": "Calculate Price Based and Per Item Shipping Rates using WooCommerce Table Rate Shipping Pro",
+    "url": "https://www.pluginhive.com/knowledge-base/calculate-price-based-per-item-shipping-rates-using-woocommerce-table-rate-shipping-pro/"
+  },
+  "calculate-shipping-cost-per-quantity-products-using-woocommerce-table-rate-shipping-pro.md": {
+    "plugin": "table-rate",
+    "sha256": "448cf0df67a0de4be76d95737ad586da03e7f5690dffb53178d52b35f5043f19",
+    "title": "Calculate Shipping Cost Per Quantity of Products- WooCommerce Table Rate Shipping Pro",
+    "url": "https://www.pluginhive.com/knowledge-base/calculate-shipping-cost-per-quantity-products-using-woocommerce-table-rate-shipping-pro/"
+  },
+  "calculate-shipping-rates-different-types-product-cart.md": {
+    "plugin": "general",
+    "sha256": "f794224faf10a192446fb5261313d64650c8770502285c95f731a480eed81289",
+    "title": "Calculate Shipping Rates for Different Types of Products in the Cart",
+    "url": "https://www.pluginhive.com/knowledge-base/calculate-shipping-rates-different-types-product-cart/"
+  },
+  "calculate-shipping-rates-pickup-products.md": {
+    "plugin": "general",
+    "sha256": "437dfe926863a7d80e015bc03c7029fd98c95d0882762df48f6d3b3fe7207994",
+    "title": "Calculate Shipping Rates for Pickup and Non Pickup Products",
+    "url": "https://www.pluginhive.com/knowledge-base/calculate-shipping-rates-pickup-products/"
+  },
+  "can-allow-pickup-items-remain-order-charging-dump-truck-items.md": {
+    "plugin": "general",
+    "sha256": "70b695136613f6746587c78b2b9672f37ff74ea5c58e4fa930bae4533c28b61f",
+    "title": "Can I allow the pickup items to remain in the order, while charging for the dump truck items?",
+    "url": "https://www.pluginhive.com/knowledge-base/can-allow-pickup-items-remain-order-charging-dump-truck-items/"
+  },
+  "can-find-web-services-password.md": {
+    "plugin": "general",
+    "sha256": "8f8b8631df3bd3244203cbe8f8a60f1b4d5079d101bab2befe04645abcccda3f",
+    "title": "Where can I find the Web Services Password for FedEx?",
+    "url": "https://www.pluginhive.com/knowledge-base/can-find-web-services-password/"
+  },
+  "can-set-world-instead-typing-countries-names.md": {
+    "plugin": "general",
+    "sha256": "5abe337bd1fd9b22a2eb6adf76a46d114f58ed5fee1bf5905f01d78f6a26923d",
+    "title": "How can I set \u201cAll the World\u201d instead of typing all the countries names?",
+    "url": "https://www.pluginhive.com/knowledge-base/can-set-world-instead-typing-countries-names/"
+  },
+  "can-shipments-go-contractors-factory-shipping-costs-charged-commercial-account.md": {
+    "plugin": "general",
+    "sha256": "950980859101d2c479f11b71329c5b352730739b5786f430a1c0a555e6847387",
+    "title": "Can I have shipments go out from my contractor\u2019s factory but the shipping costs are charged on my commercial account?",
+    "url": "https://www.pluginhive.com/knowledge-base/can-shipments-go-contractors-factory-shipping-costs-charged-commercial-account/"
+  },
+  "canada-post-manifest-woocommerce-orders.md": {
+    "plugin": "canada-post",
+    "sha256": "91cacf83a24351600707765b60c7b187c54e963767f321432d095bbd3dbafe98",
+    "title": "An Insight into Canada Post Manifest for WooCommerce Orders",
+    "url": "https://www.pluginhive.com/knowledge-base/canada-post-manifest-woocommerce-orders/"
+  },
+  "change-customs-duty-payer-based-destination-country.md": {
+    "plugin": "general",
+    "sha256": "a35e2e23bc4cc192651f38920a0c83def4e95ace7362590c03107fab510fc53b",
+    "title": "WooCommerce Shipping for FedEx \u2013 Change Customs Duty Payer based on the Destination country",
+    "url": "https://www.pluginhive.com/knowledge-base/change-customs-duty-payer-based-destination-country/"
+  },
+  "change-origin-country-based-destination-woocommerce-ups-shipping-plugin.md": {
+    "plugin": "ups",
+    "sha256": "dbf1c9f159633d775c8b045f9ae435a0de7dfafd43e8af7e4ad5a45fdad443c8",
+    "title": "WooCommerce UPS Shipping Rate for US-US & Europe-Europe",
+    "url": "https://www.pluginhive.com/knowledge-base/change-origin-country-based-destination-woocommerce-ups-shipping-plugin/"
+  },
+  "choosing-woocommerce-fedex-shipping-method.md": {
+    "plugin": "fedex",
+    "sha256": "3d1674fbc3517be17e0595679784fc004f0908653751a36ab71717e04142353f",
+    "title": "Choose Right FedEx Shipping Method for WooCommerce Store",
+    "url": "https://www.pluginhive.com/knowledge-base/choosing-woocommerce-fedex-shipping-method/"
+  },
+  "clicking-theaccept-shipmentan-error-thrownups-shippers-ups-account-surepost-test-modeerror-code-120053.md": {
+    "plugin": "ups",
+    "sha256": "c09f89089c58a8127cc0ae6f3fd1525e1054231dc0428904365813e55746ab19",
+    "title": "[Error Code:120053] \u2013 Shippers UPS Account is in SurePost test mode",
+    "url": "https://www.pluginhive.com/knowledge-base/clicking-theaccept-shipmentan-error-thrownups-shippers-ups-account-surepost-test-modeerror-code-120053/"
+  },
+  "code-snippet-display-shipping-phone-number-label-place-billing-phone-number.md": {
+    "plugin": "general",
+    "sha256": "60f15535f7103debff89264d45d091d67c63491cb5f803b4e19964f9c94d3725",
+    "title": "Code snippet to display the Shipping phone number on the WooCommerce Shipping label instead of the Billing phone number",
+    "url": "https://www.pluginhive.com/knowledge-base/code-snippet-display-shipping-phone-number-label-place-billing-phone-number/"
+  },
+  "comparison-xadapter-woocommerce-shipment-tracking-plugin.md": {
+    "plugin": "shipment-tracking",
+    "sha256": "6a60d005d725ad64abbaf89bccca7c5bbe3d662748516bbe6e021d46c97bd109",
+    "title": "Shipment Tracking Pro Vs WooCommerce Shipment Tracking",
+    "url": "https://www.pluginhive.com/knowledge-base/comparison-xadapter-woocommerce-shipment-tracking-plugin/"
+  },
+  "concern-going-take-1500-rules-since-goes-off-per-pound-150.md": {
+    "plugin": "general",
+    "sha256": "1fc41faec887aa853294d3991318c33ad03538d0a4634c74a02804d24f798743",
+    "title": "My concern is that it\u2019s going to take 1,500 rules since it goes off per pound up to 150#",
+    "url": "https://www.pluginhive.com/knowledge-base/concern-going-take-1500-rules-since-goes-off-per-pound-150/"
+  },
+  "configure-normal-priority-shipping-rates-swiss-post-using-woocommerce-tabel-rate-shipping-pro.md": {
+    "plugin": "table-rate",
+    "sha256": "e8bbebbb01f3600cd17e62ec8d4270dc331c4c1e24496efc098e8256c0769d84",
+    "title": "Configure Normal & Priority shipping rates for Swiss Post with WooCommerce Table Rate Shipping Pro",
+    "url": "https://www.pluginhive.com/knowledge-base/configure-normal-priority-shipping-rates-swiss-post-using-woocommerce-tabel-rate-shipping-pro/"
+  },
+  "configure-shipping-rates-woocommerce-multi-carrier-shipping-plugin.md": {
+    "plugin": "multi-carrier",
+    "sha256": "f962331ad1ab49a2f4b5236fc6fb34e1425a448b23c5e89b2a0a3c69d60b94c5",
+    "title": "Set Shipping Rates in WooCommerce with Multi-Carrier Shipping Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/configure-shipping-rates-woocommerce-multi-carrier-shipping-plugin/"
+  },
+  "configure-state-based-rules-manually-using-the-woocommerce-table-rate-shipping-plugin.md": {
+    "plugin": "table-rate",
+    "sha256": "b926f16e84e1b3a2dc4cf0752caec210a88390948e255fe31fdd89f316647b92",
+    "title": "How to Configure State-based Rules Manually Using the WooCommerce Table Rate Shipping Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/configure-state-based-rules-manually-using-the-woocommerce-table-rate-shipping-plugin/"
+  },
+  "configure-woocommerce-shipping-cost-weight-different-zones-netherlands.md": {
+    "plugin": "general",
+    "sha256": "ebc7f14d03096a2fc52601ad5ea16165b83caf4431d20b9b96738e3f42de089b",
+    "title": "How to configure WooCommerce shipping cost by weight for different zones in the Netherlands?",
+    "url": "https://www.pluginhive.com/knowledge-base/configure-woocommerce-shipping-cost-weight-different-zones-netherlands/"
+  },
+  "configure-woocommerce-ups-shipping-methods-based-country-codes.md": {
+    "plugin": "ups",
+    "sha256": "ab02e823834fd3b22ee7072aa2e77aa15e8d604400c7bde435cb097a24d8a3be",
+    "title": "Configure WooCommerce UPS Shipping Methods  by Country Code",
+    "url": "https://www.pluginhive.com/knowledge-base/configure-woocommerce-ups-shipping-methods-based-country-codes/"
+  },
+  "connect-ups-with-woocommerce.md": {
+    "plugin": "ups",
+    "sha256": "1f0169f802a6ef259604128e44afb92bd58a3d1f4b37f3a9cb3051e409f6b587",
+    "title": "How to Connect UPS with WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/connect-ups-with-woocommerce/"
+  },
+  "control-log-receipt-and-recipients-tax-identification-number.md": {
+    "plugin": "general",
+    "sha256": "e55140ed663d39087862fe107dd4dd3eef657b5fc126b6df40f15c7a9872508f",
+    "title": "Control Log and Recipient Tax Identification Number with WooCommerce UPS Shipping plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/control-log-receipt-and-recipients-tax-identification-number/"
+  },
+  "convert-fedex-shipping-rates-base-currency.md": {
+    "plugin": "fedex",
+    "sha256": "19747787070d51e7237b8c45838b53517593dd43bccf7778b6447aaf66113c3b",
+    "title": "Convert WooCommerce FedEx Shipping Rates to Base Currency",
+    "url": "https://www.pluginhive.com/knowledge-base/convert-fedex-shipping-rates-base-currency/"
+  },
+  "country-doesnt-zippostal-code.md": {
+    "plugin": "general",
+    "sha256": "1f369f204389ef48e5439c1e318ce39857ef4294ec015327a4a5adcc94c0bf74",
+    "title": "What to do when my country doesn\u2019t have a zip/postal code?",
+    "url": "https://www.pluginhive.com/knowledge-base/country-doesnt-zippostal-code/"
+  },
+  "cover-packaging-cost-based-product-quantity-using-woocommerce-fedex-shipping-plugin.md": {
+    "plugin": "fedex",
+    "sha256": "906c9948ca85ad693a61540f7f11b2ebcc663a72c2145d4f127ac8fe1e6c6975",
+    "title": "Packaging Cost by Product Quantity for Shopify & WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/cover-packaging-cost-based-product-quantity-using-woocommerce-fedex-shipping-plugin/"
+  },
+  "create-multiple-woocommerce-fedex-shipments-multiple-orders.md": {
+    "plugin": "fedex",
+    "sha256": "e50b499a3a771cc012cc3ac4af6d63b3fcad1a21696c00d5091978b69c533a6a",
+    "title": "Create Multiple FedEx Shipments in WooCommerce for Multiple Orders",
+    "url": "https://www.pluginhive.com/knowledge-base/create-multiple-woocommerce-fedex-shipments-multiple-orders/"
+  },
+  "create-nafta-certificate-of-origin-with-woocommerce-ups-shipping-plugin.md": {
+    "plugin": "ups",
+    "sha256": "9775146d0c9a30ec54dd7398b4ea173df3ea60847f74d6d83cde7783e533546f",
+    "title": "WooCommerce UPS Shipping \u2013 Create NAFTA Certificate of Origin",
+    "url": "https://www.pluginhive.com/knowledge-base/create-nafta-certificate-of-origin-with-woocommerce-ups-shipping-plugin/"
+  },
+  "create-ship-woocommerce-custom-product-assortments-via-fedex.md": {
+    "plugin": "fedex",
+    "sha256": "9b6fd23405802b71a28b62e9070ea4bdcbe23d5eeed0d723072285d0f802a12c",
+    "title": "How to Ship WooCommerce Custom Product Boxes via FedEx",
+    "url": "https://www.pluginhive.com/knowledge-base/create-ship-woocommerce-custom-product-assortments-via-fedex/"
+  },
+  "create-ups-ground-shipment-woocommerce-store.md": {
+    "plugin": "ups",
+    "sha256": "bd8dc23d1290022c03ff01c8e30dc363a3b7c03fe9b2f3944915411373edca93",
+    "title": "Create UPS Ground Shipment from your WooCommerce store",
+    "url": "https://www.pluginhive.com/knowledge-base/create-ups-ground-shipment-woocommerce-store/"
+  },
+  "creating-canada-post-shipping-labels-order-multiple-products.md": {
+    "plugin": "canada-post",
+    "sha256": "fbab870c7698867bdcf0c28f038bfe926a59fa8645cd13a38c7be4c23f143da1",
+    "title": "Print Canada Post Shipping Labels for Orders with Multiple Products",
+    "url": "https://www.pluginhive.com/knowledge-base/creating-canada-post-shipping-labels-order-multiple-products/"
+  },
+  "customise-woocommerce-shipping-provide-flat-rates-some-products-ship-others-via-ups-usps.md": {
+    "plugin": "table-rate",
+    "sha256": "d1a87a3389b684e56ca71aa24362a92fbf550f949ae42297261c492e175e4e09",
+    "title": "Customise your WooCommerce Shipping by Providing Flat Rates on Some Products and Ship Others via UPS and USPS",
+    "url": "https://www.pluginhive.com/knowledge-base/customise-woocommerce-shipping-provide-flat-rates-some-products-ship-others-via-ups-usps/"
+  },
+  "customize-booking-calendar-on-woocommerce.md": {
+    "plugin": "bookings",
+    "sha256": "b00021930a99d7d77cbf3e347c67ac3119e85de17b4a0bbd714270ca3006be82",
+    "title": "Customize Calendar Designs with Bookings and Appointments for WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/customize-booking-calendar-on-woocommerce/"
+  },
+  "customize-product-description-on-label-using-woocommerce-ups-shipping-plugin.md": {
+    "plugin": "ups",
+    "sha256": "e83c8451b39d4054cf53f8b5369e6fb0a29bb2da00e4d607fc807c6876b958c0",
+    "title": "Customize Product Description on Label with WooCommerce UPS Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/customize-product-description-on-label-using-woocommerce-ups-shipping-plugin/"
+  },
+  "customize-ups-freight-shipping-selection-product-weight.md": {
+    "plugin": "ups",
+    "sha256": "f13648b29ab9bae2f243e6186dc7b8f3b6e4d01bd623e9d030aeec0dcd6ca0a4",
+    "title": "WooCommerce UPS Freight Shipping based on Product\u2019s Weight",
+    "url": "https://www.pluginhive.com/knowledge-base/customize-ups-freight-shipping-selection-product-weight/"
+  },
+  "customs-amount-on-commercial-invoice.md": {
+    "plugin": "general",
+    "sha256": "4e05306aa0aad10319644771bff3b44ce0eed98ef62a6ad8f0b058119952158b",
+    "title": "Accurate Customs Amount on Commercial Invoice for Easy Customs Clearance",
+    "url": "https://www.pluginhive.com/knowledge-base/customs-amount-on-commercial-invoice/"
+  },
+  "debug-turned-fedex-response-says-authentication-failed.md": {
+    "plugin": "fedex",
+    "sha256": "7d9a2c1c725d1a7b18cf5631a9e21c3886ab00e636425a785856505002b14928",
+    "title": "Debug Error: \u201cAuthentication Failed\u201d",
+    "url": "https://www.pluginhive.com/knowledge-base/debug-turned-fedex-response-says-authentication-failed/"
+  },
+  "decoding-debug-data-woocommerce-ups-plugin.md": {
+    "plugin": "ups",
+    "sha256": "1837824da2b6b9b903f8a1c75ef7f1651d1a58dd3cb0d6b0359d7c8e43a8aa51",
+    "title": "Decoding Debug Data of WooCommerce UPS Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/decoding-debug-data-woocommerce-ups-plugin/"
+  },
+  "default-units-weight-dimensions-price-shipping-pro.md": {
+    "plugin": "table-rate",
+    "sha256": "ca8770baf08b0cb1a34147dfcc67d729ccf8a95505c882acdec4d6bc638bd45e",
+    "title": "What are the default units of weight, dimensions, and price for Shipping Pro?",
+    "url": "https://www.pluginhive.com/knowledge-base/default-units-weight-dimensions-price-shipping-pro/"
+  },
+  "difference-rates-returned-plugin-ups-shipping-calculator.md": {
+    "plugin": "ups",
+    "sha256": "66f6b647390fe766b361bf33e38e25080682e5a020b8209377f81abf013fbfe7",
+    "title": "How to resolve differences between rates returned by the plugin and the UPS shipping calculator",
+    "url": "https://www.pluginhive.com/knowledge-base/difference-rates-returned-plugin-ups-shipping-calculator/"
+  },
+  "difference-woocommerce-multi-carrier-shipping-plugin-ups-stand-alone-plugin-woocommerce.md": {
+    "plugin": "multi-carrier",
+    "sha256": "6daa2af73f79dcd7c5bba6beaa6b560039688ad1d194f63bd33ea9f55e0ef1e4",
+    "title": "Difference between WooCommerce Multi Carrier & Woo UPS plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/difference-woocommerce-multi-carrier-shipping-plugin-ups-stand-alone-plugin-woocommerce/"
+  },
+  "different-shipping-label-file-formats-supported-woocommerce-ups-shipping-plugin.md": {
+    "plugin": "ups",
+    "sha256": "33367cce691a3eeb1b51d07b5c3859c83f1fda4323b455d1b20946fccc0a478b",
+    "title": "UPS Label Format Supported by WooCommerce UPS plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/different-shipping-label-file-formats-supported-woocommerce-ups-shipping-plugin/"
+  },
+  "dimensions-boxes-taken-account-going-volume-calculating-many-products-fit-one-box-using-woocommerce-ups-shipping-plugin.md": {
+    "plugin": "ups",
+    "sha256": "27a51a9a609b4b973926358c9d770c5f44b800d56deb3e86b474852a9474a21d",
+    "title": "Are the dimensions of the boxes taken into account or is it going by volume when calculating how many products fit in one box using WooCommerce UPS Shipping Plugin?",
+    "url": "https://www.pluginhive.com/knowledge-base/dimensions-boxes-taken-account-going-volume-calculating-many-products-fit-one-box-using-woocommerce-ups-shipping-plugin/"
+  },
+  "discount-woocommerce-bookings-an-ultimate-guide.md": {
+    "plugin": "bookings",
+    "sha256": "970c881122e55ca226bc8594cf25f9ea75b2fe85b974fb0c4eb5d609638e1775",
+    "title": "Set Up Discount for WooCommerce Bookings \u2013 An Ultimate Guide",
+    "url": "https://www.pluginhive.com/knowledge-base/discount-woocommerce-bookings-an-ultimate-guide/"
+  },
+  "display-domestic-services-apart-from-fedex-ground-using-woocommerce-fedex-shipping-plugin.md": {
+    "plugin": "fedex",
+    "sha256": "6b14c6b95dc922de2f4ee2220d07b702ad71f58a93a97f2717dd5296ebf48555",
+    "title": "How to Display other Domestic Services apart from FedEx Ground using WooCommerce Shipping plugin for FedEx",
+    "url": "https://www.pluginhive.com/knowledge-base/display-domestic-services-apart-from-fedex-ground-using-woocommerce-fedex-shipping-plugin/"
+  },
+  "display-estimated-delivery-date-woocommerce-fedex-shipping-plugin.md": {
+    "plugin": "estimated-delivery",
+    "sha256": "03a66f471754d41c1809f45c48ef1f40ef685d88b5404404d4b317cdde4ace87",
+    "title": "Display Delivery Date with WooCommerce FedEx Shipping plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/display-estimated-delivery-date-woocommerce-fedex-shipping-plugin/"
+  },
+  "display-formats-estimated-delivery-date-plugin-woocommerce.md": {
+    "plugin": "estimated-delivery",
+    "sha256": "9e3567a596143a43921783d1e8f3912171aeab4e0495ab1266c5c749fc30a4f0",
+    "title": "Display Estimated Delivery Date Formats in WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/display-formats-estimated-delivery-date-plugin-woocommerce/"
+  },
+  "display-ups-shipping-rates-based-on-woocommerce-shipping-zones.md": {
+    "plugin": "ups",
+    "sha256": "0a4dbf596012e29c91badb710682becfb944abc970c492ffebd0dca871831e80",
+    "title": "Display UPS Shipping Rates Based On WooCommerce Shipping Zones",
+    "url": "https://www.pluginhive.com/knowledge-base/display-ups-shipping-rates-based-on-woocommerce-shipping-zones/"
+  },
+  "display-woocommerce-bookings-search-availability-widget.md": {
+    "plugin": "bookings",
+    "sha256": "1c55e324a671b7f1b2bfb69cac5f88789f2650ec8ebd93f26973d1c2f10067a1",
+    "title": "How to Display WooCommerce Bookings Search Availability Widget on your store",
+    "url": "https://www.pluginhive.com/knowledge-base/display-woocommerce-bookings-search-availability-widget/"
+  },
+  "divi-theme-compatibility-woocommerce-table-rate-shipping-pro.md": {
+    "plugin": "table-rate",
+    "sha256": "4b8fc4ae2f7bb30fbeaf607f5c7e431fa5562e7188ecc1d16f2eef88acab1178",
+    "title": "Set up WooCommerce Table Rate Shipping with Divi Theme",
+    "url": "https://www.pluginhive.com/knowledge-base/divi-theme-compatibility-woocommerce-table-rate-shipping-pro/"
+  },
+  "downloaded-plugin-seems-working-fine-thing-isnt-showing-letter-mail-option.md": {
+    "plugin": "general",
+    "sha256": "1e71335275d57ed49d3f3e0ac4c8fba76696e5bc6478e195942ff06110f709d4",
+    "title": "I have downloaded this plugin and it seems to be working fine. The only thing that isn\u2019t showing up is the letter mail option",
+    "url": "https://www.pluginhive.com/knowledge-base/downloaded-plugin-seems-working-fine-thing-isnt-showing-letter-mail-option/"
+  },
+  "earn-extra-profits-adjusting-shipping-cost-using-woocommerce-fedex-shipping-plugin.md": {
+    "plugin": "fedex",
+    "sha256": "91f6c0cf6f1fb635602d7824ff79976bde6d28b09421935e0f1aa98141862688",
+    "title": "Shipping Cost Optimization: WooCommerce FedEx Shipping Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/earn-extra-profits-adjusting-shipping-cost-using-woocommerce-fedex-shipping-plugin/"
+  },
+  "easily-ship-products-custom-quantities-table-rate-shipping-pro-woocommerce-measurement-price-calculator-plugin.md": {
+    "plugin": "table-rate",
+    "sha256": "00ecf76dcd4fcbd2ecd0bf00efdadf266bcc514f9fee39a2902e53e4f074818a",
+    "title": "WooCommerce Measurement Price Calculator with Table Rate Shipping",
+    "url": "https://www.pluginhive.com/knowledge-base/easily-ship-products-custom-quantities-table-rate-shipping-pro-woocommerce-measurement-price-calculator-plugin/"
+  },
+  "effectively-handling-pre-packaged-products-woocommerce-using-ups-shipping-carrier.md": {
+    "plugin": "ups",
+    "sha256": "650c42ae32fb8b1dc07cc95103f9abf3fea4b03ae1e98eb81817c585ff3218c7",
+    "title": "Effectively handling pre-packaged products in WooCommerce using UPS shipping carrier",
+    "url": "https://www.pluginhive.com/knowledge-base/effectively-handling-pre-packaged-products-woocommerce-using-ups-shipping-carrier/"
+  },
+  "empower-multi-vendor-store-using-woocommerce-multi-carrier-shipping-plugin.md": {
+    "plugin": "multi-carrier",
+    "sha256": "f45acc54649fefe0722e1349ef0df4cbefe7549773a6e8cda70df14ee18a556c",
+    "title": "WooCommerce Multi Vendor Shipping with Dokan",
+    "url": "https://www.pluginhive.com/knowledge-base/empower-multi-vendor-store-using-woocommerce-multi-carrier-shipping-plugin/"
+  },
+  "enable-address-validation-verification-on-your-cart-with-woocommerce-ups-shipping-plugin.md": {
+    "plugin": "ups",
+    "sha256": "f8e653c5cd21f656e01bc48ac090a191fe499d7d1770925829f8ecc71fbc37b6",
+    "title": "WooCommerce Address Validation With UPS Shipping Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/enable-address-validation-verification-on-your-cart-with-woocommerce-ups-shipping-plugin/"
+  },
+  "entered-api-details-etc-not-showing-shipping-option.md": {
+    "plugin": "general",
+    "sha256": "822f743286e1ca137ddc2502b71272dc9d9bfe4c3a577c85420009cb59500ba8",
+    "title": "Do I need to Set Product Weight and Dimensions for the WooCommerce UPS Shipping Plugin to work?",
+    "url": "https://www.pluginhive.com/knowledge-base/entered-api-details-etc-not-showing-shipping-option/"
+  },
+  "error-message-displayed-no-valid-services-available.md": {
+    "plugin": "general",
+    "sha256": "75e972222633e5ba5c6d0431ed9947260e17b11e0dbef0f8e1eee42b79aa61de",
+    "title": "Fix the error message \u201cThere are no valid services available\u201d for FedEx Mexico",
+    "url": "https://www.pluginhive.com/knowledge-base/error-message-displayed-no-valid-services-available/"
+  },
+  "estimated-delivery-date-for-different-products-based-on-woocommerce-shipping-class.md": {
+    "plugin": "estimated-delivery",
+    "sha256": "f86522b6eaf0e8059df21cb9ae7be6a016df689eaf83b33458620e523b167b4d",
+    "title": "Display or Hide Estimated Delivery Dates for Different Products based on WooCommerce Shipping Classes",
+    "url": "https://www.pluginhive.com/knowledge-base/estimated-delivery-date-for-different-products-based-on-woocommerce-shipping-class/"
+  },
+  "estimated-shipping-date-for-woocommerce-product-variations.md": {
+    "plugin": "estimated-delivery",
+    "sha256": "2976d77e0dd746cd5b4dad40f9128a15fb9188ca76ab318471384556a742aa86",
+    "title": "Estimated Shipping Date for WooCommerce Product Variations",
+    "url": "https://www.pluginhive.com/knowledge-base/estimated-shipping-date-for-woocommerce-product-variations/"
+  },
+  "export-woocommerce-bookings-appointments-to-csv.md": {
+    "plugin": "bookings",
+    "sha256": "62a8c824b4ac8937a2bf6495dc6b95311e915f44652de6199f53565ce3bc63a4",
+    "title": "Export WooCommerce Bookings and Appointments to a CSV File",
+    "url": "https://www.pluginhive.com/knowledge-base/export-woocommerce-bookings-appointments-to-csv/"
+  },
+  "export-woocommerce-bookings-to-icalendar.md": {
+    "plugin": "bookings",
+    "sha256": "2b258710fe0969cc96dc9d4b525ae38eb228a70782b5290f69eabe5ba4cc531a",
+    "title": "How to Export WooCommerce Bookings to iCalendar",
+    "url": "https://www.pluginhive.com/knowledge-base/export-woocommerce-bookings-to-icalendar/"
+  },
+  "extend-estimated-delivery-day-woocommerce-fedex-shipping-plugin.md": {
+    "plugin": "estimated-delivery",
+    "sha256": "7a3644077f19927dbb9e5efa24e75fc5b3113b80c218249ffbb0e5f45eff8d1a",
+    "title": "Extend the Estimated Delivery Day in WooCommerce FedEx Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/extend-estimated-delivery-day-woocommerce-fedex-shipping-plugin/"
+  },
+  "extend-woocommerce-bookings-and-appointment-plugins-functionality-advanced-add-ons.md": {
+    "plugin": "bookings",
+    "sha256": "ef48bf373340be70c915df51ecc9f433301a51d402097f88a1e9c6dd1153e363",
+    "title": "Advanced Add-ons to Extend Bookings And Appointments for WooCommerce Functionality",
+    "url": "https://www.pluginhive.com/knowledge-base/extend-woocommerce-bookings-and-appointment-plugins-functionality-advanced-add-ons/"
+  },
+  "farmhouse-accommodation-set-up-using-woocommerce-bookings-plugin-and-product-add-on.md": {
+    "plugin": "bookings",
+    "sha256": "28319e851260fbd4eb0901ac8ca54d1329552c346efc01c2bd9382a99141a3b4",
+    "title": "Farmhouse Accommodation Setup Using Bookings And Appointments for WooCommerce and Product Add-Ons",
+    "url": "https://www.pluginhive.com/knowledge-base/farmhouse-accommodation-set-up-using-woocommerce-bookings-plugin-and-product-add-on/"
+  },
+  "fedex-hold-at-location-at-woocommerce-checkout.md": {
+    "plugin": "fedex",
+    "sha256": "1474b2dd1d8e3b82672b48b8f7ccf3e1b23285dbf6f2652f00ee0a5aa40aff91",
+    "title": "FedEx Hold At Location at WooCommerce Checkout",
+    "url": "https://www.pluginhive.com/knowledge-base/fedex-hold-at-location-at-woocommerce-checkout/"
+  },
+  "fedex-label-printing-woocommerce-store-made-easy.md": {
+    "plugin": "fedex",
+    "sha256": "88317cf5aa9d1f09aebe482b576753a7df7fb0fa1e7837d8954a4e7f04e4e310",
+    "title": "How to Print WooCommerce FedEx Shipping Labels: Guide",
+    "url": "https://www.pluginhive.com/knowledge-base/fedex-label-printing-woocommerce-store-made-easy/"
+  },
+  "fedex-multi-vendor-shipping-guide-using-woocommerce-product-vendors.md": {
+    "plugin": "multi-carrier",
+    "sha256": "371e7d5911f2bb790570b8c29792565ed9cfe7045fe65b4efd5dfe42b31abef2",
+    "title": "FedEx Multi Vendor Shipping with WooCommerce Product Vendors",
+    "url": "https://www.pluginhive.com/knowledge-base/fedex-multi-vendor-shipping-guide-using-woocommerce-product-vendors/"
+  },
+  "fedex-not-shipping-zones-option.md": {
+    "plugin": "fedex",
+    "sha256": "1f23981232fc246eac90b4ec91ec94d69d82c9dd1eb4a56acefd8854b89739e7",
+    "title": "Why FedEx option is not under WooCommerce shipping zones",
+    "url": "https://www.pluginhive.com/knowledge-base/fedex-not-shipping-zones-option/"
+  },
+  "fedex-overnight-deliveries-showdelivery-tue.md": {
+    "plugin": "fedex",
+    "sha256": "dc01c55499afe8873258039da519c6b9306fc403d09e4a7dd2f6f9f40a2728fc",
+    "title": "Why does FedEx overnight deliveries shows Delivery \u2013 TUE instead of next business day, Monday?",
+    "url": "https://www.pluginhive.com/knowledge-base/fedex-overnight-deliveries-showdelivery-tue/"
+  },
+  "fedex-plugin-woocommerce-button-switch-residential-shipping.md": {
+    "plugin": "fedex",
+    "sha256": "23ff0cdf949c262317cd6546c3dfdf1d86dec6d4512e6edf0239b87e11a1f67a",
+    "title": "FedEx Address Validation & Residential Shipping for WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/fedex-plugin-woocommerce-button-switch-residential-shipping/"
+  },
+  "fedex-woocommerce-shipping-plugin-pack-items-boxes.md": {
+    "plugin": "fedex",
+    "sha256": "e97ce96be0ae8f6f77ca87f853989a95d88dbbd1ae182ddc06673a5ee47e3697",
+    "title": "Understand the Packing Methods of WooCommerce FedEx Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/fedex-woocommerce-shipping-plugin-pack-items-boxes/"
+  },
+  "find-pickup-point-id-canada-post-deposit-location.md": {
+    "plugin": "canada-post",
+    "sha256": "056957578122ff64158b2c559567123c0347f1d8e73ad7c75e5676723cd3a6c8",
+    "title": "Find Pickup Point ID for Canada Post Deposits on WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/find-pickup-point-id-canada-post-deposit-location/"
+  },
+  "frequently-asked-questions-canada-post.md": {
+    "plugin": "canada-post",
+    "sha256": "97f48419a8f3649d1758cbf5105daef66d2670501f49664699e462072f3b1885",
+    "title": "WooCommerce Canada Post Shipping Plugin \u2013 Frequently Asked Questions",
+    "url": "https://www.pluginhive.com/knowledge-base/frequently-asked-questions-canada-post/"
+  },
+  "frequently-asked-questions-fedex.md": {
+    "plugin": "fedex",
+    "sha256": "ceb90b8f53a11551910242aec314f7c6068d92dcf94f03d3902444c5efa16100",
+    "title": "WooCommerce FedEx Shipping plugin \u2013 FAQs",
+    "url": "https://www.pluginhive.com/knowledge-base/frequently-asked-questions-fedex/"
+  },
+  "frequently-asked-questions-shipping-pro.md": {
+    "plugin": "table-rate",
+    "sha256": "fd71326f0f7a2976af82256ba1fb4aa78204244390839e7f96c0eb226f21d50e",
+    "title": "Frequently Asked Questions : Shipping Pro",
+    "url": "https://www.pluginhive.com/knowledge-base/frequently-asked-questions-shipping-pro/"
+  },
+  "frequently-asked-questions-ups.md": {
+    "plugin": "ups",
+    "sha256": "f4a20cd265300e79517589b719d58b8ebc0a93924747fd4aee6285c53dc93435",
+    "title": "WooCommerce UPS Shipping Plugin Frequently Asked Questions",
+    "url": "https://www.pluginhive.com/knowledge-base/frequently-asked-questions-ups/"
+  },
+  "generate-fedex-b13a-document-for-canada-exports-using-woocommerce-fedex-shipping.md": {
+    "plugin": "fedex",
+    "sha256": "db1415946637ff1ea18bffaa63dee513b8b43a7d61922f9a7b1d02c3fc4b1de7",
+    "title": "How to Generate FedEx B13A Document for Canada Exports using WooCommerce Shipping FedEx Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/generate-fedex-b13a-document-for-canada-exports-using-woocommerce-fedex-shipping/"
+  },
+  "generate-return-label-drop-ups-access-point.md": {
+    "plugin": "ups",
+    "sha256": "7fb93ef0987f6714073027af3e43979623eb8790907fddb44e8591253adff270",
+    "title": "Generate Return Label & Drop Package at the UPS Access Point",
+    "url": "https://www.pluginhive.com/knowledge-base/generate-return-label-drop-ups-access-point/"
+  },
+  "generate-shipping-labels-bulk-using-woocommerce-ups-shipping-plugin.md": {
+    "plugin": "ups",
+    "sha256": "16221d48383aae7563f2a9eca010ce0814dd67418ccbe1ca96d980858374c66b",
+    "title": "Print Shipping Labels in Bulk with WooCommerce UPS Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/generate-shipping-labels-bulk-using-woocommerce-ups-shipping-plugin/"
+  },
+  "generating-bulk-shipping-labels-made-easy-woocommerce-fedex-shipping-plugin.md": {
+    "plugin": "fedex",
+    "sha256": "1c9b8ab59b4fe70f173b6ec0f7590918a30663d34a55cc76b89e9008eae09424",
+    "title": "Print FedEx Shipping Labels in Bulk for WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/generating-bulk-shipping-labels-made-easy-woocommerce-fedex-shipping-plugin/"
+  },
+  "generating-ups-label-aou-s-appears-label-special-type-way-correct.md": {
+    "plugin": "ups",
+    "sha256": "c0316e89f9ea0a3cccf0dc420998dde069cc1a329d0ab9862a04893b60416688",
+    "title": "Fixing \u00c4, \u00d6, \u00dc & \u00df on UPS Shipping Labels in WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/generating-ups-label-aou-s-appears-label-special-type-way-correct/"
+  },
+  "handle-freight-shipping-tariffs-ease-using-woocommerce-ups-shipping-plugin.md": {
+    "plugin": "ups",
+    "sha256": "be1e5f95915b9755e92beb81e63b9202e45c78fda14b50b2c1e3c08d4cc0367c",
+    "title": "Set Up Freight Shipping with WooCommerce UPS",
+    "url": "https://www.pluginhive.com/knowledge-base/handle-freight-shipping-tariffs-ease-using-woocommerce-ups-shipping-plugin/"
+  },
+  "handle-shipping-standard-subscription-products-ease-using-woocommerce-ups-shipping-plugin.md": {
+    "plugin": "ups",
+    "sha256": "2d4b0706e9e0196bfe85292038133fa745ce95873170c03b13b02c81ad9fcace",
+    "title": "Ship Physical Products along with WooCommerce Subscription Products with the WooCommerce UPS plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/handle-shipping-standard-subscription-products-ease-using-woocommerce-ups-shipping-plugin/"
+  },
+  "handle-woocommerce-shipping-fedex-non-standard-packages.md": {
+    "plugin": "fedex",
+    "sha256": "b49393fd825f37d5cc79a0b8c0ac68b541d8b70b14d45f3b4e485ce836f1d24f",
+    "title": "Handle FedEx Non-Standard Packages on WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/handle-woocommerce-shipping-fedex-non-standard-packages/"
+  },
+  "hassle-free-shipping-flammable-goods-using-woocommerce.md": {
+    "plugin": "general",
+    "sha256": "8f4c767f11c02ce42cd433afc49eb7c75bdc371737084b66d50110a6ac0e2399",
+    "title": "Shipping Prohibited Items in WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/hassle-free-shipping-flammable-goods-using-woocommerce/"
+  },
+  "hide-fedex-ground-specific-zip-code.md": {
+    "plugin": "fedex",
+    "sha256": "b3925b78560ebf8be6df7ad1e61dbe3a55acaa74e7e260bbcf5ba2dd9defcdaf",
+    "title": "Hide \u2018FedEx Ground\u2019 for specific zip code",
+    "url": "https://www.pluginhive.com/knowledge-base/hide-fedex-ground-specific-zip-code/"
+  },
+  "hide-shipping-methods-based-total-order-weight.md": {
+    "plugin": "general",
+    "sha256": "f48af042db6d2f9fdbf61b5d57c31a9736e9bb0887568f96f1297be5c2ed5af2",
+    "title": "Hide UPS Services for Shipments Weighing more than 10lbs and Show only FedEx",
+    "url": "https://www.pluginhive.com/knowledge-base/hide-shipping-methods-based-total-order-weight/"
+  },
+  "how-shipment-tracking-pro-sends-shipping-ids-via-email.md": {
+    "plugin": "shipment-tracking",
+    "sha256": "eb72fd045fbfd98bb30bc9ee3d69cf6a960422bcffa8e4966e5bde9b8d26c13c",
+    "title": "WooCommerce Shipment Tracking: Send Shipping IDs via Email",
+    "url": "https://www.pluginhive.com/knowledge-base/how-shipment-tracking-pro-sends-shipping-ids-via-email/"
+  },
+  "how-to-add-handling-charges-ups-shipment.md": {
+    "plugin": "ups",
+    "sha256": "779b3da7c7aef1affd0a6d11107b47d53494c920b71ae079329fdf0675137fa7",
+    "title": "Add Handling Charges to WooCommerce UPS Shipment",
+    "url": "https://www.pluginhive.com/knowledge-base/how-to-add-handling-charges-ups-shipment/"
+  },
+  "how-to-allow-customers-to-download-ups-labels-repair-shop.md": {
+    "plugin": "ups",
+    "sha256": "c5a4766c6d1f362d6c9863a9c07f9de111ac59bfe3dd7a33f200f1c32e030501",
+    "title": "How to allow Customers to Download UPS labels from an Online Repair Shop",
+    "url": "https://www.pluginhive.com/knowledge-base/how-to-allow-customers-to-download-ups-labels-repair-shop/"
+  },
+  "how-to-download-install-update-woocommerce-plugin.md": {
+    "plugin": "general",
+    "sha256": "c7588134b2fe76f1864bb7f5186f1d57c001be6fa14a1aee3a3e553147341c5b",
+    "title": "How to Download, Install, Activate, and Update PluginHive WooCommerce Plugins",
+    "url": "https://www.pluginhive.com/knowledge-base/how-to-download-install-update-woocommerce-plugin/"
+  },
+  "how-to-generate-packages-automatically-using-woocommerce-fedex-shipping-plugin.md": {
+    "plugin": "fedex",
+    "sha256": "28fa136214ae4955e9f45bf3a99bbde696b2e6c4cc0c766e7d5d8c5bc5ec2f13",
+    "title": "How to Generate Packages Automatically using WooCommerce Shipping Plugin for FedEx",
+    "url": "https://www.pluginhive.com/knowledge-base/how-to-generate-packages-automatically-using-woocommerce-fedex-shipping-plugin/"
+  },
+  "how-to-get-a-production-key-from-ups.md": {
+    "plugin": "ups",
+    "sha256": "a1f061e36c2fe4bc8019c5b349de50f7dc2ee07fc7cdbf87dd09fed4e89a71f0",
+    "title": "How to get a product key from UPS?",
+    "url": "https://www.pluginhive.com/knowledge-base/how-to-get-a-production-key-from-ups/"
+  },
+  "how-to-get-dhl-account-number.md": {
+    "plugin": "dhl",
+    "sha256": "38899458185dc3f7299058893bd760c39f1ad6d7fb76747da0f143cbd2f92265",
+    "title": "How to get DHL Account Number?",
+    "url": "https://www.pluginhive.com/knowledge-base/how-to-get-dhl-account-number/"
+  },
+  "how-to-get-the-ups-access-key.md": {
+    "plugin": "ups",
+    "sha256": "b802d06ae89195d424f111167dca0f465d276575644ea5152a5cfb0882281b66",
+    "title": "How to get the UPS Access Key?",
+    "url": "https://www.pluginhive.com/knowledge-base/how-to-get-the-ups-access-key/"
+  },
+  "how-to-pack-a-product-into-multiple-packages-using-woocommerce-ups-shipping-plugin.md": {
+    "plugin": "ups",
+    "sha256": "a705645f0595f9cbd01a705ee40a13469ac2ed8b092da15c2e5c38b65fd22ac5",
+    "title": "Pack a Product into Multiple Packages: WooCommerce UPS Shipping Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/how-to-pack-a-product-into-multiple-packages-using-woocommerce-ups-shipping-plugin/"
+  },
+  "how-to-set-booking-assets-using-woocommerce-bookings-and-appointments-plugin.md": {
+    "plugin": "bookings",
+    "sha256": "f77f6166d96f4d2ed58e9c638f0996d4d6b4e203bb8888cc5b2f1a0390f8a276",
+    "title": "Set Booking Assets with WooCommerce Bookings and Appointments",
+    "url": "https://www.pluginhive.com/knowledge-base/how-to-set-booking-assets-using-woocommerce-bookings-and-appointments-plugin/"
+  },
+  "how-to-set-booking-costs-using-woocommerce-bookings-and-appointments.md": {
+    "plugin": "bookings",
+    "sha256": "f925d21832e201d49596b5903c17f56d5d082dcefb269b0a8bf7b51f7f075cfd",
+    "title": "Set Booking Cost with WooCommerce Bookings and Appointments",
+    "url": "https://www.pluginhive.com/knowledge-base/how-to-set-booking-costs-using-woocommerce-bookings-and-appointments/"
+  },
+  "how-to-set-booking-participants-using-woocommerce-bookings-and-appointments.md": {
+    "plugin": "bookings",
+    "sha256": "7be928609b20b267153b44553a8878e874eaad117c037eb0090eca558e043ff2",
+    "title": "Set Booking Participants with Bookings and Appointments for WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/how-to-set-booking-participants-using-woocommerce-bookings-and-appointments/"
+  },
+  "how-to-set-booking-resources-using-woocommerce-bookings-and-appointments.md": {
+    "plugin": "bookings",
+    "sha256": "fa6d6a6f2c6e43c9b48d1a9e73982c752f5f794334a5fae61a15a2449b50ac26",
+    "title": "Set Booking Resources with WooCommerce Bookings and Appointments",
+    "url": "https://www.pluginhive.com/knowledge-base/how-to-set-booking-resources-using-woocommerce-bookings-and-appointments/"
+  },
+  "how-to-set-bookings-availability-using-woocommerce-bookings-and-appointments.md": {
+    "plugin": "bookings",
+    "sha256": "9f784755709d2b2f378cf61005f6ad4ba846e35c7f053845f9a93f012ea6b146",
+    "title": "Set Booking Availability with Bookings and Appointments for WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/how-to-set-bookings-availability-using-woocommerce-bookings-and-appointments/"
+  },
+  "how-to-set-up-buffer-time-in-woocommerce-bookings-and-appointments.md": {
+    "plugin": "bookings",
+    "sha256": "e72538e95da8734feacb189eca671c660247ac3ef70c2e191105fca95a21ee61",
+    "title": "Set up Buffer Time in WooCommerce Bookings and Appointments",
+    "url": "https://www.pluginhive.com/knowledge-base/how-to-set-up-buffer-time-in-woocommerce-bookings-and-appointments/"
+  },
+  "how-to-set-up-museum-tours-using-woocommerce-bookings-and-appointments-plugin.md": {
+    "plugin": "bookings",
+    "sha256": "8212d006c4ee9fa4385d3861d8d147ef8ac6dc0b8ccb0078a2a2619e91924187",
+    "title": "How to set up museum tours using Bookings and Appointments for WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/how-to-set-up-museum-tours-using-woocommerce-bookings-and-appointments-plugin/"
+  },
+  "how-to-setup-an-elearning-store-using-woocommerce-bookings-and-appointments-plugin.md": {
+    "plugin": "bookings",
+    "sha256": "b4c37ccaeed3a058007d850d13fdf67ad66c341907c8bce02c933ae4683a61d8",
+    "title": "How to Setup an eLearning Store using WooCommerce Bookings and Appointments plugin?",
+    "url": "https://www.pluginhive.com/knowledge-base/how-to-setup-an-elearning-store-using-woocommerce-bookings-and-appointments-plugin/"
+  },
+  "how-to-use-2-way-google-calendar-sync-with-woocommerce-bookings-and-appointments-plugin.md": {
+    "plugin": "bookings",
+    "sha256": "6dd909f6760beeef39fe7f7b313d316eabd4ba1bae641449e46b89249e4ce970",
+    "title": "How To Use 2 Way Google Calendar Sync with WooCommerce Bookings and Appointments plugin?",
+    "url": "https://www.pluginhive.com/knowledge-base/how-to-use-2-way-google-calendar-sync-with-woocommerce-bookings-and-appointments-plugin/"
+  },
+  "importing-tracking-data-csv-file-shipment-tracking-pro-woocommerce.md": {
+    "plugin": "shipment-tracking",
+    "sha256": "457f6a3d52f1e080b008d1518735200abf86f8650180b221555e8e6c1675fb04",
+    "title": "Bulk Import WooCommerce Shipment Tracking Details via CSV",
+    "url": "https://www.pluginhive.com/knowledge-base/importing-tracking-data-csv-file-shipment-tracking-pro-woocommerce/"
+  },
+  "impress-customer-customizing-tracking-details-order-completion-email-using-woocommerce-shipment-tracking-pro.md": {
+    "plugin": "shipment-tracking",
+    "sha256": "1d7ca631d744e689f3719ebd910f0b65c167f9556bd9e88c4123b84568f5fbb3",
+    "title": "Customize Tracking Details- WooCommerce Shipment Tracking",
+    "url": "https://www.pluginhive.com/knowledge-base/impress-customer-customizing-tracking-details-order-completion-email-using-woocommerce-shipment-tracking-pro/"
+  },
+  "improve-customer-experience-showing-delivery-estimates.md": {
+    "plugin": "estimated-delivery",
+    "sha256": "cfaec28ad7ba16b35a934dfc7a0da5b4724d983fe3f30d8d40ca4af4e24f7cb6",
+    "title": "Display Delivery Estimates on your WooCommerce Store",
+    "url": "https://www.pluginhive.com/knowledge-base/improve-customer-experience-showing-delivery-estimates/"
+  },
+  "include-cost-insurance-estimate-canada-post-woocommerce-store.md": {
+    "plugin": "canada-post",
+    "sha256": "b2c705c15bba10594265ada480d00b9287a9ec8d411c3f4382fbff4059326adb",
+    "title": "Add WooCommerce Canada Post Insurance cost to Shipping Rates",
+    "url": "https://www.pluginhive.com/knowledge-base/include-cost-insurance-estimate-canada-post-woocommerce-store/"
+  },
+  "increase-max-input-vars-limit-on-your-wordpress.md": {
+    "plugin": "general",
+    "sha256": "0b36fbeec50794009f09a4cb234f3c1d6aef55c52372bd043d1de6260a542071",
+    "title": "Increase the Maximum Input Variables Limit(Max Input Vars) on your WordPress.",
+    "url": "https://www.pluginhive.com/knowledge-base/increase-max-input-vars-limit-on-your-wordpress/"
+  },
+  "increase-php-wordpress-memory-limit.md": {
+    "plugin": "general",
+    "sha256": "89ed802a55f5957f937849c3385168a2ae9ebc8a409f3ba280eecfc6898239c7",
+    "title": "How to Increase PHP WordPress Memory Limit?",
+    "url": "https://www.pluginhive.com/knowledge-base/increase-php-wordpress-memory-limit/"
+  },
+  "increase-sales-providing-free-shipping-beyond-certain-number-items-using-woocommerce-table-rate-shipping-pro.md": {
+    "plugin": "table-rate",
+    "sha256": "a8e6ce32eabf3a7dfb3c7b3f600b118f9095c25453287a68c4a88b3751ac07cb",
+    "title": "WooCommerce Free Shipping Based on Quantity-  Table Rate Shipping",
+    "url": "https://www.pluginhive.com/knowledge-base/increase-sales-providing-free-shipping-beyond-certain-number-items-using-woocommerce-table-rate-shipping-pro/"
+  },
+  "input-postal-code-city-checkout-cart-form-still-doesnt-show-fedex-info.md": {
+    "plugin": "fedex",
+    "sha256": "4bc514f7ca692dc962d95e9760a61fa27e7af916ab523ea835345486e4fe7c1f",
+    "title": "I have input the Postal code and City into the checkout cart form and it still doesn\u2019t show the FedEx info",
+    "url": "https://www.pluginhive.com/knowledge-base/input-postal-code-city-checkout-cart-form-still-doesnt-show-fedex-info/"
+  },
+  "insight-into-fedex-boxes-for-woocommerce.md": {
+    "plugin": "fedex",
+    "sha256": "e5956e344a5186d8c9d823922e20db3e658b5c5c09a29ac3371a1634b37a7e5c",
+    "title": "Insights into the FedEx Boxes for WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/insight-into-fedex-boxes-for-woocommerce/"
+  },
+  "insight-ups-collect-delivery-using-woocommerce-ups-shipping-plugin.md": {
+    "plugin": "ups",
+    "sha256": "8b588d12b581e494401ffda1403ea08664da5e3de1f76758d668c04c63821865",
+    "title": "UPS Collect-On-Delivery with WooCommerce UPS Shipping plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/insight-ups-collect-delivery-using-woocommerce-ups-shipping-plugin/"
+  },
+  "installation-licence-activation-woocommerce-bookings-appointments-plugin.md": {
+    "plugin": "bookings",
+    "sha256": "293d54504b5962c4729c9b645831b4d7d7f9306e08b6723bd1be1aacf444a5e3",
+    "title": "Install & Activate License for WooCommerce Bookings and Appointments",
+    "url": "https://www.pluginhive.com/knowledge-base/installation-licence-activation-woocommerce-bookings-appointments-plugin/"
+  },
+  "installation-licence-activation-woocommerce-royal-mail-shipping-tracking-plugin.md": {
+    "plugin": "royal-mail",
+    "sha256": "5dc3523e291b68a2e4c03e751109129d1507cee54e024f35cca3e558020450f3",
+    "title": "Installation and Licence Activation",
+    "url": "https://www.pluginhive.com/knowledge-base/installation-licence-activation-woocommerce-royal-mail-shipping-tracking-plugin/"
+  },
+  "installation-license-activation-woocommerce-royal-mail-shipping-tracking-plugin.md": {
+    "plugin": "royal-mail",
+    "sha256": "c13ce7d647749adad07d439b90e9d42b8f3711905793f8b4637f194dc8c6b94a",
+    "title": "Installation and License Activation(Video)",
+    "url": "https://www.pluginhive.com/knowledge-base/installation-license-activation-woocommerce-royal-mail-shipping-tracking-plugin/"
+  },
+  "installed-fedex-plugin-shipping-throwing-issues.md": {
+    "plugin": "fedex",
+    "sha256": "f026c11fe896222d9c684df6fdbdeaa13a676af599452f5b3b5644eb8e654660",
+    "title": "Debug Error: Product # is missing weight. Aborting.",
+    "url": "https://www.pluginhive.com/knowledge-base/installed-fedex-plugin-shipping-throwing-issues/"
+  },
+  "insurance-policy-ups.md": {
+    "plugin": "ups",
+    "sha256": "8bf65695b19d025fb9947e6628befc24f030ee75a1cac3b93c4920f3ef159267",
+    "title": "UPS Insurance Policy with WooCommerce UPS Shipping plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/insurance-policy-ups/"
+  },
+  "international-pricing-not-showing-website.md": {
+    "plugin": "general",
+    "sha256": "fbdef82850daac4e1c5f74f871ebb2cf864017e397c18ab37a66e0b51cd5bb3e",
+    "title": "Configure FedEx International Shipping with WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/international-pricing-not-showing-website/"
+  },
+  "issue-printing-fedex-shipping-label.md": {
+    "plugin": "fedex",
+    "sha256": "6dd29eb7d9b211c5e3faa50f2ef7058d403086dc123151ea394da22ae0c9b99a",
+    "title": "I have an issue with printing the FedEx Shipping label",
+    "url": "https://www.pluginhive.com/knowledge-base/issue-printing-fedex-shipping-label/"
+  },
+  "kalium-theme-compatibility-woocommerce-table-rate-shipping-pro.md": {
+    "plugin": "table-rate",
+    "sha256": "af4e8c7146c6a860c0da8fb6854a45edd0e49c22adac8d81a721c950550b083f",
+    "title": "Kalium Theme Compatible with WooCommerce Table Rate Shipping",
+    "url": "https://www.pluginhive.com/knowledge-base/kalium-theme-compatibility-woocommerce-table-rate-shipping-pro/"
+  },
+  "keep-getting-authentication-error-trying-3-different-fedex-production-keys-site.md": {
+    "plugin": "fedex",
+    "sha256": "352a0cc8b9ede9aaba4881d53698c7c175ce2fae624f002ea6ea0a8ea7e5ccea",
+    "title": "How to Resolve Authentication Error with FedEx Production Keys",
+    "url": "https://www.pluginhive.com/knowledge-base/keep-getting-authentication-error-trying-3-different-fedex-production-keys-site/"
+  },
+  "la-poste-addon-weight-based-shipping-la-poste-colissimo.md": {
+    "plugin": "general",
+    "sha256": "314a0fed7f02e8918f28c9fa9f80e54706642d3c3e10fb39e1d8eead16651341",
+    "title": "La Poste Add-on: Weight-Based Shipping for La Poste Colissimo",
+    "url": "https://www.pluginhive.com/knowledge-base/la-poste-addon-weight-based-shipping-la-poste-colissimo/"
+  },
+  "label-prints-4-pages-sideways-cannot-figure-settings-make-print-right-dimensions-directionally.md": {
+    "plugin": "general",
+    "sha256": "f992643dc28e03e5e4a11fdb06b9f02c9592cad98c2c3b2d3205eb101e0894f1",
+    "title": "How to print the label correctly on a thermal printer?",
+    "url": "https://www.pluginhive.com/knowledge-base/label-prints-4-pages-sideways-cannot-figure-settings-make-print-right-dimensions-directionally/"
+  },
+  "label-prints-testing-one-even-though-switched-live.md": {
+    "plugin": "general",
+    "sha256": "5aea1bf2c2584160b3ec9789672847ba26e772445e9a8f64f90afdb1d534072c",
+    "title": "The only label that prints are a testing one even though I have switched to live",
+    "url": "https://www.pluginhive.com/knowledge-base/label-prints-testing-one-even-though-switched-live/"
+  },
+  "limit-ammunition-shipping-certain-states-using-woocommerce-ups-shipping-plugin.md": {
+    "plugin": "ups",
+    "sha256": "f705eb51ea08d34395cb7787f59b3c9dce5d471adb6b48873bb1123737ee61d8",
+    "title": "Restrict WooCommerce Shipping by State for Products like Ammunition and Alcohol",
+    "url": "https://www.pluginhive.com/knowledge-base/limit-ammunition-shipping-certain-states-using-woocommerce-ups-shipping-plugin/"
+  },
+  "local-delivery-date-estimates-with-woocommerce-estimated-delivery-date.md": {
+    "plugin": "estimated-delivery",
+    "sha256": "016d77db8523ef7bffed6b33b9f7de70a61a64c52c111faaa26069ff03c17dbb",
+    "title": "Offer Local Delivery Date Estimates to Three different Shipping Zones with WooCommerce Estimated Delivery Date plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/local-delivery-date-estimates-with-woocommerce-estimated-delivery-date/"
+  },
+  "make-easy-customers-track-package-process-returns-using-woocommerce-ups-shipping-plugin.md": {
+    "plugin": "ups",
+    "sha256": "9c1a13d0142d6f7e77f2a97f1c82e82ce1a06d7dfdde6d1462ff49d2561c2d8f",
+    "title": "Package Tracking and Returns with WooCommerce UPS Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/make-easy-customers-track-package-process-returns-using-woocommerce-ups-shipping-plugin/"
+  },
+  "make-labels-multiple-boxes-order-using-woocommerce-fedex-shipping-plugin.md": {
+    "plugin": "fedex",
+    "sha256": "56ba238e126206a381352a5ae1766544e56b58a7e3aaadedcac525e23131e2b4",
+    "title": "Print Multiple WooCommerce FedEx Labels for Single Orders",
+    "url": "https://www.pluginhive.com/knowledge-base/make-labels-multiple-boxes-order-using-woocommerce-fedex-shipping-plugin/"
+  },
+  "manage-return-shipments-woocommerce-fedex-shipping-plugin.md": {
+    "plugin": "fedex",
+    "sha256": "fc6a67071f739eef62233e4d264e71fac8a64c04bb4894dc4e3fa6f26f81ac21",
+    "title": "Manage Return Shipments with FedEx Plugin for WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/manage-return-shipments-woocommerce-fedex-shipping-plugin/"
+  },
+  "managing-units-measurement-shipping-woocommerce.md": {
+    "plugin": "general",
+    "sha256": "b105323c82721a28edafd0833cd7d5f652551211b3bc3190c24dfe9f40171a6c",
+    "title": "WooCommerce Shipping \u2013 Managing Units of Measurement",
+    "url": "https://www.pluginhive.com/knowledge-base/managing-units-measurement-shipping-woocommerce/"
+  },
+  "multi-carrier-shipping-plugin-work.md": {
+    "plugin": "multi-carrier",
+    "sha256": "325d50d0e6ff26fcd92eb1147c0ff1abf043285eaaa99a7a13c1507905831e7f",
+    "title": "How does Multi-Carrier Shipping Plugin for WooCommerce work?",
+    "url": "https://www.pluginhive.com/knowledge-base/multi-carrier-shipping-plugin-work/"
+  },
+  "multi-vendor-shipping-using-woocommerce-shipping-services.md": {
+    "plugin": "multi-carrier",
+    "sha256": "65d28106725833e8203a1484adfe641e2d4471edf3779d03989ff146a0d0c919",
+    "title": "Multi-Vendor Shipping with WooCommerce Shipping Services",
+    "url": "https://www.pluginhive.com/knowledge-base/multi-vendor-shipping-using-woocommerce-shipping-services/"
+  },
+  "multi-vendor-support-woocommerce-multi-carrier-shipping-plugin-dokan.md": {
+    "plugin": "multi-carrier",
+    "sha256": "3b7bd43db0826d6a1d06f97e5ef26cd4bf24fb921b7ef9115f30c21706f6d456",
+    "title": "Dokan Integration  With WooCommerce Multi-Carrier Shipping",
+    "url": "https://www.pluginhive.com/knowledge-base/multi-vendor-support-woocommerce-multi-carrier-shipping-plugin-dokan/"
+  },
+  "multilingual-woocommerce-bookings-store.md": {
+    "plugin": "bookings",
+    "sha256": "f78d2604778ce816ad66cd3efd90a3df6d7a67ac0c567a1c6b969f32cda44db2",
+    "title": "How To Set Up a Multilingual WooCommerce Bookings Store?",
+    "url": "https://www.pluginhive.com/knowledge-base/multilingual-woocommerce-bookings-store/"
+  },
+  "multivendor-support-woocommerce-ups-shipping-plugin-dokan.md": {
+    "plugin": "ups",
+    "sha256": "8d20b5b2aed19d09461ad68131506c579dcdf96f4e5ff9a4b2d03bf33e53dfee",
+    "title": "Dokan Integration with WooCommerce UPS Shipping Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/multivendor-support-woocommerce-ups-shipping-plugin-dokan/"
+  },
+  "need-5-shipping-first-item-1-per-additional-item-setup-woocommerce-shipping.md": {
+    "plugin": "general",
+    "sha256": "e08b23b186e593cc06fa2efe9302d96d1bde1a2af30e4d7e5ab6ad547e890f70",
+    "title": "I need $5 for shipping the first item and $1 per additional item. How to setup WooCommerce Shipping?",
+    "url": "https://www.pluginhive.com/knowledge-base/need-5-shipping-first-item-1-per-additional-item-setup-woocommerce-shipping/"
+  },
+  "need-exclude-shipping-costs-tax-calculations-fedex-shipping-tax-free.md": {
+    "plugin": "fedex",
+    "sha256": "1dfff95f53402d7d240e6bea10f69711b226489820b047a7d378c0dc6c0aaef9",
+    "title": "Exclude WooCommerce Shipping Costs from Tax Calculations",
+    "url": "https://www.pluginhive.com/knowledge-base/need-exclude-shipping-costs-tax-calculations-fedex-shipping-tax-free/"
+  },
+  "need-plugin-allows-store-calculate-shipping-based-weight-destination-city.md": {
+    "plugin": "general",
+    "sha256": "54a8105384812f886b08c19be5421e54696b0e8a0a528ae545264459bb2c1865",
+    "title": "I need a Plugin that allows our store to Calculate WooCommerce Shipping based on Weight and Destination City",
+    "url": "https://www.pluginhive.com/knowledge-base/need-plugin-allows-store-calculate-shipping-based-weight-destination-city/"
+  },
+  "need-plugin-vendors-can-print-shipping-labels-postage-paid.md": {
+    "plugin": "general",
+    "sha256": "ef8f3f685fd22c84c551f8cad27370ef83fa1e2a4c522ba53b7107aa7c88fb9d",
+    "title": "I need a WooCommerce Shipping Plugin so that my Vendors can Print their Labels with Postage Paid",
+    "url": "https://www.pluginhive.com/knowledge-base/need-plugin-vendors-can-print-shipping-labels-postage-paid/"
+  },
+  "now-ship-multiple-warehouses-based-destination-country.md": {
+    "plugin": "general",
+    "sha256": "a76b81c15fb408a3ce82d53dbb95979b43630da0876105a629e45276caba176d",
+    "title": "WooCommerce FedEx Shipping: Choose Warehouse Based on Destination",
+    "url": "https://www.pluginhive.com/knowledge-base/now-ship-multiple-warehouses-based-destination-country/"
+  },
+  "offer-fedex-shipping-woocommerce.md": {
+    "plugin": "fedex",
+    "sha256": "bd39ee32edfa2706a30c87f8467ab64f4960208a67c9735b5b17100859dfc1f3",
+    "title": "Enable FedEx as the only Shipping Method for WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/offer-fedex-shipping-woocommerce/"
+  },
+  "offer-free-shipping-customers-still-allow-track-shipment-using-woocommerce-canada-post-shipping-plugin.md": {
+    "plugin": "canada-post",
+    "sha256": "645e250f9963a768a27d20117bac90557121f3c23db4c02bb69379a34674b444",
+    "title": "Offer Free Shipping to Customers and still allow them to Track their Shipment using the WooCommerce Canada Post Shipping plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/offer-free-shipping-customers-still-allow-track-shipment-using-woocommerce-canada-post-shipping-plugin/"
+  },
+  "online-booking-music-lessons-woocommerce-bookings-and-appointments-plugin.md": {
+    "plugin": "bookings",
+    "sha256": "a38c7a6dd0f0f708fe83de831540f06b3c0ea5048773e6996ee60d125e6f602a",
+    "title": "Offer Online Booking for Music Lessons With the WooCommerce Bookings and Appointments plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/online-booking-music-lessons-woocommerce-bookings-and-appointments-plugin/"
+  },
+  "online-diving-adventure-additional-services-using-woocommerce-bookings.md": {
+    "plugin": "bookings",
+    "sha256": "fd7fcef0c0ebb8a0376cc5c7e96aa3a0d59ff2a8bad993484aff5f8fe79a4e89",
+    "title": "Book Online Diving Adventure with Additional Services using Bookings And Appointments for WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/online-diving-adventure-additional-services-using-woocommerce-bookings/"
+  },
+  "online-dog-walking-overnight-pet-care-with-woocommerce-bookings.md": {
+    "plugin": "bookings",
+    "sha256": "a7854ba28338c43bb44378a76e5d5cff85af4b6f3471c638d2b4557ec95b6885",
+    "title": "Online Dog Walking & Overnight Pet Care with WooCommerce Bookings",
+    "url": "https://www.pluginhive.com/knowledge-base/online-dog-walking-overnight-pet-care-with-woocommerce-bookings/"
+  },
+  "online-motor-bike-rental-using-woocommerce-bookings.md": {
+    "plugin": "bookings",
+    "sha256": "4810841f7e53fd9f6925ae9d97344d86fa5219ef2e234f0d984821d5d03c124a",
+    "title": "Create a Motorbike Rental Website with Multiple Engine Capacities",
+    "url": "https://www.pluginhive.com/knowledge-base/online-motor-bike-rental-using-woocommerce-bookings/"
+  },
+  "open-a-free-ups-account-in-europe.md": {
+    "plugin": "ups",
+    "sha256": "211d44fc3c7d1a9d9372bcbed30eed86006994329ae14d3aeffb0e7f3c6e25c2",
+    "title": "Open a Free UPS Account and Get Exclusive Shipping Discounts in Europe",
+    "url": "https://www.pluginhive.com/knowledge-base/open-a-free-ups-account-in-europe/"
+  },
+  "optimize-shipping-plugin-ups-account-currency.md": {
+    "plugin": "ups",
+    "sha256": "7f28a05d195b087cca8dc4c3429dd27e6284ad016d9914960469afddf404a100",
+    "title": "Optimize UPS Shipping plugin based on your UPS Account Currency",
+    "url": "https://www.pluginhive.com/knowledge-base/optimize-shipping-plugin-ups-account-currency/"
+  },
+  "optimize-shipping-rates-using-woocommerce-ups-plugin.md": {
+    "plugin": "ups",
+    "sha256": "ae1965cd8adfda4c7574c61e8c6e7e1bee0046743bb48c37fd36e27f6f214f19",
+    "title": "How to Get the Best Shipping Rates for WooCommerce Orders",
+    "url": "https://www.pluginhive.com/knowledge-base/optimize-shipping-rates-using-woocommerce-ups-plugin/"
+  },
+  "optimize-woocommerce-fedex-packages.md": {
+    "plugin": "fedex",
+    "sha256": "b9ae5fe4833ed91e3b25a675aeb4208e5f8749995e677e051c250a755aa9b3ed",
+    "title": "Optimize FedEx Packages for Better Shipments in WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/optimize-woocommerce-fedex-packages/"
+  },
+  "option-plugin-settings-make-signature-required-upon-delivery.md": {
+    "plugin": "general",
+    "sha256": "02bb0eb6ffd2d7f131b4f32e5709f9d7dd2a21273d349b98ea07c0a37d4dec78",
+    "title": "Enable Delivery Signature for WooCommerce Shipments with UPS",
+    "url": "https://www.pluginhive.com/knowledge-base/option-plugin-settings-make-signature-required-upon-delivery/"
+  },
+  "pack-items-based-weight.md": {
+    "plugin": "general",
+    "sha256": "37d4509b77653de4a87ea58a41c712576136d09505709c4febaf9508d792cf68",
+    "title": "How to Pack Items Based on Weight?",
+    "url": "https://www.pluginhive.com/knowledge-base/pack-items-based-weight/"
+  },
+  "pack-multiple-packages-using-woocommerce-fedex-shipping-plugin.md": {
+    "plugin": "fedex",
+    "sha256": "64ced55727c958e401721db7730f01d4cf0aac2367bff70f87efb6911487ae2f",
+    "title": "How to Pack a Product into Multiple Packages on WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/pack-multiple-packages-using-woocommerce-fedex-shipping-plugin/"
+  },
+  "pack-ship-woocommerce-product-bundles-via-ups.md": {
+    "plugin": "ups",
+    "sha256": "b8c860af7749fd29f6165dc2439ad7eddcbdc88d2d62150618668704f1bff62e",
+    "title": "Pack & Ship WooCommerce Product Bundles with UPS",
+    "url": "https://www.pluginhive.com/knowledge-base/pack-ship-woocommerce-product-bundles-via-ups/"
+  },
+  "packing-items-separately-box-together.md": {
+    "plugin": "general",
+    "sha256": "1aed38c15d1ce6a70ed0c533cdcb7f0a5ddc485c7c03a9f0829ba8513ddc983e",
+    "title": "WooCommerce FedEx Shipping- Pack Some Items Separately & the Rest Together in a Box",
+    "url": "https://www.pluginhive.com/knowledge-base/packing-items-separately-box-together/"
+  },
+  "packing-options-available-woocommerce-ups-shipping-plugin.md": {
+    "plugin": "ups",
+    "sha256": "dc40f19be38af112b48ca9cc557d3b0b82fccbda18759e3e8a105608b5d3a615",
+    "title": "Efficient Parcel Packing with WooCommerce UPS Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/packing-options-available-woocommerce-ups-shipping-plugin/"
+  },
+  "packing-product-ships-two-boxes-ups-box.md": {
+    "plugin": "ups",
+    "sha256": "c494e696661c12a6d30634fbf56bd00369dc2c69393d292e9b72b40c21017423",
+    "title": "Packing a Product that Ships in Two Boxes using UPS Box Packing",
+    "url": "https://www.pluginhive.com/knowledge-base/packing-product-ships-two-boxes-ups-box/"
+  },
+  "paperless-commercial-invoice-with-woocommerce-ups-shipping.md": {
+    "plugin": "ups",
+    "sha256": "b584e0d2dac32bc49b8024cfcda1d00a3040ffc1b3ac2b9d38cc23a453853ae9",
+    "title": "UPS Paperless Invoice for WooCommerce International Shipping",
+    "url": "https://www.pluginhive.com/knowledge-base/paperless-commercial-invoice-with-woocommerce-ups-shipping/"
+  },
+  "paypal-not-receiving-shipping-cost.md": {
+    "plugin": "general",
+    "sha256": "204bc1c6180a2d77f39bad30592abbe690394cc5bf493e5f5af9d62a61df3b67",
+    "title": "Why is My Paypal not Receiving Shipping Cost ?",
+    "url": "https://www.pluginhive.com/knowledge-base/paypal-not-receiving-shipping-cost/"
+  },
+  "per-product-shipping-plugin-woocommerce.md": {
+    "plugin": "general",
+    "sha256": "71fdce69493a75b86867c8d8281252839309ad0a0104917c259d05a38acfdcb2",
+    "title": "Per Product Shipping Plugin for WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/per-product-shipping-plugin-woocommerce/"
+  },
+  "plugin-giving-error-debugged-fedex-address-validation-response-reveal.md": {
+    "plugin": "fedex",
+    "sha256": "ee1a031e88e86408c12daefc447d46da60ac23028bfe8bb2d8045171b6f403ba",
+    "title": "Debug Error: FedEx ADDRESS VALIDATION RESPONSE",
+    "url": "https://www.pluginhive.com/knowledge-base/plugin-giving-error-debugged-fedex-address-validation-response-reveal/"
+  },
+  "plugin-integration-using-fedex-shipping-plugin-woocommerce-measurement-price-calculator.md": {
+    "plugin": "fedex",
+    "sha256": "3f07e5503ad19964273eb3f05281f8c1381f38ba27bbcf889c7d0d76e0b393ad",
+    "title": "WooCommerce FedEx Shipping with Measurement Price Calculator Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/plugin-integration-using-fedex-shipping-plugin-woocommerce-measurement-price-calculator/"
+  },
+  "populate-ups-tracking-number-orders-free-shipping-woocommerce.md": {
+    "plugin": "ups",
+    "sha256": "f0d2ca0b558233cfc1e58de5d856eeac6bec6273efc06816b094e7a5d50240f4",
+    "title": "WooCommerce UPS Tracking Number for Free Shipping Orders",
+    "url": "https://www.pluginhive.com/knowledge-base/populate-ups-tracking-number-orders-free-shipping-woocommerce/"
+  },
+  "possible-bulk-import-tracking-data-using-comma-separated-file.md": {
+    "plugin": "general",
+    "sha256": "a2a2ff63b7a65848729dcb40bf9d50559986a77b28128d8b97964332da0669b6",
+    "title": "Is it possible to do a bulk import of tracking data using comma separated file?",
+    "url": "https://www.pluginhive.com/knowledge-base/possible-bulk-import-tracking-data-using-comma-separated-file/"
+  },
+  "possible-certain-product-variations-no-calculated-shipping-cost.md": {
+    "plugin": "general",
+    "sha256": "f06358063dea83bce47d7f000812bc05f8da5a6ac12f3318425441ebe6ef5696",
+    "title": "How to exclude certain product variations from the FedEx shipping calculation",
+    "url": "https://www.pluginhive.com/knowledge-base/possible-certain-product-variations-no-calculated-shipping-cost/"
+  },
+  "possible-configure-two-shipping-carriers-la-poste-ups-packaging-product.md": {
+    "plugin": "ups",
+    "sha256": "dd5353738f9bb45097d15a49ff2d7269e098acfc5eb319b540b12238ceb45883",
+    "title": "Is it possible to Configure Two Shipping Carriers, La Poste and UPS, for each Packaging and Product?",
+    "url": "https://www.pluginhive.com/knowledge-base/possible-configure-two-shipping-carriers-la-poste-ups-packaging-product/"
+  },
+  "possible-provide-pre-paid-ups-return-shipment-label-woocommerce-store.md": {
+    "plugin": "ups",
+    "sha256": "c3652e71e12249697bf325ab2b5d3059d399bb2d252d75350f64d78f095b7d6d",
+    "title": "Pre-Paid UPS Return Label for WooCommerce Store",
+    "url": "https://www.pluginhive.com/knowledge-base/possible-provide-pre-paid-ups-return-shipment-label-woocommerce-store/"
+  },
+  "possible-send-notification-including-fedex-tracking-number-customer-email.md": {
+    "plugin": "fedex",
+    "sha256": "cd6f236179105bd10be015edd6303820f79ffe5d19588b2e31eaeb3e18e2c2b0",
+    "title": "Is it possible to Send Notification including FedEx Tracking Number to Customer in Email?",
+    "url": "https://www.pluginhive.com/knowledge-base/possible-send-notification-including-fedex-tracking-number-customer-email/"
+  },
+  "print-canada-post-manifests-domestic-international-shipments-using-woocommerce-canada-post-shipping-plugin.md": {
+    "plugin": "canada-post",
+    "sha256": "5ec8ea7049692bf83d996cd7c1ae7b9555db6f3319c0b117ec1c33549982f59b",
+    "title": "WooCommerce Canada Post Manifests for Domestic & International Shipments",
+    "url": "https://www.pluginhive.com/knowledge-base/print-canada-post-manifests-domestic-international-shipments-using-woocommerce-canada-post-shipping-plugin/"
+  },
+  "print-fedex-shipping-labels-directly-from-woocommerce-store.md": {
+    "plugin": "fedex",
+    "sha256": "5276edb4f52b74565f3be1ca19f6bdeacb1029d472380135724a9b83b8d84127",
+    "title": "Print FedEx Shipping Labels Directly from WooCommerce Store",
+    "url": "https://www.pluginhive.com/knowledge-base/print-fedex-shipping-labels-directly-from-woocommerce-store/"
+  },
+  "print-fedex-shipping-labels-using-zebra-thermal-printers.md": {
+    "plugin": "fedex",
+    "sha256": "c8d0afb73af0de885f91e1c431fb022cb096fdb6ed5ff00e8149c27362e45452",
+    "title": "Print FedEx Shipping Labels using Zebra Thermal Printers",
+    "url": "https://www.pluginhive.com/knowledge-base/print-fedex-shipping-labels-using-zebra-thermal-printers/"
+  },
+  "print-shipping-labels-multiple-packages.md": {
+    "plugin": "general",
+    "sha256": "a3335bcd601365d3edc8772669fa4ca1c57d4ab8f04d5c526e604953ccbad695",
+    "title": "Canada Post Labels for Multiple Packages with WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/print-shipping-labels-multiple-packages/"
+  },
+  "print-ups-shipping-label-for-your-woocommerce-orders.md": {
+    "plugin": "ups",
+    "sha256": "6ab6d74d046281a6a29e407f2788b6128b208cdd82850f8d367a904ac75f4bb0",
+    "title": "Print UPS Shipping Label for WooCommerce Orders",
+    "url": "https://www.pluginhive.com/knowledge-base/print-ups-shipping-label-for-your-woocommerce-orders/"
+  },
+  "print-woocommerce-fedex-shipping-labels-size.md": {
+    "plugin": "fedex",
+    "sha256": "7a077042fb8ca11f8d9233e149f2d537d4c7c1058480332ba8bc19bcc8fd8e6f",
+    "title": "Print FedEx Shipping Labels in Multiple Sizes in WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/print-woocommerce-fedex-shipping-labels-size/"
+  },
+  "problem-plugin-always-no-shipping-methods-available.md": {
+    "plugin": "general",
+    "sha256": "47a225739ce6b6ddba9cb4aef76229cf304590d988605aad83551dbb507b013f",
+    "title": "\u201cThere are no shipping methods available\u201d on WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/problem-plugin-always-no-shipping-methods-available/"
+  },
+  "problem-printing-shipping-labels-commercial-invoice.md": {
+    "plugin": "general",
+    "sha256": "2de800f8f5708a4c5ae2713795e0f3770e4cc6a875cf4257e18d0d407806e037",
+    "title": "Print FedEx Labels & Commercial Invoices on WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/problem-printing-shipping-labels-commercial-invoice/"
+  },
+  "product-descriptions-on-commercial-invoice.md": {
+    "plugin": "general",
+    "sha256": "2f427b6764bd96322962ede8ca9f71eb51069345ff811a8f68d44333282fc18f",
+    "title": "Product Descriptions on Commercial Invoice for Easy Customs Clearance",
+    "url": "https://www.pluginhive.com/knowledge-base/product-descriptions-on-commercial-invoice/"
+  },
+  "product-packaging-made-easy-using-woocommerce-ups-shipping-plugin.md": {
+    "plugin": "ups",
+    "sha256": "ca5b92ac58e3bc9cbb17cce64b2522117e85e97a78fc1cae2b1cfdc6f8e04f10",
+    "title": "Simplify Product Packaging with WooCommerce UPS Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/product-packaging-made-easy-using-woocommerce-ups-shipping-plugin/"
+  },
+  "provide-woocommerce-fedex-shipping-rates-in-multiple-currencies.md": {
+    "plugin": "fedex",
+    "sha256": "ccbb2eae4cd86b0a49db05bab4fb4b72c9fa27bcfc6d410f9dad57c6a06d9369",
+    "title": "WooCommerce FedEx Shipping Rates in Multiple Currencies",
+    "url": "https://www.pluginhive.com/knowledge-base/provide-woocommerce-fedex-shipping-rates-in-multiple-currencies/"
+  },
+  "provide-woocommerce-standard-or-priority-shipping-different-delivery-time.md": {
+    "plugin": "general",
+    "sha256": "583d02e83add6e7f5801b79af67b7249d12a267cb5be0f62dfb37481a3fc814d",
+    "title": "Provide Standard or Priority Shipping with Different Shipping Cost and Delivery Time on your WooCommerce store",
+    "url": "https://www.pluginhive.com/knowledge-base/provide-woocommerce-standard-or-priority-shipping-different-delivery-time/"
+  },
+  "purolator-setup-with-woocommerce-shipping-services.md": {
+    "plugin": "purolator",
+    "sha256": "f1640ff6aee139b21438c121b78b4ff79d8b6c3a41c4422a3dcd9acb3000199a",
+    "title": "Set Up Purolator with WooCommerce Shipping Services",
+    "url": "https://www.pluginhive.com/knowledge-base/purolator-setup-with-woocommerce-shipping-services/"
+  },
+  "radical-shift-physical-invoices-paperless-shipping.md": {
+    "plugin": "general",
+    "sha256": "1466e2498b4abc35f1e0b53e7b9be871e71b259f103f96e4116338a2beb90a51",
+    "title": "A radical shift from physical invoices to paperless shipping!",
+    "url": "https://www.pluginhive.com/knowledge-base/radical-shift-physical-invoices-paperless-shipping/"
+  },
+  "recover-postage-expenses-including-uk-postal-code-surcharges-shipping-rates-using-woocommerce-table-rate-shipping-pro.md": {
+    "plugin": "table-rate",
+    "sha256": "95807caadb13cf41fb17afe5377c2d90b706046ab6e7e8b407de7455a40f627d",
+    "title": "Recover Postage Expenses by including the UK Postal-Code Surcharges to your Shipping Rates using WooCommerce Table Rate Shipping Pro",
+    "url": "https://www.pluginhive.com/knowledge-base/recover-postage-expenses-including-uk-postal-code-surcharges-shipping-rates-using-woocommerce-table-rate-shipping-pro/"
+  },
+  "recurring-online-courses-woocommerce-bookings.md": {
+    "plugin": "bookings",
+    "sha256": "cbbdad354018ec876e5275c59724a05338647544b85b9579ca9396cc960585a3",
+    "title": "Set up Recurring Online Courses with WooCommerce Bookings",
+    "url": "https://www.pluginhive.com/knowledge-base/recurring-online-courses-woocommerce-bookings/"
+  },
+  "rentals-with-security-deposit-and-woocommerce-bookings-plugin.md": {
+    "plugin": "bookings",
+    "sha256": "b361bb026914c934e2c9a2bf0842d547ade665da0981390ba9f890df6a6ddce7",
+    "title": "Take WooCommerce Bookings Deposit for your Rentals",
+    "url": "https://www.pluginhive.com/knowledge-base/rentals-with-security-deposit-and-woocommerce-bookings-plugin/"
+  },
+  "reserve-meeting-rooms-with-woocommerce-bookings-and-appointments-plugin.md": {
+    "plugin": "bookings",
+    "sha256": "5e0fe46a637d8c3acf31c68bd00754bc0a2789bbcd405072645d3a8d543e2d50",
+    "title": "How to Reserve Meeting Rooms with Bookings and Appointments for WooCommerce plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/reserve-meeting-rooms-with-woocommerce-bookings-and-appointments-plugin/"
+  },
+  "residential-commercial-address-ups-shipping-plugin.md": {
+    "plugin": "ups",
+    "sha256": "d6eba8621d2559005a5c567a075dc167201cab7214b3d7a3624a51a48c8c3830",
+    "title": "Residential or Commercial Address in WooCommerce UPS Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/residential-commercial-address-ups-shipping-plugin/"
+  },
+  "resolve-printing-issue-dymo-label-printer.md": {
+    "plugin": "general",
+    "sha256": "cd67f055402023472d1c33c5242ab32cabd830a41ee1d4ad28e8c06b42d64973",
+    "title": "How to resolve printing issue with Dymo label printer?",
+    "url": "https://www.pluginhive.com/knowledge-base/resolve-printing-issue-dymo-label-printer/"
+  },
+  "right-now-give-free-shipping-surepost-orders.md": {
+    "plugin": "general",
+    "sha256": "753eb280e67f8317c89f46cfa89b638d8b00e39ed66e29c15cd5b1ca56367dd5",
+    "title": "Can I set Free UPS SurePost Shipping for orders above $30 in WooCommerce?",
+    "url": "https://www.pluginhive.com/knowledge-base/right-now-give-free-shipping-surepost-orders/"
+  },
+  "save-shipping-cost-using-fedex-one-rate.md": {
+    "plugin": "fedex",
+    "sha256": "ec698e599b741d86e16f2ad5e10410d76c651ab389e3e959320f4b6897a24c0f",
+    "title": "How to Save Shipping Cost using FedEx One Rate",
+    "url": "https://www.pluginhive.com/knowledge-base/save-shipping-cost-using-fedex-one-rate/"
+  },
+  "schedule-ups-pickup-woocommerce-shipment.md": {
+    "plugin": "ups",
+    "sha256": "1d2f25d9adf92ce2838718e0ed037468106aa68104dd38fe4ae0c76e9f827361",
+    "title": "Scheduling UPS Pickup for WooCommerce Shipments",
+    "url": "https://www.pluginhive.com/knowledge-base/schedule-ups-pickup-woocommerce-shipment/"
+  },
+  "secure-shipping-precious-items-via-ups-direct-delivery.md": {
+    "plugin": "ups",
+    "sha256": "cd6b29ca3df63791766ae63a31abf62afc10a452ecbd47fdd729627bb393889b",
+    "title": "Secure Shipping: Choose UPS Direct Delivery for Precious Items",
+    "url": "https://www.pluginhive.com/knowledge-base/secure-shipping-precious-items-via-ups-direct-delivery/"
+  },
+  "select-shipping-method-based-total-weight-cart-usps-10-lbs-ups-rest.md": {
+    "plugin": "ups",
+    "sha256": "a907c3c257029f8226b49c6e7b8679adc1bb50d26dbcc76b7085dac2c4c7517c",
+    "title": "Select a shipping method based on the total weight of the cart, USPS for under 10 LBS and UPS for the rest",
+    "url": "https://www.pluginhive.com/knowledge-base/select-shipping-method-based-total-weight-cart-usps-10-lbs-ups-rest/"
+  },
+  "selling-digital-products-in-conjunction-with-physical-products-inside-woocommerce.md": {
+    "plugin": "general",
+    "sha256": "0b5199ed17140a4717c3303626b1b190d22eda61facc8717d4e87be3e4a84e96",
+    "title": "Sell both WooCommerce Digital products and Physical goods",
+    "url": "https://www.pluginhive.com/knowledge-base/selling-digital-products-in-conjunction-with-physical-products-inside-woocommerce/"
+  },
+  "send-prepaid-fedex-shipping-label-customers-can-send-products-service.md": {
+    "plugin": "fedex",
+    "sha256": "29a2496436cf36fd9d481eee31e161645e5a93ae6f05b6055a823e3e44730058",
+    "title": "Send Prepaid FedEx Labels to WooCommerce Customers",
+    "url": "https://www.pluginhive.com/knowledge-base/send-prepaid-fedex-shipping-label-customers-can-send-products-service/"
+  },
+  "send-shipping-label-shop-owner-via-email-using-woocommerce-ups-shipping-plugin.md": {
+    "plugin": "ups",
+    "sha256": "c0519121b0bac997f1ff06a8c38ff56054bb372a5fc07af60f3d09a5b8441ed9",
+    "title": "Send WooCommerce UPS Shipping Label via Email",
+    "url": "https://www.pluginhive.com/knowledge-base/send-shipping-label-shop-owner-via-email-using-woocommerce-ups-shipping-plugin/"
+  },
+  "send-shipping-labels-multiple-vendors-woocommerce-fedex-shipping.md": {
+    "plugin": "fedex",
+    "sha256": "2c61cb2e6c9785c42db0b69ec597d3bebde81ca224fe39b03a4071c9ed5eaf3c",
+    "title": "Auto-Send WooCommerce Fedex Labels  to Multiple Vendors",
+    "url": "https://www.pluginhive.com/knowledge-base/send-shipping-labels-multiple-vendors-woocommerce-fedex-shipping/"
+  },
+  "set-default-shipping-method-woocommerce.md": {
+    "plugin": "general",
+    "sha256": "ac692b6af9ebab4bb19a49d6711d2bdd4c81ce9f6787a964a7646d67c94973e7",
+    "title": "WooCommerce Shipping  \u2013 Set a particular service as default in Cart",
+    "url": "https://www.pluginhive.com/knowledge-base/set-default-shipping-method-woocommerce/"
+  },
+  "set-shipping-rates-product-categories-woocommerce-table-rate-shipping-plugin.md": {
+    "plugin": "table-rate",
+    "sha256": "905da440ac8065fffb362caf09040ba71baff238193bff8973b1b2e6c8782e43",
+    "title": "How to Set Shipping Rates based on Product Categories Using the WooCommerce Table Rate Shipping Plugin?",
+    "url": "https://www.pluginhive.com/knowledge-base/set-shipping-rates-product-categories-woocommerce-table-rate-shipping-plugin/"
+  },
+  "set-up-2-way-ms-outlook-calendar-sync-with-woocommerce-bookings.md": {
+    "plugin": "bookings",
+    "sha256": "28f7d7a38c0bef1f09f6cae6063c2559ecd10ebf33009cfecd04597cec263ffd",
+    "title": "How to Set Up 2-Way MS Outlook Calendar Sync with WooCommerce Bookings",
+    "url": "https://www.pluginhive.com/knowledge-base/set-up-2-way-ms-outlook-calendar-sync-with-woocommerce-bookings/"
+  },
+  "set-up-bike-rental-using-woocommerce-bookings-plugin.md": {
+    "plugin": "bookings",
+    "sha256": "249f1df58773a1d7394d81a959edfdd2dd0dcb008ba02ddf7efb0b8613df2f6d",
+    "title": "How to Set up Bike Rental using WooCommerce Bookings and Appointments plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/set-up-bike-rental-using-woocommerce-bookings-plugin/"
+  },
+  "set-up-bookings-for-wine-tasting-session-using-woocommerce-bookings.md": {
+    "plugin": "bookings",
+    "sha256": "3b3c81cdfebdc0fe75aae55bc34aadf2ef8887de92713bb6a83268637c197757",
+    "title": "How to Set up Bookings for Wine Tasting Session using WooCommerce Bookings Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/set-up-bookings-for-wine-tasting-session-using-woocommerce-bookings/"
+  },
+  "set-up-community-hall-availabilities-and-pricing-with-woocommerce-bookings-and-appointments.md": {
+    "plugin": "bookings",
+    "sha256": "8bd16087ba512346e5259b68236ceac874e412a828c4fd1e3cd08be658c681dc",
+    "title": "Set Up Community Hall Availabilities and Pricing with Bookings and Appointments for WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/set-up-community-hall-availabilities-and-pricing-with-woocommerce-bookings-and-appointments/"
+  },
+  "set-up-discounted-rates-for-different-seasons-with-woocommerce-bookings-and-cost-adjustment-add-on.md": {
+    "plugin": "bookings",
+    "sha256": "081bd4fe053359ceacecd24f8cb859eaee3303c0828d7c4ac9b5bbb08683e067",
+    "title": "Set up Discounted Rates for Different Seasons with WooCommerce Bookings and Cost Adjustment Add-on",
+    "url": "https://www.pluginhive.com/knowledge-base/set-up-discounted-rates-for-different-seasons-with-woocommerce-bookings-and-cost-adjustment-add-on/"
+  },
+  "set-up-equipment-rental-store-woocommerce-bookings.md": {
+    "plugin": "bookings",
+    "sha256": "72ba17c6a9b7d0feb9c11a981377ad15906729e12d9543a6c29c99c8fbe73087",
+    "title": "Set up an Equipment Rental Website with WooCommerce Bookings",
+    "url": "https://www.pluginhive.com/knowledge-base/set-up-equipment-rental-store-woocommerce-bookings/"
+  },
+  "set-up-event-booking-using-woocommerce-bookings.md": {
+    "plugin": "bookings",
+    "sha256": "62c9555312a1993c55b8659047541ca1f771341bb6581e89e27c93ce3afb43c7",
+    "title": "Set up Event Booking with WooCommerce Bookings Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/set-up-event-booking-using-woocommerce-bookings/"
+  },
+  "set-up-indoor-arena-rentals-with-woocommerce-bookings.md": {
+    "plugin": "bookings",
+    "sha256": "54e4d0861cb1f255e17a975cd18624d41a6b85edd4b0f9c0d2d59a7ef16036ba",
+    "title": "Indoor Arena Rentals \u2014 Set up using Bookings and Appointments for WooCommerce Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/set-up-indoor-arena-rentals-with-woocommerce-bookings/"
+  },
+  "set-up-online-boat-rental-using-woocommerce-bookings-and-appointments.md": {
+    "plugin": "bookings",
+    "sha256": "cc21e87298eb23887e3b60a84ef2055283fbf33631b4303deac22381487de6b9",
+    "title": "How to Set Up Online Boat-Rental using WooCommerce Bookings and Appointments",
+    "url": "https://www.pluginhive.com/knowledge-base/set-up-online-boat-rental-using-woocommerce-bookings-and-appointments/"
+  },
+  "set-up-online-hotel-booking-woocommerce-bookings-and-appointments-plugin.md": {
+    "plugin": "bookings",
+    "sha256": "57467ca617c38a3b2f87809dba2b337f6e25b91b5b1a2af7da51f1013799e59b",
+    "title": "Set Up Online Hotel Booking with WooCommerce Bookings",
+    "url": "https://www.pluginhive.com/knowledge-base/set-up-online-hotel-booking-woocommerce-bookings-and-appointments-plugin/"
+  },
+  "set-up-online-tour-booking-with-woocommerce-bookings-plugin.md": {
+    "plugin": "bookings",
+    "sha256": "0d589030e2daf712b4ebfd498b589b6407e35075bbeb5a73ee527c7488f550c2",
+    "title": "Online Tour Booking \u2014 Set up using Bookings and Appointments for WooCommerce Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/set-up-online-tour-booking-with-woocommerce-bookings-plugin/"
+  },
+  "set-up-weaving-and-fibre-arts-studio-using-woocommerce-bookings.md": {
+    "plugin": "bookings",
+    "sha256": "37f6bb512a2ee2bbf4579adedf5bcea2a4199c9ce6ecdda4400556846cf8480c",
+    "title": "How to Set up Weaving and Fibre Arts Studio using WooCommerce Bookings and Appointments",
+    "url": "https://www.pluginhive.com/knowledge-base/set-up-weaving-and-fibre-arts-studio-using-woocommerce-bookings/"
+  },
+  "set-up-woocommerce-deposits-plugin.md": {
+    "plugin": "general",
+    "sha256": "e7ab6cf978f89012b942e0f9f5786d2110958d71780cd37befbc11980e5613c4",
+    "title": "Setting Up PH WooCommerce Deposits plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/set-up-woocommerce-deposits-plugin/"
+  },
+  "set-up-woocommerce-fedex-shipping-services.md": {
+    "plugin": "fedex",
+    "sha256": "a0b15036e3e2cd7c916df49e8aa2eca24abaa657afafec463c002f80aee67000",
+    "title": "Setting Up WooCommerce Shipping Services For FedEx",
+    "url": "https://www.pluginhive.com/knowledge-base/set-up-woocommerce-fedex-shipping-services/"
+  },
+  "set-up-woocommerce-product-addons.md": {
+    "plugin": "general",
+    "sha256": "958feb6fc39e82bbf0a405393d3b0f1ddb7f048c958d60356138a8e325db44d2",
+    "title": "Set Up PH Product Add-ons for WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/set-up-woocommerce-product-addons/"
+  },
+  "set-weight-in-pounds-lbs-while-shipping-out-of-united-states.md": {
+    "plugin": "general",
+    "sha256": "0fc84bb92f89b089cb67f7faff681f03aa2084e60573e1a15157ad2a31d29650",
+    "title": "WooCommerce Shipping from the United States -Product Weight Units in Pounds",
+    "url": "https://www.pluginhive.com/knowledge-base/set-weight-in-pounds-lbs-while-shipping-out-of-united-states/"
+  },
+  "setting-default-product-weight-dimensions-ship-products-using-woocommerce-shipping-plugins.md": {
+    "plugin": "general",
+    "sha256": "8cce1f6a753edd9ce256ac43790df6ba167850181a59f14debda289047241a47",
+    "title": "Set up WooCommerce Shipping by Product Weight and  Size",
+    "url": "https://www.pluginhive.com/knowledge-base/setting-default-product-weight-dimensions-ship-products-using-woocommerce-shipping-plugins/"
+  },
+  "setting-estimated-delivery-date-plugin-woocommerce.md": {
+    "plugin": "estimated-delivery",
+    "sha256": "d3c325e028262c10b164af5c22eea8f3e0fdfc24a9cdd63cfbc4354eeff85881",
+    "title": "Setting Up Estimated Delivery Date Plugin for WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/setting-estimated-delivery-date-plugin-woocommerce/"
+  },
+  "setting-fedex-account.md": {
+    "plugin": "fedex",
+    "sha256": "19f0357de8eeecc4b00258711695ec778e6d9756c75a32ec78f8b39dfd0763de",
+    "title": "Setting up FedEx Account",
+    "url": "https://www.pluginhive.com/knowledge-base/setting-fedex-account/"
+  },
+  "setting-minimum-shipping-cost-various-woocommerce-shipping-methods.md": {
+    "plugin": "general",
+    "sha256": "c80e5a2b9ded437dff92f39a1e6a5a037179a8eec4288f6115a35cb8adfcb2d9",
+    "title": "Set Minimum Shipping Cost for WooCommerce Shipping Methods",
+    "url": "https://www.pluginhive.com/knowledge-base/setting-minimum-shipping-cost-various-woocommerce-shipping-methods/"
+  },
+  "setting-multi-carrier-shipping-plugin-woocommerce.md": {
+    "plugin": "multi-carrier",
+    "sha256": "fbd744ecabf0dc44045c4170bcc5e8b9b0e2de4ea537f220fbc52aaa3c0fe90a",
+    "title": "How to setup Multi-Carrier Shipping Plugin for WooCommerce?",
+    "url": "https://www.pluginhive.com/knowledge-base/setting-multi-carrier-shipping-plugin-woocommerce/"
+  },
+  "setting-odfl-shipping-for-woocommerce.md": {
+    "plugin": "general",
+    "sha256": "a0c834378dd6426af2557fbf2d0c620112a02f8c576145b0ed33c0326d663185",
+    "title": "Setting Up PH ODFL Shipping For WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/setting-odfl-shipping-for-woocommerce/"
+  },
+  "setting-stamps-com-account.md": {
+    "plugin": "usps",
+    "sha256": "49937ee6e4e0a527a654aa4e7543221f4bdf5ca6e9a3f73edee06b6f5411a57e",
+    "title": "Setting up Stamps.com Account",
+    "url": "https://www.pluginhive.com/knowledge-base/setting-stamps-com-account/"
+  },
+  "setting-up-india-post-shipping-for-woocommerce-with-print-label.md": {
+    "plugin": "general",
+    "sha256": "b0c9e887e63bfaa0deadd0652ddb7b61f2ed0ae85b5a18c6e98d5aaaa4280701",
+    "title": "How to Set Up PH India Post Shipping for WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/setting-up-india-post-shipping-for-woocommerce-with-print-label/"
+  },
+  "setting-up-woocommerce-australia-post-mypost-business-plugin.md": {
+    "plugin": "australia-post",
+    "sha256": "baf98cc4d204cb428c964a68ee6f4f60b49ac8680dc2c311af99043e15815cf6",
+    "title": "Setting Up WooCommerce Australia Post MyPost Business Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/setting-up-woocommerce-australia-post-mypost-business-plugin/"
+  },
+  "setting-up-woocommerce-hide-shipping-methods-and-rate-adjustment.md": {
+    "plugin": "general",
+    "sha256": "f8ba8e1a90f9a614581009fb8b19eaa24d6f096fa18b02b4fc401c8643ba2905",
+    "title": "Setting up PH WooCommerce Hide Shipping Methods & Rate Adjustment",
+    "url": "https://www.pluginhive.com/knowledge-base/setting-up-woocommerce-hide-shipping-methods-and-rate-adjustment/"
+  },
+  "setting-up-woocommerce-mobile-app.md": {
+    "plugin": "general",
+    "sha256": "c7cbd059d0146ad8cdcbd6ec28b496f0bf10a8f8ceb49608312fe8bb590baa48",
+    "title": "Setting Up of WooCommerce Mobile App",
+    "url": "https://www.pluginhive.com/knowledge-base/setting-up-woocommerce-mobile-app/"
+  },
+  "setting-up-woocommerce-nz-post-shipping-plugin.md": {
+    "plugin": "general",
+    "sha256": "7ec7f10efd628ce4e6353b0107f44141e5a19041c4791ebbf53f55cb2f506b4f",
+    "title": "How to Set Up PH NZ Post Shipping for WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/setting-up-woocommerce-nz-post-shipping-plugin/"
+  },
+  "setting-up-woocommerce-postnord-shipping-plugin.md": {
+    "plugin": "postnord",
+    "sha256": "89f6ebe2a7aea8221444bf7044acd7ad1e11d4c123a6c511fde162c400c5afd9",
+    "title": "Setting Up WooCommerce PostNord Shipping Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/setting-up-woocommerce-postnord-shipping-plugin/"
+  },
+  "setting-up-woocommerce-shipping-services-plugin.md": {
+    "plugin": "general",
+    "sha256": "a000feb3c9e5ad082ec8de58ed283d44f3c480bb6ace1112125dd52e56867d78",
+    "title": "Setting Up WooCommerce Shipping Services Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/setting-up-woocommerce-shipping-services-plugin/"
+  },
+  "setting-up-woocommerce-shipping-services.md": {
+    "plugin": "general",
+    "sha256": "8822f2b897d8751024700db0fc7b7d7c55b2fc5b2de885a5980e02662ae70e7b",
+    "title": "Setting Up WooCommerce Shipping Services",
+    "url": "https://www.pluginhive.com/knowledge-base/setting-up-woocommerce-shipping-services/"
+  },
+  "setting-up-woocommerce-usps-shipping-plugin.md": {
+    "plugin": "usps",
+    "sha256": "d9de6ad0ae5bd81c38bd8fd1d101f6d262132675981594875c11d987a24a9ccc",
+    "title": "Setting Up USPS Shipping Plugin for WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/setting-up-woocommerce-usps-shipping-plugin/"
+  },
+  "setting-ups-account.md": {
+    "plugin": "ups",
+    "sha256": "95cde4dd4d73786b75ce009ea94d180e61cab70f9c64ffcad57b750d754edfc6",
+    "title": "How to set up a UPS Account?",
+    "url": "https://www.pluginhive.com/knowledge-base/setting-ups-account/"
+  },
+  "setting-usps-account.md": {
+    "plugin": "usps",
+    "sha256": "fca1390c02f298944dd60aa12e00d4144cb0fbf7d13c3edcd59e431d9b40b85e",
+    "title": "Setting up USPS Account",
+    "url": "https://www.pluginhive.com/knowledge-base/setting-usps-account/"
+  },
+  "setting-weight-based-rates-using-shipping-pro.md": {
+    "plugin": "table-rate",
+    "sha256": "518fa7bad9cd7345e428262ad9e41975ace1fd39c968d95aa8a3c71026bb6ffc",
+    "title": "Setting up Weight Based Shipping Rates using Shipping Pro",
+    "url": "https://www.pluginhive.com/knowledge-base/setting-weight-based-rates-using-shipping-pro/"
+  },
+  "setting-woocommerce-canada-post-shipping-plugin.md": {
+    "plugin": "canada-post",
+    "sha256": "fc4515fbff97b59f7bca8ae86173d230231559d757ba03b36874b245fb0c709c",
+    "title": "Setting Up WooCommerce Canada Post Shipping Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/setting-woocommerce-canada-post-shipping-plugin/"
+  },
+  "setting-woocommerce-fedex-shipping-plugin.md": {
+    "plugin": "fedex",
+    "sha256": "cba218c50a56416b03c5164a6cff9735fc46fb4935afef70de769b80b00297f3",
+    "title": "Set Up WooCommerce FedEx Shipping Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/setting-woocommerce-fedex-shipping-plugin/"
+  },
+  "setting-woocommerce-per-product-shipping-plugin.md": {
+    "plugin": "general",
+    "sha256": "86cf923f7f09bbda47dce976c745f5bb288a7d54b34266f275ce74ed1feea505",
+    "title": "Setting Up WooCommerce Per Product Shipping Add-on",
+    "url": "https://www.pluginhive.com/knowledge-base/setting-woocommerce-per-product-shipping-plugin/"
+  },
+  "setting-woocommerce-royal-mail-shipping-tracking-plugin.md": {
+    "plugin": "royal-mail",
+    "sha256": "cbf2941fa9f5c136042722fe89500922ae233860273b85962003304f42b4bfc8",
+    "title": "How to Set Up PH Royal Mail Shipping with Tracking for WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/setting-woocommerce-royal-mail-shipping-tracking-plugin/"
+  },
+  "setting-woocommerce-shipment-tracking-pro-plugin.md": {
+    "plugin": "shipment-tracking",
+    "sha256": "3ed554aeef483dff4c04858008d565a04ac7282cd21f9de8d0c4126a8057ff00",
+    "title": "Setting Up WooCommerce Shipment Tracking Pro Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/setting-woocommerce-shipment-tracking-pro-plugin/"
+  },
+  "setting-woocommerce-tforce-freight-shipping-plugin.md": {
+    "plugin": "general",
+    "sha256": "6cdb56f71ecc62bdf2d6545e71fab96971deb2b636e43a091c966e0788473403",
+    "title": "Setting Up WooCommerce TForce Freight Shipping Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/setting-woocommerce-tforce-freight-shipping-plugin/"
+  },
+  "setting-woocommerce-ups-shipping-plugin.md": {
+    "plugin": "ups",
+    "sha256": "7a2866a90d57d80a151c25f8f1f82f8e513d1af428375e92c3eead54008988e0",
+    "title": "Setting Up WooCommerce UPS Shipping Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/setting-woocommerce-ups-shipping-plugin/"
+  },
+  "setup-guide-woocommerce-bookings-and-appointments-plugin.md": {
+    "plugin": "bookings",
+    "sha256": "a2e77118e9b5cf8b3c658623eb9f4a65927c1e7b1c333cb6b249b1bccd3ec77d",
+    "title": "Setup Guide for Bookings and Appointments for WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/setup-guide-woocommerce-bookings-and-appointments-plugin/"
+  },
+  "setup-la-poste-colissimo-using-woocommerce-table-rate-shipping-pro-plugin.md": {
+    "plugin": "table-rate",
+    "sha256": "c60f92a09d77ca7b1c1227e35ba2e8877dcdcf3fbc5ed6aa34fd13b7f19879e5",
+    "title": "La Poste Colissimo Shipping for WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/setup-la-poste-colissimo-using-woocommerce-table-rate-shipping-pro-plugin/"
+  },
+  "setup-table-rate-cost-class-quantity.md": {
+    "plugin": "table-rate",
+    "sha256": "d6c54c4c3f5a1bd9039023b1a4e3dca8f221487093118631e7c8fc3c3aab7f12",
+    "title": "WooCommerce Table Rate Shipping \u2013 Setup Costs based on Shipping Class & Quantity",
+    "url": "https://www.pluginhive.com/knowledge-base/setup-table-rate-cost-class-quantity/"
+  },
+  "setup-woocommerce-multi-vendor-add-on-dhl-express-plugin-print-label-dokan.md": {
+    "plugin": "dhl",
+    "sha256": "bef8ac809e9686374586404d90b669a6bb974af50dc214f790df4dcf067ff64d",
+    "title": "Set up a Multi-Vendor store with WooCommerce DHL Express & Dokan",
+    "url": "https://www.pluginhive.com/knowledge-base/setup-woocommerce-multi-vendor-add-on-dhl-express-plugin-print-label-dokan/"
+  },
+  "share-service-with-multiple-bookable-products-using-woocommerce-bookings.md": {
+    "plugin": "bookings",
+    "sha256": "319497f38bcb94bf14968758eb590c588dcfb84ba72857f77031d55d5336b821",
+    "title": "How to Share a Service with Multiple Bookable products using Bookings And Appointments for WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/share-service-with-multiple-bookable-products-using-woocommerce-bookings/"
+  },
+  "ship-alcohol-using-fedex-shipping-plugin.md": {
+    "plugin": "fedex",
+    "sha256": "2a18a67f879eeac76c87805b9e45b19d3bcddc48f5a512fc9509233ff66a59a8",
+    "title": "How to Legally Ship Alcohol Products via FedEx",
+    "url": "https://www.pluginhive.com/knowledge-base/ship-alcohol-using-fedex-shipping-plugin/"
+  },
+  "ship-certain-items-with-fedex-and-provide-flat-rate-shipping-for-others-using-woocommerce-fedex-shipping-plugin.md": {
+    "plugin": "fedex",
+    "sha256": "ab0ee4cefde22a0da622eef263d243cbb9278775a835011aaa2eb8730d1f1a12",
+    "title": "Ship Certain Items with FedEx and Provide Flat-Rate Shipping for others with WooCommerce FedEx Shipping Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/ship-certain-items-with-fedex-and-provide-flat-rate-shipping-for-others-using-woocommerce-fedex-shipping-plugin/"
+  },
+  "ship-food-items-fedex-shipping-services.md": {
+    "plugin": "fedex",
+    "sha256": "fb529c4303fb81c0f1b883bbe0008d9dc473e977294c546bb97c9b13efd60edf",
+    "title": "Best way to Ship Food items along with Dry Ice and using Efficient FedEx Shipping Services",
+    "url": "https://www.pluginhive.com/knowledge-base/ship-food-items-fedex-shipping-services/"
+  },
+  "ship-from-warehouse-located-in-different-country-using-woocommerce-fedex-shipping-plugin.md": {
+    "plugin": "fedex",
+    "sha256": "fa2d173f5e2d761eae1be13bfa321c57e6f3c58af3f940c686ee88c0d6e1d356",
+    "title": "Ship from a Warehouse located in a Different country with WooCommerce FedEx Shipping Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/ship-from-warehouse-located-in-different-country-using-woocommerce-fedex-shipping-plugin/"
+  },
+  "ship-frozen-items-using-dry-ice-fedex-shipping-plugin.md": {
+    "plugin": "fedex",
+    "sha256": "87fe0705f915c546f2004ebcec985c667571c5ff89be8fc74ac91fd0f8a0a732",
+    "title": "How to Ship Frozen Items with Dry Ice via FedEx",
+    "url": "https://www.pluginhive.com/knowledge-base/ship-frozen-items-using-dry-ice-fedex-shipping-plugin/"
+  },
+  "ship-items-united-states-puerto-rico-woocommerce-ups-shipping-plugin.md": {
+    "plugin": "ups",
+    "sha256": "79db5127889fd6d4fe43f0305cd73c4f39a7aadbf5612032c3766bad05b2dc91",
+    "title": "Ship from the US to Puerto Rico with WooCommerce UPS Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/ship-items-united-states-puerto-rico-woocommerce-ups-shipping-plugin/"
+  },
+  "ship-products-easily-multiple-warehouses-using-woocommerce-fedex-shipping-plugin.md": {
+    "plugin": "fedex",
+    "sha256": "69d564944688732ba446fd586de09c5544c8dd5077ffe8ed2389abaac4999d12",
+    "title": "Ship Products from Multiple Warehouses with WooCommerce FedEx Shipping Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/ship-products-easily-multiple-warehouses-using-woocommerce-fedex-shipping-plugin/"
+  },
+  "ship-your-products-easily-from-multiple-warehouses-for-woocommerce.md": {
+    "plugin": "general",
+    "sha256": "77a2542331029caacfb8919a28e54c5b564289e2e20fde7c80300bce5dce3bc6",
+    "title": "Ship your Products from Multiple Warehouses in WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/ship-your-products-easily-from-multiple-warehouses-for-woocommerce/"
+  },
+  "shipping-freight-classes.md": {
+    "plugin": "general",
+    "sha256": "2b292ade0653de70581d9ae9106a06ca3bb051c5858384d94cc813e86905c121",
+    "title": "WooCommerce Shipping: What are Freight Classes?",
+    "url": "https://www.pluginhive.com/knowledge-base/shipping-freight-classes/"
+  },
+  "shipping-method-doesnt-show-can-see-error-highestseverity-error-notifications-stdclass-object.md": {
+    "plugin": "general",
+    "sha256": "3b2bc5d9f5db93a08cd1368c62e48208de82c4874ff4ad1435b4f669c54f6945",
+    "title": "Debug Error: [HighestSeverity] => ERROR",
+    "url": "https://www.pluginhive.com/knowledge-base/shipping-method-doesnt-show-can-see-error-highestseverity-error-notifications-stdclass-object/"
+  },
+  "shipping-perishable-items-woocommerce-fedex-shipping-plugin.md": {
+    "plugin": "fedex",
+    "sha256": "ab7fd553369bd79ecf033b0326288d26273c35e0f317e7c80796954c463e133f",
+    "title": "A Guide to Ship Perishable Items with WooCommerce FedEx",
+    "url": "https://www.pluginhive.com/knowledge-base/shipping-perishable-items-woocommerce-fedex-shipping-plugin/"
+  },
+  "shipping-pro-case-based-weight-price.md": {
+    "plugin": "table-rate",
+    "sha256": "f8b12eed911b141d73a0dab12e8e6fe8177726aa1a101ccd3a1c567b2ba41c6f",
+    "title": "Shipping Pro \u2013 Case based on weight and price",
+    "url": "https://www.pluginhive.com/knowledge-base/shipping-pro-case-based-weight-price/"
+  },
+  "shipping-rates-calculator-get-rates-multiple-carriers-multiple-services.md": {
+    "plugin": "general",
+    "sha256": "4cc45d5dae9a794775dc6535589bedb4d152af38cfc28c76039ba67f81723e1c",
+    "title": "Shipping Rates Calculator: Get Rates from Multiple Carriers and Services",
+    "url": "https://www.pluginhive.com/knowledge-base/shipping-rates-calculator-get-rates-multiple-carriers-multiple-services/"
+  },
+  "show-calculated-shipping-options-first-pickup-option-second-woocommerce-cart-page.md": {
+    "plugin": "general",
+    "sha256": "523fc901ae02b5f1db18d98650a2d1a28a4cfea8e5ba76619542a240a42e4b27",
+    "title": "How to Change the Order of WooCommerce Calculated Shipping Options and Pickup on the Cart page?",
+    "url": "https://www.pluginhive.com/knowledge-base/show-calculated-shipping-options-first-pickup-option-second-woocommerce-cart-page/"
+  },
+  "show-estimated-shipping-date-product-page-using-woocommerce-estimated-delivery-date-plugin.md": {
+    "plugin": "estimated-delivery",
+    "sha256": "602422c5917e31c90da122c5164504744c87827f42b56238052802e73e9ce5f7",
+    "title": "Show WooCommerce Estimated Delivery Date on the Product Page",
+    "url": "https://www.pluginhive.com/knowledge-base/show-estimated-shipping-date-product-page-using-woocommerce-estimated-delivery-date-plugin/"
+  },
+  "show-hide-ups-negotiated-rates.md": {
+    "plugin": "ups",
+    "sha256": "d1662f3b58f611955c6b2d4fe23726878aac45456b1dcdb8c80738871a7a09b4",
+    "title": "How to Show/Hide UPS Negotiated Rates?",
+    "url": "https://www.pluginhive.com/knowledge-base/show-hide-ups-negotiated-rates/"
+  },
+  "simplify-shipping-providing-customers-flat-rate-based-product-quantity-using-woocommerce-multi-carrier-shipping-plugin.md": {
+    "plugin": "multi-carrier",
+    "sha256": "edf2b02ac9cef04233538846561576cd1e180bf1644c1499898b6dec25f5c224",
+    "title": "Flat Rate Shipping based on Product Quantity \u2013 WooCommerce Multi Carrier plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/simplify-shipping-providing-customers-flat-rate-based-product-quantity-using-woocommerce-multi-carrier-shipping-plugin/"
+  },
+  "soapfault-object-messageprotected-not-connect-host.md": {
+    "plugin": "general",
+    "sha256": "9eacbbf97bfd38876b5291e83de0bfdd7d681b5c9b64c0e824c55831700efa7d",
+    "title": "How to solve Error: SoapFault Object ( [message:protected] => Could not connect to host when using WooCommerce FedEx Shipping Plugin?",
+    "url": "https://www.pluginhive.com/knowledge-base/soapfault-object-messageprotected-not-connect-host/"
+  },
+  "specify-estimated-delivery-dates-different-shipping-zones.md": {
+    "plugin": "estimated-delivery",
+    "sha256": "b8bd6828b4d9cddb5c97e3393756a813216ae223ff9fb49ef67737bc0d588795",
+    "title": "Set Estimated Delivery Dates for Different WooCommerce Shipping Zones",
+    "url": "https://www.pluginhive.com/knowledge-base/specify-estimated-delivery-dates-different-shipping-zones/"
+  },
+  "specifying-dangerous-goods-using-fedex-shipping-plugin.md": {
+    "plugin": "fedex",
+    "sha256": "aec0d52958837115df8ac692f60d989eb64d4d02e1a1fb503d25d8733999f190",
+    "title": "Specify Dangerous Goods with WooCommerce FedEx Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/specifying-dangerous-goods-using-fedex-shipping-plugin/"
+  },
+  "specifying-estimated-delivery-dates-multiple-shipping-methods.md": {
+    "plugin": "estimated-delivery",
+    "sha256": "25fb5197defe3ffbf089ac6f33e81d08f4dd12c06301ff5102d37dfdd303deac",
+    "title": "WooCommerce: Set Estimated Delivery Dates for Multiple Methods",
+    "url": "https://www.pluginhive.com/knowledge-base/specifying-estimated-delivery-dates-multiple-shipping-methods/"
+  },
+  "steps-configure-la-poste-colissimo-using-woocommerce-table-rate-shipping-pro-plugin.md": {
+    "plugin": "table-rate",
+    "sha256": "4fb1dcadece577519e1e35a52cae95e8e1d47075e843416173e406734b1fd16c",
+    "title": "Steps to configure La Poste Colissimo with WooCommerce Table Rate Shipping",
+    "url": "https://www.pluginhive.com/knowledge-base/steps-configure-la-poste-colissimo-using-woocommerce-table-rate-shipping-pro-plugin/"
+  },
+  "steps-migrate-universal-shipping-calculator-la-poste-colissimo.md": {
+    "plugin": "general",
+    "sha256": "9e3d54ecff1bef0b113757bbf8e93a641e370a0f482b32349f0ca6a01ecd236b",
+    "title": "Universal Shipping Calculator for La Poste Colissimo on WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/steps-migrate-universal-shipping-calculator-la-poste-colissimo/"
+  },
+  "subscription-based-booking-using-woocommerce-bookings.md": {
+    "plugin": "bookings",
+    "sha256": "3099f4f13e484da7860c9caa3427e01f05f297f05ac045aa4d07cbfabbe3d8c1",
+    "title": "Subscription-Based Booking for Fitness Centers in WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/subscription-based-booking-using-woocommerce-bookings/"
+  },
+  "sync-woocommerce-bookings-to-microsoft-outlook-calendar.md": {
+    "plugin": "bookings",
+    "sha256": "1c3c332228ff81b5e368cb516f8d4c180d860764a7472d8a18854bad504044b1",
+    "title": "How to Sync WooCommerce Bookings to Microsoft Outlook Calendar",
+    "url": "https://www.pluginhive.com/knowledge-base/sync-woocommerce-bookings-to-microsoft-outlook-calendar/"
+  },
+  "sync-woocommerce-bookings-with-your-google-calendar.md": {
+    "plugin": "bookings",
+    "sha256": "cf2f5ab012937db78de4fbc7b74b067bbc90715307576ade5aabaf2f473b2697",
+    "title": "Setup Google Calendar with WooCommerce Bookings and Appointments",
+    "url": "https://www.pluginhive.com/knowledge-base/sync-woocommerce-bookings-with-your-google-calendar/"
+  },
+  "test-use-fedex-account-number-test-account-number-password-use.md": {
+    "plugin": "fedex",
+    "sha256": "6134a8a02828f351b24ea41416742f670490f5c967d02bab53bd42ccf0e17569",
+    "title": "During the test mode, should I use my FedEx account number or test account number?",
+    "url": "https://www.pluginhive.com/knowledge-base/test-use-fedex-account-number-test-account-number-password-use/"
+  },
+  "theme-integration-woocommerce-canada-post-plugin-xstore.md": {
+    "plugin": "canada-post",
+    "sha256": "85c90ace3c53ac9fa8f9bd5ddedaea33a918c4a122833a7e43874938e95424c6",
+    "title": "WooCommerce Canada Post Plugin compatible with XStore Theme",
+    "url": "https://www.pluginhive.com/knowledge-base/theme-integration-woocommerce-canada-post-plugin-xstore/"
+  },
+  "thermal-printers-ups-suggest-use-best-printer-use-plugin.md": {
+    "plugin": "ups",
+    "sha256": "096e221c315af4b4c4bbedb52ee8966491f42fc5711e7c2f5e9a1ea1d11b4bcd",
+    "title": "Print UPS Shipping Labels with Thermal Printers from WooCommerce & Shopify",
+    "url": "https://www.pluginhive.com/knowledge-base/thermal-printers-ups-suggest-use-best-printer-use-plugin/"
+  },
+  "top-5-paid-woocommerce-shipment-tracking-plugins.md": {
+    "plugin": "shipment-tracking",
+    "sha256": "26b725eb70809075f11153469df3e5c26221460bdc1b86f27bd2d97392b7ab8c",
+    "title": "Best WooCommerce Shipment Tracking Plugins-2023",
+    "url": "https://www.pluginhive.com/knowledge-base/top-5-paid-woocommerce-shipment-tracking-plugins/"
+  },
+  "top-features-ideal-woocommerce-tracking-plugin.md": {
+    "plugin": "general",
+    "sha256": "adafe8346070c21e0543b999c5437066755628a29d53c7728a4e19a59f683c13",
+    "title": "Choose The  Best WooCommerce Shipment Tracking Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/top-features-ideal-woocommerce-tracking-plugin/"
+  },
+  "translate-shipment-tracking-message-polylang-pro-woocommerce-shipment-tracking-plugin.md": {
+    "plugin": "shipment-tracking",
+    "sha256": "1818b94e10b84b2ee8d7966dede68456e397b06a27033a93d729ca4739094ace",
+    "title": "Translate WooCommerce Shipment Tracking Messages with Polylang Pro",
+    "url": "https://www.pluginhive.com/knowledge-base/translate-shipment-tracking-message-polylang-pro-woocommerce-shipment-tracking-plugin/"
+  },
+  "troubleshoot-different-fedex-shipping-rates-cartcheckout.md": {
+    "plugin": "fedex",
+    "sha256": "d55abde1663a5a2cd1170baccb54bde1573550198c45969644d989d064ec6642",
+    "title": "Troubleshoot \u2013 Different FedEx Shipping Rates in Cart/Checkout",
+    "url": "https://www.pluginhive.com/knowledge-base/troubleshoot-different-fedex-shipping-rates-cartcheckout/"
+  },
+  "troubleshoot-getting-multiple-shipping-options-no-price.md": {
+    "plugin": "general",
+    "sha256": "7dca0c68fcb3522a8de99f15ad59a3f54016866ac2aea1c04adb77b6c499f486",
+    "title": "Troubleshoot \u2013 Getting Multiple Shipping Options with No Price!",
+    "url": "https://www.pluginhive.com/knowledge-base/troubleshoot-getting-multiple-shipping-options-no-price/"
+  },
+  "troubleshoot-higher-rates-ups-shipping-plugin.md": {
+    "plugin": "ups",
+    "sha256": "f5478274c1105fb7b87bae85eb4fbcb288cf97161a87de0c654bd4ebab697956",
+    "title": "Troubleshoot- Getting Higher Rates in UPS Shipping Plugin..!",
+    "url": "https://www.pluginhive.com/knowledge-base/troubleshoot-higher-rates-ups-shipping-plugin/"
+  },
+  "troubleshoot-invalid-country-code-fedex-shipping-plugin.md": {
+    "plugin": "fedex",
+    "sha256": "5639e63c2308969199856e75b606fae37cea04b803792fc48435a6103528fd73",
+    "title": "Fix \u201cInvalid Country Code\u201d Error with WooCommerce FedEx Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/troubleshoot-invalid-country-code-fedex-shipping-plugin/"
+  },
+  "troubleshoot-invalid-service-shipment-origin-error-code-121100.md": {
+    "plugin": "general",
+    "sha256": "2f7b8288b6ea6a155d6e08f0819a4ee81191089905753ec2bdc1746b8ad56539",
+    "title": "Troubleshoot \u2013 Invalid Service for Shipment Origin [ Error Code:121100]",
+    "url": "https://www.pluginhive.com/knowledge-base/troubleshoot-invalid-service-shipment-origin-error-code-121100/"
+  },
+  "troubleshoot-multi-carrier-shipping-plugin-woocommerce.md": {
+    "plugin": "multi-carrier",
+    "sha256": "1fc136bab51095bd9736e4821e5217946c939597535920385655fa7e1c0d3eba",
+    "title": "How to troubleshoot Multi-Carrier Shipping Plugin for WooCommerce?",
+    "url": "https://www.pluginhive.com/knowledge-base/troubleshoot-multi-carrier-shipping-plugin-woocommerce/"
+  },
+  "troubleshoot-print-return-shipping-label.md": {
+    "plugin": "general",
+    "sha256": "343da65ca5414fc2c12cf1ae5a0fa372dac974bd928d7f9c4b28ba4f68363cec",
+    "title": "Troubleshoot \u2013 No Option to Print Return Shipping Label!",
+    "url": "https://www.pluginhive.com/knowledge-base/troubleshoot-print-return-shipping-label/"
+  },
+  "troubleshooting-google-calendar-sync-woocommerce-bookings-and-appointments-plugin.md": {
+    "plugin": "bookings",
+    "sha256": "49e85d7e36f2612637b97582ec506db095a8da959f0913351286a5d9c1e6eed5",
+    "title": "Troubleshooting Google Calendar Sync for WooCommerce Bookings and Appointments Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/troubleshooting-google-calendar-sync-woocommerce-bookings-and-appointments-plugin/"
+  },
+  "troubleshooting-woocommerce-canada-post-plugin.md": {
+    "plugin": "canada-post",
+    "sha256": "77d06bf79a2c824c2d7327e99be636bc422b7001a2a8e8e6b84f6d3c434235e5",
+    "title": "Troubleshooting WooCommerce Canada Post Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/troubleshooting-woocommerce-canada-post-plugin/"
+  },
+  "troubleshooting-woocommerce-fedex-shipping-plugin.md": {
+    "plugin": "fedex",
+    "sha256": "660f85e6e8a4e6eab0a8725b726509c60112c6a4cb2d41d170c260ba096e689a",
+    "title": "How to troubleshoot WooCommerce FedEx Shipping Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/troubleshooting-woocommerce-fedex-shipping-plugin/"
+  },
+  "troubleshooting-woocommerce-royal-mail-shipping-tracking-plugin.md": {
+    "plugin": "royal-mail",
+    "sha256": "5d5b95061ed2c78f36c1909a2ee51f2f3b53f0d1a94a6b3d43fa2799e20d33d8",
+    "title": "Troubleshoot",
+    "url": "https://www.pluginhive.com/knowledge-base/troubleshooting-woocommerce-royal-mail-shipping-tracking-plugin/"
+  },
+  "troubleshooting-woocommerce-shipping-services.md": {
+    "plugin": "general",
+    "sha256": "9d2da0bf3c138734db7d630ebbdd6618241b03f6c097bb9a33554d15ac2d30b8",
+    "title": "Troubleshooting WooCommerce Shipping Services",
+    "url": "https://www.pluginhive.com/knowledge-base/troubleshooting-woocommerce-shipping-services/"
+  },
+  "troubleshooting-woocommerce-ups-plugin.md": {
+    "plugin": "ups",
+    "sha256": "665c2410960308a4deccfc4a894ef7837f699a4cccc27b33b47704004375ca06",
+    "title": "Troubleshooting WooCommerce UPS Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/troubleshooting-woocommerce-ups-plugin/"
+  },
+  "try-create-label-orders-error-message-get-fedex-create-shipment-error-severity-error.md": {
+    "plugin": "fedex",
+    "sha256": "094bb0896ccd0124de52f32ed5ad745975a05b2cf001026c1477f9f50892dbc3",
+    "title": "When I try to create a label for my orders, error message I get: FedEx Create Shipment Error: Severity: ERROR",
+    "url": "https://www.pluginhive.com/knowledge-base/try-create-label-orders-error-message-get-fedex-create-shipment-error-severity-error/"
+  },
+  "two-fedex-paks-order-create-two-shipments.md": {
+    "plugin": "fedex",
+    "sha256": "4671afd4250ebca57fa6939c342f15341d6e435b9e616b4222b753ec21e237d9",
+    "title": "Create two FedEx Pak shipments, for two different FedEx Pak orders",
+    "url": "https://www.pluginhive.com/knowledge-base/two-fedex-paks-order-create-two-shipments/"
+  },
+  "understanding-fedex-box-packing-priority-custom-boxes.md": {
+    "plugin": "fedex",
+    "sha256": "9bdecba1dcafc9582eee3c5f144176a0acb91038ecfb73684c037b73bfb94471",
+    "title": "FedEx Box or Custom Boxes for Packing WooCommerce Orders",
+    "url": "https://www.pluginhive.com/knowledge-base/understanding-fedex-box-packing-priority-custom-boxes/"
+  },
+  "understanding-fedex-shipping-rates-woocommerce.md": {
+    "plugin": "fedex",
+    "sha256": "0456bc178aa7beba27815511ad7371370c3a20b2b2537b92ff79246fac031f6c",
+    "title": "FedEx Shipping Rates for WooCommerce and Shopify",
+    "url": "https://www.pluginhive.com/knowledge-base/understanding-fedex-shipping-rates-woocommerce/"
+  },
+  "understanding-wordpress-ups-shipping-charges.md": {
+    "plugin": "ups",
+    "sha256": "67812366a8f8e77290a2ea4c4d155bb45b54d3cf0f967622691d67b0db0a3ae5",
+    "title": "UPS Packaging Charges with WooCommerce UPS Shipping Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/understanding-wordpress-ups-shipping-charges/"
+  },
+  "ups-access-point-woocommerce-shipment.md": {
+    "plugin": "ups",
+    "sha256": "4bbd8d0e177a1f0d5e3bfc02b8575684b959524fc0329e82a2f7a6f0bd8d11ac",
+    "title": "UPS Access Point in WooCommerce Shipments",
+    "url": "https://www.pluginhive.com/knowledge-base/ups-access-point-woocommerce-shipment/"
+  },
+  "ups-blind-shipping-for-woocommerce.md": {
+    "plugin": "ups",
+    "sha256": "ac0136be216aca050473b59cbcaa5b7d535f16e2cf98e023dc8eba28782f1716",
+    "title": "Blind Shipping with UPS for WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/ups-blind-shipping-for-woocommerce/"
+  },
+  "ups-deliver-saturday-provide-accurate-woocommerce-estimated-delivery-date.md": {
+    "plugin": "estimated-delivery",
+    "sha256": "08bdc6de123d4221c0f2603ac83ab09059df98da9d84abe3f0e000965e039d1f",
+    "title": "Does UPS Deliver On Saturday? \u2013 Provide Estimated Delivery Dates on WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/ups-deliver-saturday-provide-accurate-woocommerce-estimated-delivery-date/"
+  },
+  "ups-missing-invalid-shipper-number-error-code-120100.md": {
+    "plugin": "ups",
+    "sha256": "c326ac7b76ee8e4c177bab5b9626da83ea2a97f8d555dcbc1b74c4291b966b43",
+    "title": "[Error Code: 120100] \u2013 \u201cMissing or invalid shipper number\u201d",
+    "url": "https://www.pluginhive.com/knowledge-base/ups-missing-invalid-shipper-number-error-code-120100/"
+  },
+  "ups-return-label-woocommerce-shipment.md": {
+    "plugin": "ups",
+    "sha256": "d708d59a8db84547ef442edc38166b76183c313075d134fda3a0116f9e46ecf6",
+    "title": "Print UPS Return Label for WooCommerce & Shopify Shipments",
+    "url": "https://www.pluginhive.com/knowledge-base/ups-return-label-woocommerce-shipment/"
+  },
+  "ups-shipping-guide-for-woocommerce-multi-vendor-with-wc-vendors.md": {
+    "plugin": "ups",
+    "sha256": "7cbf9729955de36e56a2c6880e213631eac2638f410baeadd7c5d38d714794b2",
+    "title": "UPS Shipping Guide for WooCommerce Multi Vendor with WC Vendors",
+    "url": "https://www.pluginhive.com/knowledge-base/ups-shipping-guide-for-woocommerce-multi-vendor-with-wc-vendors/"
+  },
+  "ups-shipping-guide-multi-vendor-with-woocommerce-product-vendors.md": {
+    "plugin": "ups",
+    "sha256": "921ec898de00928778669efd68a5f1d30c0f66382d8a49f62bb43fe714d14c36",
+    "title": "UPS Shipping Guide for Multi Vendor using WooCommerce Product Vendors",
+    "url": "https://www.pluginhive.com/knowledge-base/ups-shipping-guide-multi-vendor-with-woocommerce-product-vendors/"
+  },
+  "ups-shipping-guide-woocommerce-multi-vendor-dokan.md": {
+    "plugin": "ups",
+    "sha256": "16973a1ca7689df577a76f2b418f9f71043e85876d1b0966e68f84827f20b15e",
+    "title": "UPS Shipping Guide for WooCommerce Multi Vendor with Dokan",
+    "url": "https://www.pluginhive.com/knowledge-base/ups-shipping-guide-woocommerce-multi-vendor-dokan/"
+  },
+  "ups-shipping-methods-not-listed-woocommerce-shipping-zones.md": {
+    "plugin": "ups",
+    "sha256": "f6118823a0b48233d15dcc264d7fc5475dcc7c885b9d7f3249e00d29f7487ff5",
+    "title": "Why UPS Shipping Methods are not listed under WooCommerce Shipping Zones?",
+    "url": "https://www.pluginhive.com/knowledge-base/ups-shipping-methods-not-listed-woocommerce-shipping-zones/"
+  },
+  "ups-shipping-plugin-only-print-labels-track-shipments.md": {
+    "plugin": "ups",
+    "sha256": "2a4b5a002ec35b5f4918de7a8beeab903d1851c136d52432f0e553c46094882b",
+    "title": "UPS Shipping Plugin for Label Printing & Order Tracking in WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/ups-shipping-plugin-only-print-labels-track-shipments/"
+  },
+  "ups-shipping-rate-adjustment-based-destination-country.md": {
+    "plugin": "ups",
+    "sha256": "e5d5ee8f3659f96565873487b765116c81361873aa968c2b615099619334618c",
+    "title": "Adjust WooCommerce UPS Rates  based on Destination Country",
+    "url": "https://www.pluginhive.com/knowledge-base/ups-shipping-rate-adjustment-based-destination-country/"
+  },
+  "ups-shipping-woocommerce-multi-vendor-wcfm-marketplace.md": {
+    "plugin": "ups",
+    "sha256": "7fb5af14ddcf23a0d084eafed1d1e5e126ee7987f06a3bcd027b857aeff3150a",
+    "title": "UPS Shipping for WooCommerce Multi Vendor with WCFM Marketplace",
+    "url": "https://www.pluginhive.com/knowledge-base/ups-shipping-woocommerce-multi-vendor-wcfm-marketplace/"
+  },
+  "ups-usps-display-woocommerce-shipping-rates-with-price-adjustment.md": {
+    "plugin": "ups",
+    "sha256": "d84bbe1c336787d899210c2892435249c2f4a7ca64810daca3a6c47dd6df384e",
+    "title": "UPS and USPS \u2013 Display WooCommerce Shipping Rates with Price Adjustment",
+    "url": "https://www.pluginhive.com/knowledge-base/ups-usps-display-woocommerce-shipping-rates-with-price-adjustment/"
+  },
+  "use-fedex-home-delivery-residential-addresses.md": {
+    "plugin": "fedex",
+    "sha256": "758c1d8908c911880c9ea49e2a4c2cb074d1063fe58bc68f9340436a8a8725fb",
+    "title": "FedEx Home Delivery for Residential Addresses",
+    "url": "https://www.pluginhive.com/knowledge-base/use-fedex-home-delivery-residential-addresses/"
+  },
+  "use-plugin-print-fedex-shipping-labels.md": {
+    "plugin": "fedex",
+    "sha256": "63cbebe3a9df876e718e2cd6c3d6dc4284a9e38e8d3ef96dfcfd31195035b25a",
+    "title": "Use WooCommerce Shipping Plugin to Print FedEx Labels",
+    "url": "https://www.pluginhive.com/knowledge-base/use-plugin-print-fedex-shipping-labels/"
+  },
+  "user-id-shipper-number-combination-not-qualified-receive-negotiated-rates.md": {
+    "plugin": "general",
+    "sha256": "521251790918e0f19886beab418d3b7a3eb07fad692b0de4fc18020e608716db",
+    "title": "Use UPS Negotiated Rates with WooCommerce Shipping",
+    "url": "https://www.pluginhive.com/knowledge-base/user-id-shipper-number-combination-not-qualified-receive-negotiated-rates/"
+  },
+  "user-puts-multiples-one-item-cart-multiplies-shipping-rate-number-making-way-high.md": {
+    "plugin": "general",
+    "sha256": "883aaf4d4880e485c9da67a46c925de549f5a109f04780bde48b5243ff5b38eb",
+    "title": "Can I pack multiple units of the same product together with WooCommerce UPS Shipping Plugin?",
+    "url": "https://www.pluginhive.com/knowledge-base/user-puts-multiples-one-item-cart-multiplies-shipping-rate-number-making-way-high/"
+  },
+  "using-broker-fedex-handling-clearance.md": {
+    "plugin": "fedex",
+    "sha256": "98561a1a72542f466d8efc7d4d3160db33970156dfe41210ea4244d2948636af",
+    "title": "WooCommerce FedEx Shipping \u2013 Broker for handling customs clearance",
+    "url": "https://www.pluginhive.com/knowledge-base/using-broker-fedex-handling-clearance/"
+  },
+  "using-shipment-tracking-pro-woocommerce-basic-order-numbers-plugin.md": {
+    "plugin": "shipment-tracking",
+    "sha256": "6fb1cc4def1ac1a96b0e1ad1d24dcfdfa31fd7a8b6605b6373d28f2e85bea38a",
+    "title": "WooCommerce Basic Order Numbers Plugin: Streamline Order Tracking",
+    "url": "https://www.pluginhive.com/knowledge-base/using-shipment-tracking-pro-woocommerce-basic-order-numbers-plugin/"
+  },
+  "using-shipment-tracking-sequential-order-numbers-pro.md": {
+    "plugin": "shipment-tracking",
+    "sha256": "192dde1bac4d52d6a01281ccc27a686f34cbca9a9f99e6065aeb07c3664546e4",
+    "title": "WooCommerce Shipment Tracking with Sequential Order Numbers Pro",
+    "url": "https://www.pluginhive.com/knowledge-base/using-shipment-tracking-sequential-order-numbers-pro/"
+  },
+  "using-woocommerce-pdf-invoices-fedex-shipping-plugin.md": {
+    "plugin": "fedex",
+    "sha256": "15253c668b0dbee3ad9fa68caf71ffc694dbf5d86f6b9dc64e647d70367bafd9",
+    "title": "WooCommerce PDF Invoices with FedEx Shipping Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/using-woocommerce-pdf-invoices-fedex-shipping-plugin/"
+  },
+  "using-wpml-woocommerce-canada-post-shipping-plugin-multilingual-sites.md": {
+    "plugin": "canada-post",
+    "sha256": "58ac8fdbc184d2b6e60c0162555ee5b990053b6aa4b76abb6d41e5910faf13ef",
+    "title": "WPML & WooCommerce Canada Post Shipping for Multilingual Sites",
+    "url": "https://www.pluginhive.com/knowledge-base/using-wpml-woocommerce-canada-post-shipping-plugin-multilingual-sites/"
+  },
+  "using-wpml-woocommerce-estimated-delivery-date-plugin-multilingual-sites.md": {
+    "plugin": "estimated-delivery",
+    "sha256": "2c3ba153300122157052394bd90cbb08c2ef492671d13b65dcfd6826747d5bab",
+    "title": "Using WPML with WooCommerce Estimated Delivery Date plugin for Multilingual Sites",
+    "url": "https://www.pluginhive.com/knowledge-base/using-wpml-woocommerce-estimated-delivery-date-plugin-multilingual-sites/"
+  },
+  "using-wpml-woocommerce-fedex-shipping-plugin-multilingual-sites.md": {
+    "plugin": "fedex",
+    "sha256": "468a4f47f9fb2e1ffe0b07461ae8aecbcb7b9e0eb4e218f2b895556a668b8873",
+    "title": "WPML & FedEx shipping \u2013 WooCommerce store translation",
+    "url": "https://www.pluginhive.com/knowledge-base/using-wpml-woocommerce-fedex-shipping-plugin-multilingual-sites/"
+  },
+  "using-wpml-woocommerce-multi-carrier-shipping-plugin-multilingual-sites.md": {
+    "plugin": "multi-carrier",
+    "sha256": "d352a2e7060bd63af9bc675c759c876383667ab374008bb282da0662ba62d522",
+    "title": "Using WPML with WooCommerce Multi-Carrier Shipping plugin for Multilingual Sites",
+    "url": "https://www.pluginhive.com/knowledge-base/using-wpml-woocommerce-multi-carrier-shipping-plugin-multilingual-sites/"
+  },
+  "using-wpml-woocommerce-shipment-tracking-pro-plugin-multilingual-sites.md": {
+    "plugin": "shipment-tracking",
+    "sha256": "d9badca758d55470dd265766ffcc9121d0aad07342f5d8c0acb7b9f2970f2a0c",
+    "title": "Using WPML with WooCommerce Shipment Tracking Pro plugin for Multilingual Sites",
+    "url": "https://www.pluginhive.com/knowledge-base/using-wpml-woocommerce-shipment-tracking-pro-plugin-multilingual-sites/"
+  },
+  "using-wpml-woocommerce-table-rate-shipping-pro-plugin-multilingual-sites.md": {
+    "plugin": "table-rate",
+    "sha256": "08ce5d7438886a72624b13e32a3e44bb308d81b8e5d6204ffb13834ecd8bdedc",
+    "title": "WooCommerce Table Rate Shipping Pro plugin With WPML for Multilingual sites",
+    "url": "https://www.pluginhive.com/knowledge-base/using-wpml-woocommerce-table-rate-shipping-pro-plugin-multilingual-sites/"
+  },
+  "using-wpml-woocommerce-ups-shipping-plugin-multilingual-sites.md": {
+    "plugin": "ups",
+    "sha256": "2db3e655bb288bcbd8c248f6250b94476357e5aa65c19351f413ea78a6f48979",
+    "title": "WPML WooCommerce Shipping Solutions for Multilingual Sites",
+    "url": "https://www.pluginhive.com/knowledge-base/using-wpml-woocommerce-ups-shipping-plugin-multilingual-sites/"
+  },
+  "volumetric-weight-based-shipping-using-woocommerce-fedex-plugin.md": {
+    "plugin": "fedex",
+    "sha256": "6a344cf4afc47606618107b1ed54c83487a1922312e79d9e6d91dc11d912156c",
+    "title": "Volumetric Weight-Based Shipping with WooCommerce FedEx Shipping Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/volumetric-weight-based-shipping-using-woocommerce-fedex-plugin/"
+  },
+  "want-integrate-fedex-shipping-calculator-website.md": {
+    "plugin": "fedex",
+    "sha256": "4e4a1e6cc72ea7f270d2a262a93c30174c263d8ab857fd62521d2140f9149f76",
+    "title": "Integrate FedEx Shipping Calculator with WooCommerce website",
+    "url": "https://www.pluginhive.com/knowledge-base/want-integrate-fedex-shipping-calculator-website/"
+  },
+  "wanted-make-sure-add-handling-fees-shipping-calculations.md": {
+    "plugin": "general",
+    "sha256": "7eb60c3d8395169fb8897b5e91a893d84034788d244c75cf9662114009a288f7",
+    "title": "Add handling fees to FedEX shipping services in WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/wanted-make-sure-add-handling-fees-shipping-calculations/"
+  },
+  "way-print-order-generated-woocommerce-printed-shipping-label.md": {
+    "plugin": "general",
+    "sha256": "1b40a964a7272a9b03a70da3ccafb4f42f193898594cddda1e9add981460c432",
+    "title": "Print Order number on the WooCommerce Shipping Label",
+    "url": "https://www.pluginhive.com/knowledge-base/way-print-order-generated-woocommerce-printed-shipping-label/"
+  },
+  "weekends-non-delivery-estimated-delivery-date-and-time-plugin-for-woocommerce.md": {
+    "plugin": "estimated-delivery",
+    "sha256": "959f2a202dfc2bbc2daeea03c27e5c526a79414f147b7e314c77d0e007ed986b",
+    "title": "How to Show Weekends as Non-Delivery Days using Estimated Delivery Date and Time Plugin for WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/weekends-non-delivery-estimated-delivery-date-and-time-plugin-for-woocommerce/"
+  },
+  "weight-based-packing-ups-shipping-plugin.md": {
+    "plugin": "ups",
+    "sha256": "d5e9811bd1450da925315b3d182be7b638a07dc1890c104c6bf462906a6b1dad",
+    "title": "Weight-based Packing with WooCommerce UPS Shipping plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/weight-based-packing-ups-shipping-plugin/"
+  },
+  "weight-based-packing-woocommerce-fedex-shipping-plugin.md": {
+    "plugin": "fedex",
+    "sha256": "8e5b4a5b0a06f5882df2fd8b27dee9d8a474c4c6aaa76096485bc244b459f8dc",
+    "title": "Weight-based Packing with WooCommerce FedEx Shipping Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/weight-based-packing-woocommerce-fedex-shipping-plugin/"
+  },
+  "will-the-plugin-show-rates-inclusive-of-taxes-at-checkout.md": {
+    "plugin": "general",
+    "sha256": "69b05055394e4f92a7312933ccab7b844a99bec82a8dabfae4a48f028f486c76",
+    "title": "Display tax-inclusive WooCommerce UPS Rates at Checkout",
+    "url": "https://www.pluginhive.com/knowledge-base/will-the-plugin-show-rates-inclusive-of-taxes-at-checkout/"
+  },
+  "will-woocommerce-estimated-delivery-date-plugin-work-shipping-classes-shipping-zones-time.md": {
+    "plugin": "estimated-delivery",
+    "sha256": "6140819107da04ba497db1c6ce353155e82a2ea805d3ecfa403d22e5d20346f0",
+    "title": "Will the WooCommerce Estimated Delivery Date plugin work with Shipping Classes and Shipping Zones, both at a time?",
+    "url": "https://www.pluginhive.com/knowledge-base/will-woocommerce-estimated-delivery-date-plugin-work-shipping-classes-shipping-zones-time/"
+  },
+  "will-woocommerce-fedex-shipping-plugin-work-country-colombia-currency-colombian-peso.md": {
+    "plugin": "fedex",
+    "sha256": "42741c020294557d82281f68f311fb44d7349ee089855f5087e4d39c3069901b",
+    "title": "Will WooCommerce FedEx Shipping Plugin work with Country Colombia & currency Colombian Peso?",
+    "url": "https://www.pluginhive.com/knowledge-base/will-woocommerce-fedex-shipping-plugin-work-country-colombia-currency-colombian-peso/"
+  },
+  "woocommerce-automated-emails-and-shipment-delivery-updates.md": {
+    "plugin": "general",
+    "sha256": "ad932c910a29abd89bf40b09fbf940a92498e5ea9a3c1556c912cd6d2fc64869",
+    "title": "WooCommerce Automated Emails and Shipment Delivery Updates",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-automated-emails-and-shipment-delivery-updates/"
+  },
+  "woocommerce-bookings-across-unavailable-days.md": {
+    "plugin": "bookings",
+    "sha256": "1a9f8c1fb0c55c7c861fe9f3234256b0b683a8594665c7aea701ec196f7590e3",
+    "title": "WooCommerce Bookings Add-ons \u2013 Book Dates Across Unavailable Days",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-bookings-across-unavailable-days/"
+  },
+  "woocommerce-bookings-add-ons-auto-select-available-date-for-customer.md": {
+    "plugin": "bookings",
+    "sha256": "9390b472291f89031ebc74263af0249d96d261f0f1af8a1871f7033a6a8dc24f",
+    "title": "WooCommerce Bookings Add-ons \u2013 Auto-Select Available Date for Customer",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-bookings-add-ons-auto-select-available-date-for-customer/"
+  },
+  "woocommerce-bookings-add-ons-customise-maximum-bookings-per-slot.md": {
+    "plugin": "bookings",
+    "sha256": "c7e27a68980ee6a6dedc9967f5b6ce8c6f2240dff37a905a52ab50f273c3ab2e",
+    "title": "WooCommerce Bookings Add-ons \u2013 Customise Maximum Bookings Per Slot",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-bookings-add-ons-customise-maximum-bookings-per-slot/"
+  },
+  "woocommerce-bookings-add-ons-customize-weekly-maximum-bookings-per-slot.md": {
+    "plugin": "bookings",
+    "sha256": "8ae8e9ac443d5653fe14da3184920864c8c5a2ac0ff6e6b12bd2d1a4e8b526a7",
+    "title": "WooCommerce Bookings Add-ons \u2013 Customize Maximum Bookings Per Slot for All Week",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-bookings-add-ons-customize-weekly-maximum-bookings-per-slot/"
+  },
+  "woocommerce-bookings-add-ons-set-and-manage-resource-quantity.md": {
+    "plugin": "bookings",
+    "sha256": "a706390289320f07243004533640019ad39606653bf6a1632493676b7ec28e15",
+    "title": "Bookings and Appointments for WooCommerce Add-ons \u2013 Set and manage resource quantity",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-bookings-add-ons-set-and-manage-resource-quantity/"
+  },
+  "woocommerce-bookings-add-ons-skip-cart-checkout.md": {
+    "plugin": "bookings",
+    "sha256": "eb7365ae9febe81b83c54c17bb971315347777fe0e86a3a0ac7fe6b5d774d9fd",
+    "title": "Add-ons for Bookings And Appointments for WooCommerce \u2013 Skip Cart & Checkout",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-bookings-add-ons-skip-cart-checkout/"
+  },
+  "woocommerce-bookings-add-ons-store-owners-make-last-minute-bookings.md": {
+    "plugin": "bookings",
+    "sha256": "d6ca186aac62ca9b6435a0f0a6247b103841d71af81e973a2600e640f9e76f06",
+    "title": "WooCommerce Bookings Add-ons \u2013 Allow store owners to make last-minute Bookings",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-bookings-add-ons-store-owners-make-last-minute-bookings/"
+  },
+  "woocommerce-bookings-addons-block-product-availability.md": {
+    "plugin": "bookings",
+    "sha256": "fbb4cff3423a6fb13cf59ecba6c34ecc180232d67ea681d1a9e94e246ae1c627",
+    "title": "WooCommerce Bookings Add-ons \u2013 Block Product Availability Based on Other Bookings",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-bookings-addons-block-product-availability/"
+  },
+  "woocommerce-bookings-addons-resource-quantity-availability.md": {
+    "plugin": "bookings",
+    "sha256": "df551edf6602eb74e05a77396026ef6d6c3a4eb69bea550a63277af10051f992",
+    "title": "WooCommerce Bookings addons \u2013 Resource quantity & availability",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-bookings-addons-resource-quantity-availability/"
+  },
+  "woocommerce-bookings-and-appointments-plugin-faqs.md": {
+    "plugin": "bookings",
+    "sha256": "dbd6b60c628c83c9ab65acd79be5b6385a26fe66e2d3d4e3146654d8f55edff7",
+    "title": "Bookings And Appointments for WooCommerce plugin FAQs",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-bookings-and-appointments-plugin-faqs/"
+  },
+  "woocommerce-bookings-availability-search-widget.md": {
+    "plugin": "bookings",
+    "sha256": "f23dd0eb523a69c891438c7e5e534d9c3251edc31b14f304d666dfbc236faf65",
+    "title": "WooCommerce Bookings Availability Search Widget",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-bookings-availability-search-widget/"
+  },
+  "woocommerce-bookings-cancellation.md": {
+    "plugin": "bookings",
+    "sha256": "c05abbef8268bfdca9d7f2ae447ba9e216521c5977a6216853c37760df2fba71",
+    "title": "WooCommerce Bookings Cancellation",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-bookings-cancellation/"
+  },
+  "woocommerce-bookings-conditional-discount-based-on-participants.md": {
+    "plugin": "bookings",
+    "sha256": "9dfe93d8baa923bf9127b6ce48d75a88098f55284889d6c43d9520ba648b0354",
+    "title": "WooCommerce Bookings Add-ons \u2013 Conditional Discount based on Participants",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-bookings-conditional-discount-based-on-participants/"
+  },
+  "woocommerce-bookings-confirmation-payment-on-approval.md": {
+    "plugin": "bookings",
+    "sha256": "64b175fc32294520f1d5a839d5287f67c77e8abf558ca9d8ec4f5fbb30614374",
+    "title": "WooCommerce Bookings Confirmation & Payment on Approval",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-bookings-confirmation-payment-on-approval/"
+  },
+  "woocommerce-bookings-create-groups-people-family-team.md": {
+    "plugin": "bookings",
+    "sha256": "73cfe15f62b8b47a18ddcec305baf1c3f0754a5813a5a094f5f4c982e4a5d5e8",
+    "title": "Accept WooCommerce Bookings in Groups of People, Families & Team Members",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-bookings-create-groups-people-family-team/"
+  },
+  "woocommerce-bookings-custom-booking-interval.md": {
+    "plugin": "bookings",
+    "sha256": "22e6c75337f995486ba77c7bb92b5977a51ae4f70fdb90f90196801e7c879800",
+    "title": "Set Up Custom Booking Interval using WooCommerce Bookings and Appointment plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-bookings-custom-booking-interval/"
+  },
+  "woocommerce-bookings-custom-time-duration.md": {
+    "plugin": "bookings",
+    "sha256": "60082c420a79d61aee9e2e048ac5be55ea67592c865427dbbf52c9b61a34f4cb",
+    "title": "Customize Your Booking Duration to 2, 11, or 47 Hours in WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-bookings-custom-time-duration/"
+  },
+  "woocommerce-bookings-database-update.md": {
+    "plugin": "bookings",
+    "sha256": "c7eb74d54434f539b8078a0799845c32e194fad65a61bcaaed805fc9108ba40d",
+    "title": "WooCommerce Bookings & Appointments v.3.0.0 \u2013 Database Update",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-bookings-database-update/"
+  },
+  "woocommerce-bookings-email-notifications-reminders.md": {
+    "plugin": "bookings",
+    "sha256": "b96c4a5267b0ac8b39257414d8bb78acc7640934d9f0bdd1118fca2c3a42a07a",
+    "title": "WooCommerce Bookings Email Notification",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-bookings-email-notifications-reminders/"
+  },
+  "woocommerce-bookings-for-custom-order-status.md": {
+    "plugin": "bookings",
+    "sha256": "b77f8850762dbd0fbfc0b309a840b5740641a4d84b81266538343475ed40b38c",
+    "title": "WooCommerce Bookings for Custom Order Status",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-bookings-for-custom-order-status/"
+  },
+  "woocommerce-bookings-for-different-seasons.md": {
+    "plugin": "bookings",
+    "sha256": "28561fb188bd589738ca3777245ea15473fde53563adee627404a0f0800143f5",
+    "title": "Set Up Booking Costs Based on Different Seasons in WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-bookings-for-different-seasons/"
+  },
+  "woocommerce-bookings-plugin-now-provide-easy-shipping-rented-items-via-fedex.md": {
+    "plugin": "bookings",
+    "sha256": "560b50a4ae445237b117b7cf3f977bfd4a85e4f88ece04d45476b9b1ea928b57",
+    "title": "WooCommerce Bookings- Shipping Rented Items Via FedEx",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-bookings-plugin-now-provide-easy-shipping-rented-items-via-fedex/"
+  },
+  "woocommerce-bookings-select-first-available-time-of-the-day.md": {
+    "plugin": "bookings",
+    "sha256": "f62becd77f8cd702cf709644dd8431fb646376a34932f6150b2fddaaef7e6d3d",
+    "title": "WooCommerce Bookings Add-ons \u2013 Select First Available Time of the Day",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-bookings-select-first-available-time-of-the-day/"
+  },
+  "woocommerce-bookings-set-custom-duration-based-on-date.md": {
+    "plugin": "bookings",
+    "sha256": "5614cb016714acc898e4b36c5e5c55e8fb8feaa492ba5b1a66994e1a55eca099",
+    "title": "WooCommerce Bookings Add-ons \u2013 Set Minimum/Maximum Booking Duration based on Date",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-bookings-set-custom-duration-based-on-date/"
+  },
+  "woocommerce-canada-post-shipping-plugin-2-1-0-return-shipment-labels.md": {
+    "plugin": "canada-post",
+    "sha256": "45fbb216f13c58ec37716409037fb33be49ca77ba7eea8599ec376cf0ffcf2ff",
+    "title": "WooCommerce Canada Post Shipping Plugin 2.1.0: Now with return shipping labels",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-canada-post-shipping-plugin-2-1-0-return-shipment-labels/"
+  },
+  "woocommerce-canada-post-shipping-plugin-supports-different-weights-variable-products.md": {
+    "plugin": "canada-post",
+    "sha256": "b67ae77fe2fa92a93d0ad41c0f4e593e36f62adf959c4c9c42de9729e5e21f95",
+    "title": "Does WooCommerce Canada Post Shipping Plugin Supports Different Weights for Variable Products?",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-canada-post-shipping-plugin-supports-different-weights-variable-products/"
+  },
+  "woocommerce-canada-post-shipping-plugin-works-currency-usd.md": {
+    "plugin": "canada-post",
+    "sha256": "7dfdc7efc380f97367694cca04c41715652405a171836df1bda3860657fb6dd3",
+    "title": "Does WooCommerce Canada Post Shipping plugin works with Currency USD?",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-canada-post-shipping-plugin-works-currency-usd/"
+  },
+  "woocommerce-conditional-shipping-with-multi-carrier-plugin.md": {
+    "plugin": "multi-carrier",
+    "sha256": "573f5f2067bd4fedf715e84541f9ae8d3ecb3f3ae34cdeea10cd5799589e2e78",
+    "title": "WooCommerce Conditional Shipping with Multi-Carrier Shipping Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-conditional-shipping-with-multi-carrier-plugin/"
+  },
+  "woocommerce-configure-box-dimensions.md": {
+    "plugin": "general",
+    "sha256": "8b64741bdac2728094237baa831e48cd2875e1371febe5a76e7a7dad6e52947d",
+    "title": "WooCommerce: Configure Box Dimensions",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-configure-box-dimensions/"
+  },
+  "woocommerce-currency-conversion-fedex-europe.md": {
+    "plugin": "fedex",
+    "sha256": "66d58ba21b20c0cd31ba8e20f162fc50fd2ebf28a81023bb3c51b6621acb338a",
+    "title": "WooCommerce Currency Conversion \u2013 FedEx Europe",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-currency-conversion-fedex-europe/"
+  },
+  "woocommerce-deposits-addons-reminder-emails.md": {
+    "plugin": "general",
+    "sha256": "c1287b0629d9b9c5241f63c7b4e1a54a81e6b6861a85b7ac53dcc7363837a0f1",
+    "title": "WooCommerce Deposits addons \u2013 Reminder emails for percentage deposits",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-deposits-addons-reminder-emails/"
+  },
+  "woocommerce-deposits-plugin-partial-payments-for-bookings.md": {
+    "plugin": "bookings",
+    "sha256": "a13a4564140beb566502ae418cd8431239aa6e3611466bd274d73b2cfb6c578d",
+    "title": "Partial Payments for Bookings in WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-deposits-plugin-partial-payments-for-bookings/"
+  },
+  "woocommerce-equipment-rental-dynamic-discounts.md": {
+    "plugin": "general",
+    "sha256": "612445ef75b763ccdd49b9e93d61e2550d29e3305bc42ac66dbb4d1c3416bcd1",
+    "title": "WooCommerce Equipment Rental with Dynamic Discounts",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-equipment-rental-dynamic-discounts/"
+  },
+  "woocommerce-estimated-delivery-date-different-products-shipped-different-locations.md": {
+    "plugin": "estimated-delivery",
+    "sha256": "e8d353887c3ff253b3bd86cab5c05a7872053fefa45bab6b6739c96bc8ba8992",
+    "title": "Set Up the Estimated Delivery Date\u00a0for Products  Shiping from Different Locations",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-estimated-delivery-date-different-products-shipped-different-locations/"
+  },
+  "woocommerce-fedex-integration-good-online-store.md": {
+    "plugin": "fedex",
+    "sha256": "313c44b8e3ceaccc6b30f9ffaa7bea9831cfe38acb30d2e542622823690cc810",
+    "title": "Why is FedEx Integration Good for your WooCommerce Store",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-fedex-integration-good-online-store/"
+  },
+  "woocommerce-fedex-plugin-customize-estimated-delivery-date-formats.md": {
+    "plugin": "estimated-delivery",
+    "sha256": "c97e3eefda52d3ec593c7df15d0c4e1e7ff1638a237a78c26ea62137bf5a584e",
+    "title": "Customize Delivery Date formats in WooCommerce FedEx plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-fedex-plugin-customize-estimated-delivery-date-formats/"
+  },
+  "woocommerce-fedex-shipment-tracking-scheduling-pickup.md": {
+    "plugin": "shipment-tracking",
+    "sha256": "8d4504cfebbcf2e44b84ad8dae23a03f003b6349287ec381f80f6e5803eb07d6",
+    "title": "FedEx Tracking & Schedule FedEx Pickups in WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-fedex-shipment-tracking-scheduling-pickup/"
+  },
+  "woocommerce-flat-rate-shipping-live-ups-ground-rates.md": {
+    "plugin": "ups",
+    "sha256": "b1d3fe79b8b7e4739f1864a9b7e13d91340a77b36681984b6a46c6e568368968",
+    "title": "Set Up WooCommerce Flat Rate Shipping with UPS Ground Rates",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-flat-rate-shipping-live-ups-ground-rates/"
+  },
+  "woocommerce-free-shipping-for-some-products.md": {
+    "plugin": "general",
+    "sha256": "78350ccb695c2de5878409c84d289069bb34015949017441bf5fd0bd0c031f99",
+    "title": "WooCommerce Free Shipping only for Some of the Products",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-free-shipping-for-some-products/"
+  },
+  "woocommerce-live-ups-shipping-rates-free-shipping-cart-subtotal.md": {
+    "plugin": "ups",
+    "sha256": "786b17848f868a906fb05491c5f9a24729d2a802519a4697b30bbb1e6d2a3450",
+    "title": "WooCommerce UPS Shipping \u2013 Provide Live Rates and Free Shipping for Some Products based on Cart Subtotal",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-live-ups-shipping-rates-free-shipping-cart-subtotal/"
+  },
+  "woocommerce-marketplace-with-fedex-shipping-and-wc-vendors.md": {
+    "plugin": "fedex",
+    "sha256": "5a49ec749e0cfc6d7abdd888fa36d9db03c6b6e0e0c67e95881711f204274845",
+    "title": "FedEx Shipping with WC Vendors Marketplace for WooCommerce",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-marketplace-with-fedex-shipping-and-wc-vendors/"
+  },
+  "woocommerce-marketplace-with-multiple-shipping-carriers-using-product-vendors.md": {
+    "plugin": "general",
+    "sha256": "c677de68cba45081d786d64419782c3170845805d231687630a7488120bbf170",
+    "title": "WooCommerce Marketplace with Multiple Shipping Carriers using Product Vendors",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-marketplace-with-multiple-shipping-carriers-using-product-vendors/"
+  },
+  "woocommerce-minimum-order-amount-for-ups-shipping.md": {
+    "plugin": "ups",
+    "sha256": "de2a8b2c8f185bac630ec3820edee7e3a6fcf1da443dc5f963f540636a600e09",
+    "title": "WooCommerce Minimum Order Amount for UPS Shipping",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-minimum-order-amount-for-ups-shipping/"
+  },
+  "woocommerce-multi-carrier-shipping-plugin-supports-dhl-fedex-mexico.md": {
+    "plugin": "multi-carrier",
+    "sha256": "a995bafc7b9058b5f45176e08a94aab157f3da7cc83601d0693755ba56b2ddf7",
+    "title": "Does WooCommerce Multi Carrier Shipping support DHL & FedEx in Mexico?",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-multi-carrier-shipping-plugin-supports-dhl-fedex-mexico/"
+  },
+  "woocommerce-multi-vendor-dokan-with-fedex-shipping.md": {
+    "plugin": "fedex",
+    "sha256": "015796e80a0fd798f12bd77b7754837883b851e88d861c2e2702f723a6f86ee1",
+    "title": "FedEx Shipping Guide for WooCommerce Multi-Vendor with Dokan",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-multi-vendor-dokan-with-fedex-shipping/"
+  },
+  "woocommerce-multi-vendor-fedex-shipping-wcfm-marketplace.md": {
+    "plugin": "fedex",
+    "sha256": "2d60f5a35a56a504193a02d6b8590836f1ea552c492c7f01ddd6a615f6ebed30",
+    "title": "WooCommerce Multi Vendor FedEx Shipping Guide with WCFM Marketplace",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-multi-vendor-fedex-shipping-wcfm-marketplace/"
+  },
+  "woocommerce-order-fulfilment-with-touchless-label-printing.md": {
+    "plugin": "general",
+    "sha256": "2a4e5396f8fbb8a0bec0965d545d6eaadd3f4bc233abf969e48f4adce6254db8",
+    "title": "WooCommerce Order Fulfilment Made Easy with Touchless Label Printing",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-order-fulfilment-with-touchless-label-printing/"
+  },
+  "woocommerce-recurring-bookings.md": {
+    "plugin": "bookings",
+    "sha256": "c60bda72ba462ecaa728b92ba2fb399ccccf8aac16294c6a0f4ace5340aff36d",
+    "title": "Recurring Bookings \u2013 How to set up using WooCommerce Bookings and Appointments plugin?",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-recurring-bookings/"
+  },
+  "woocommerce-shipment-tracking-methodologies-efficient-business.md": {
+    "plugin": "shipment-tracking",
+    "sha256": "cff44485121b65df90a4dfb283585c483b45542f0c75914c0ac5748e395c3605",
+    "title": "Efficient WooCommerce Shipment Tracking: Top Methodologies",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-shipment-tracking-methodologies-efficient-business/"
+  },
+  "woocommerce-shipment-tracking-pro-improves-customer-experience.md": {
+    "plugin": "shipment-tracking",
+    "sha256": "882947b371e8816e70fd92b930ba8b8b7d5e8a00c26cbf0b1cd3b78f52c5c139",
+    "title": "How Shipment Tracking Pro for WooCommerce improves customer experience?",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-shipment-tracking-pro-improves-customer-experience/"
+  },
+  "woocommerce-shipment-tracking-shipping-easy-integration.md": {
+    "plugin": "shipment-tracking",
+    "sha256": "515bc355cb05334d3be12549b8c0e9f29710437cb9c4dde1cf687e545aa74205",
+    "title": "Set up WooCommerce Shipment Tracking with Shipping Easy",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-shipment-tracking-shipping-easy-integration/"
+  },
+  "woocommerce-shipment-tracking-ups-shipping-plugin.md": {
+    "plugin": "shipment-tracking",
+    "sha256": "c547a8914c361b163268b5744e2de96419d0bb1285ae6c7e392938c6d1691062",
+    "title": "WooCommerce UPS Tracking Guide",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-shipment-tracking-ups-shipping-plugin/"
+  },
+  "woocommerce-shipping-configure-shipping-area-management-multiple-carriers.md": {
+    "plugin": "general",
+    "sha256": "7a761634114299cc48304bc9e7cbc571ac59c9d304b629d89fced068f4befe8b",
+    "title": "WooCommerce Shipping \u2013 Configure Shipping Area Management for Multiple Carriers",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-shipping-configure-shipping-area-management-multiple-carriers/"
+  },
+  "woocommerce-shipping-fedex-live-rate-adjustment-based-on-shipping-classes.md": {
+    "plugin": "fedex",
+    "sha256": "90c4367f3515541b79b0c835649259b5390a85174711101e5965a07440a0cf47",
+    "title": "Adjust WooCommerce FedEx Shipping Rates by Shipping Class",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-shipping-fedex-live-rate-adjustment-based-on-shipping-classes/"
+  },
+  "woocommerce-shipping-gst-implementation-fedex-shipping-carrier-india.md": {
+    "plugin": "fedex",
+    "sha256": "551e34759c1e7349debfea22b32b4fa0ddbe792004daa70d1d9cf7e5ec4a4247",
+    "title": "WooCommerce Shipping with FedEx: GST Implementation in India",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-shipping-gst-implementation-fedex-shipping-carrier-india/"
+  },
+  "woocommerce-shipping-methods-for-different-product-categories-table-rate-shipping.md": {
+    "plugin": "table-rate",
+    "sha256": "73febcb6169ab2d91d14da3d03c7cc62389031a1a7fa1eb72275edacb4c7ec85",
+    "title": "Set up WooCommerce Shipping Methods for Different Product Categories with WooCommerce Table Rate Shipping Pro",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-shipping-methods-for-different-product-categories-table-rate-shipping/"
+  },
+  "woocommerce-shipping-plugins-comparison-chart-multiple-vs-individual-carrier-integration.md": {
+    "plugin": "general",
+    "sha256": "127a9bf014c63573121c3ae15d88c8124a90fee4ad061da790520988ce839937",
+    "title": "WooCommerce Shipping Plugins Comparison Chart \u2013 Multiple vs. Individual Carrier-Integration",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-shipping-plugins-comparison-chart-multiple-vs-individual-carrier-integration/"
+  },
+  "woocommerce-shipping-pro-chapter-1-setting-plugin.md": {
+    "plugin": "table-rate",
+    "sha256": "4698b7a68176711a2a743b1d6a6073e079b21db8b9cf9bfa63ec426a52a78db6",
+    "title": "WooCommerce Shipping Pro Chapter-1: Setting Up",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-shipping-pro-chapter-1-setting-plugin/"
+  },
+  "woocommerce-shipping-pro-chapter-2-solving-business-case.md": {
+    "plugin": "table-rate",
+    "sha256": "b50991e39cb59b07ddb48170ac6979b85a36183d2b2ba16cd3d2b29cc60810ee",
+    "title": "WooCommerce Shipping Pro \u2013 Chapter 2: Solving Business Case",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-shipping-pro-chapter-2-solving-business-case/"
+  },
+  "woocommerce-shipping-pro-chapter-3-bundle-rate-shipping.md": {
+    "plugin": "table-rate",
+    "sha256": "54681fe500fc780063c8305c78f9e0d30c1799f9985a367dfac20709ac052a18",
+    "title": "WooCommerce Table Rate Shipping Pro \u2013 Chapter 3: Bundle Rate Shipping",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-shipping-pro-chapter-3-bundle-rate-shipping/"
+  },
+  "woocommerce-shipping-pro-chapter-4-usability-features.md": {
+    "plugin": "table-rate",
+    "sha256": "9c28b349a1b825e5b95294a8207a4a564cabb091089622f1432223b6aa82393f",
+    "title": "WooCommerce Shipping Pro \u2013 Chapter 4: Usability Features",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-shipping-pro-chapter-4-usability-features/"
+  },
+  "woocommerce-shipping-pro-chapter-5-united-kingdom-countiesstates.md": {
+    "plugin": "table-rate",
+    "sha256": "f9329c93da06c475bfc96ed2966a6240f19338a01c6a116387e2505918a8d97f",
+    "title": "WooCommerce Shipping Pro- Chapter 5: United Kingdom Counties/States",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-shipping-pro-chapter-5-united-kingdom-countiesstates/"
+  },
+  "woocommerce-shipping-pro-chapter-6-per-shipping-class.md": {
+    "plugin": "table-rate",
+    "sha256": "53bba65c300f5194c194356d99ae1b848a47e11ba26aa47846844691dca8cdf5",
+    "title": "WooCommerce Shipping Pro- Chapter 6: Per Shipping Class",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-shipping-pro-chapter-6-per-shipping-class/"
+  },
+  "woocommerce-shipping-pro-chapter-7-extend-using-add-ons.md": {
+    "plugin": "table-rate",
+    "sha256": "6cded8899958b5e663a707cac7e7db9651d79642c61d52be5dd6caf69460b900",
+    "title": "WooCommerce Shipping Pro- Chapter 7: Extend using Add-ons",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-shipping-pro-chapter-7-extend-using-add-ons/"
+  },
+  "woocommerce-shipping-pro-chapter-8-business-cases-handled-woocommerce-weight-country-based-shipping.md": {
+    "plugin": "table-rate",
+    "sha256": "b99cfb9de1f51a4f4fc97f5653f1c1f6a77153f88fe4ecf1b528e62af75b26a9",
+    "title": "WooCommerce Shipping Pro \u2013 Chapter 8 : Business cases handled by WooCommerce Weight and Country based shipping",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-shipping-pro-chapter-8-business-cases-handled-woocommerce-weight-country-based-shipping/"
+  },
+  "woocommerce-shipping-pro-chapter-9-woocommerce-weight-based-shipping-simplified.md": {
+    "plugin": "table-rate",
+    "sha256": "e37a95a4f3c4602c5f36fd62ebe007a3dfa253153fd1ccdc8927d823aa4c8435",
+    "title": "WooCommerce Weight-Based Shipping with Table Rate Shipping Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-shipping-pro-chapter-9-woocommerce-weight-based-shipping-simplified/"
+  },
+  "woocommerce-shipping-rates-based-on-order-quantity-and-price.md": {
+    "plugin": "general",
+    "sha256": "763d6ec1f162d8ddde0e75cce9bbe9dad1ada640669df63edb613ea7777dffb7",
+    "title": "WooCommerce Table Rate Shipping: Set up Shipping Rates Based On Order Quantity and Price",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-shipping-rates-based-on-order-quantity-and-price/"
+  },
+  "woocommerce-table-rate-shipping-based-on-state-and-shipping-class.md": {
+    "plugin": "table-rate",
+    "sha256": "69c7b9221b76ea33973d57364efafdb694e34defc8e5ca5d7bd7cfdbf0e508de",
+    "title": "Set up WooCommerce Shipping by State and Shipping Class using Table Rate Shipping plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-table-rate-shipping-based-on-state-and-shipping-class/"
+  },
+  "woocommerce-table-rate-shipping-pro-advanced-addons.md": {
+    "plugin": "table-rate",
+    "sha256": "a3354e50acfc0e67b1f57e092f26dd00b71a8a9294bdfd8401acc83d4b6dc902",
+    "title": "Advanced Addons for WooCommerce Table Rate Shipping Pro",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-table-rate-shipping-pro-advanced-addons/"
+  },
+  "woocommerce-table-rate-shipping-pro-allow-customer-choose-between-pickup-option-shipping.md": {
+    "plugin": "table-rate",
+    "sha256": "3e8485803941bc70546888ace71f909e1bf4f321bb4c9a486d1e0274db66a031",
+    "title": "WooCommerce Table Rate Shipping: Pickup & Shipping Choices",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-table-rate-shipping-pro-allow-customer-choose-between-pickup-option-shipping/"
+  },
+  "woocommerce-tracking-now-import-tracking-details-automatically-via-ftp.md": {
+    "plugin": "general",
+    "sha256": "70d1011547a42d298f0b2976718f3bd6285d8adcb38d634c29a9d7e5768ca70c",
+    "title": "Import WooCommerce Order Tracking Details via FTP & CSV",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-tracking-now-import-tracking-details-automatically-via-ftp/"
+  },
+  "woocommerce-tracking-number-for-fedex-shipments-in-order-completion-email.md": {
+    "plugin": "fedex",
+    "sha256": "bf2dda27d90cba1d017a422e80db88617f28115cae30f1e60be666d44c66ef3c",
+    "title": "Add FedEx WooCommerce Tracking Number to Order Completion Email",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-tracking-number-for-fedex-shipments-in-order-completion-email/"
+  },
+  "woocommerce-tracking-number-order-completion-email.md": {
+    "plugin": "general",
+    "sha256": "96c2798a15ab45a8db222f0aefc9256c5e87a6c972029b1910399358ce6ec0ec",
+    "title": "Add WooCommerce Tracking Number in the Order Completion Email",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-tracking-number-order-completion-email/"
+  },
+  "woocommerce-ups-can-third-party-ups-account-pay-shipping-charges.md": {
+    "plugin": "ups",
+    "sha256": "a7164b9414a5f003f734c75e8158e8b68398209e5f2554f7605118783a2e1b7f",
+    "title": "WooCommerce UPS Shipping \u2013 Can a Third-Party\u2019s Account Pay the Shipping Charges?",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-ups-can-third-party-ups-account-pay-shipping-charges/"
+  },
+  "woocommerce-ups-cod-for-europe-automatically-convert-the-currency-into-euro.md": {
+    "plugin": "ups",
+    "sha256": "588439a62a2374436774c65f0b8444a64c3330bd25b2cbb935f7154d0817af1b",
+    "title": "WooCommerce UPS COD for Europe \u2013 Automatically convert the currency into Euro",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-ups-cod-for-europe-automatically-convert-the-currency-into-euro/"
+  },
+  "woocommerce-ups-shipping-boxes.md": {
+    "plugin": "ups",
+    "sha256": "5f0233979a67ceaafcc9f99e2f9efc4039b69b510c956adcddeee04d31da2b3e",
+    "title": "UPS Boxes for WooCommerce Shipping",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-ups-shipping-boxes/"
+  },
+  "woocommerce-ups-shipping-exclude-products-from-being-charged.md": {
+    "plugin": "ups",
+    "sha256": "09a4adf731a5d04d5e4bf496966a819349941f53a5bdff988f8bf4c94c7de9ed",
+    "title": "Exclude Gift Products from being Charged for UPS Shipping on your WooCommerce Store",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-ups-shipping-exclude-products-from-being-charged/"
+  },
+  "woocommerce-ups-shipping-plugin-get-ups-shipping-rates-one-category-free-shipping-others.md": {
+    "plugin": "ups",
+    "sha256": "4dbd19e9c3b7de50ae198cd5cab535844e1309d7750481d8d63b630a35b36401",
+    "title": "WooCommerce UPS Rates & Free Shipping Based on the Product Category",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-ups-shipping-plugin-get-ups-shipping-rates-one-category-free-shipping-others/"
+  },
+  "woocommerce-ups-shipping-plugin-print-label-xml-document-not-well-formed-error-code-10001.md": {
+    "plugin": "ups",
+    "sha256": "87fdf622192358205de940f1cb2001f340db47fad658aefc50230fd9717c2b83",
+    "title": "WooCommerce UPS Shipping Plugin [Error Code 10001] -The XML document is not well formed",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-ups-shipping-plugin-print-label-xml-document-not-well-formed-error-code-10001/"
+  },
+  "woocommerce-ups-shipping-plugin-v-3-9-15-with-estimated-delivery-options-bulk-label-printing-much-more.md": {
+    "plugin": "estimated-delivery",
+    "sha256": "30fb30cd2af6684f256f06594f4816221dcc2ceca3b358f39ec20a410ebc6fd3",
+    "title": "WooCommerce UPS Plugin v.3.9.15:  Estimated Delivery Options, Bulk Label Printing",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-ups-shipping-plugin-v-3-9-15-with-estimated-delivery-options-bulk-label-printing-much-more/"
+  },
+  "woocommerce-ups-shipping-plugin-works.md": {
+    "plugin": "ups",
+    "sha256": "15fc80b0fe6b6d16bf234ef80852f69314d59e601650fc9e6b804ed06f599229",
+    "title": "WooCommerce UPS Shipping Plugin and How it works?",
+    "url": "https://www.pluginhive.com/knowledge-base/woocommerce-ups-shipping-plugin-works/"
+  },
+  "wpml-compatibility-woocommerce-canada-post-shipping-plugin.md": {
+    "plugin": "canada-post",
+    "sha256": "38e3758b993809adfe2a68870bcfdfab79cedb49a6cc05252471674367317966",
+    "title": "WooCommerce Canada Post Shipping Plugin with WPML Support",
+    "url": "https://www.pluginhive.com/knowledge-base/wpml-compatibility-woocommerce-canada-post-shipping-plugin/"
+  },
+  "wpml-compatibility-woocommerce-estimated-delivery-date-plugin.md": {
+    "plugin": "estimated-delivery",
+    "sha256": "efdfd44a395a2ac86420a3abb760877e36a99dfa72e677354a5952f565037420",
+    "title": "WooCommerce Estimated Delivery Date plugin with WPML Support",
+    "url": "https://www.pluginhive.com/knowledge-base/wpml-compatibility-woocommerce-estimated-delivery-date-plugin/"
+  },
+  "wpml-compatibility-woocommerce-multi-carrier-shipping-plugin.md": {
+    "plugin": "multi-carrier",
+    "sha256": "17d0335ff4fb831e7e6eae371963f08dabcca858e214182e3772bafbedb7b752",
+    "title": "WPML Support with WooCommerce Multi Carrier Shipping Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/wpml-compatibility-woocommerce-multi-carrier-shipping-plugin/"
+  },
+  "wpml-compatibility-woocommerce-shipment-tracking-pro-plugin.md": {
+    "plugin": "shipment-tracking",
+    "sha256": "a346a3f0584a798c40ab1874c04adc617c53f112a138259430fe04851ddb175f",
+    "title": "WPML Compatibility with WooCommerce Shipment Tracking Pro",
+    "url": "https://www.pluginhive.com/knowledge-base/wpml-compatibility-woocommerce-shipment-tracking-pro-plugin/"
+  },
+  "wpml-compatibility-woocommerce-table-rate-shipping-plugin.md": {
+    "plugin": "table-rate",
+    "sha256": "9f096b123c9b0487d8384ed8c9a648e597922e3f0499bf1d4be0cbc91bd46dd9",
+    "title": "WPML Compatibility with WooCommerce Table Rate Shipping",
+    "url": "https://www.pluginhive.com/knowledge-base/wpml-compatibility-woocommerce-table-rate-shipping-plugin/"
+  },
+  "wpml-compatibility-woocommerce-ups-shipping-plugin.md": {
+    "plugin": "ups",
+    "sha256": "5408bd80d27ec6a3e7083f529800b7cdf8ade29c6cc3b6ff2a328dfee12fea7d",
+    "title": "WPML Compatibility with WooCommerce UPS Shipping Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/wpml-compatibility-woocommerce-ups-shipping-plugin/"
+  },
+  "zoom-meetings-with-woocommerce-bookings-plugin.md": {
+    "plugin": "bookings",
+    "sha256": "aeff2060c7d959e8c925f972cf46675cc229273c417323cfd12497f92bc24be7",
+    "title": "Setting Up WooCommerce Zoom Meetings with Bookings Plugin",
+    "url": "https://www.pluginhive.com/knowledge-base/zoom-meetings-with-woocommerce-bookings-plugin/"
+  }
+}
