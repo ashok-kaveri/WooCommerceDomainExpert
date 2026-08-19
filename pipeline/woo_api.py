@@ -1,7 +1,7 @@
 """
 WooCommerce REST API client.
 
-This is the Woo equivalent of the WooCommerce REST API layer in MCSLDomainExpert.
+This is the WooCommerce counterpart of the Shopify Admin API layer in MCSLDomainExpert.
 Everything that talks to a QA WooCommerce store — product seeding, order
 creation, settings inspection — goes through here so credential handling and
 error reporting stay in one place.

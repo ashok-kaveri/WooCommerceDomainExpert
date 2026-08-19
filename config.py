@@ -105,6 +105,6 @@ TOP_K_RESULTS = 8
 MEMORY_WINDOW = 10
 
 # WooCommerce plugin settings render inline in wp-admin — there is no app
-# iframe the way the WooCommerce MCSL app has one. Kept as an empty-string constant
+# iframe the way the Shopify MCSL app has one. Kept as an empty-string constant
 # so shared browser helpers can branch on "no iframe" instead of crashing.
 APP_IFRAME_SELECTOR = ""
