@@ -46,23 +46,27 @@ Use it to answer:
   - APC Postal Logistics
   - Landmark Global
 
-## Shared Woo navigation model
+## Shared WooCommerce navigation model
 
-Most carrier flows still reuse the same Woo platform navigation:
+Most carrier flows reuse the same wp-admin navigation. Every screen has a URL —
+navigate directly rather than clicking through menus.
 
-- top tabs:
-  - `ORDERS`
-  - `LABELS`
-  - `PICKUP`
-  - also `MANIFEST`, `TRACKING`
-- hamburger navigation:
-  - `Products`
-  - `Carriers`
-  - `General Settings`
-  - shipping / packaging / automation areas
-- WooCommerce verification:
-  - `Orders` for fulfillment / tracking verification
-  - `Products` for product creation and product sync verification
+- orders and labels:
+  - `admin.php?page=wc-orders` — orders list, bulk label actions
+  - `admin.php?page=wc-orders&action=edit&id=<id>` — the shipment metabox
+    (Generate Packages → Calculate Rates → Confirm Shipment → Print Label,
+    plus return label, void shipment, client-side reset)
+- plugin configuration:
+  - `admin.php?page=ph_multi_carrier_admin_menu` — Multi Carrier menu
+  - `admin.php?page=ph_multi_carrier_<carrier>_registration` — carrier credentials
+  - `admin.php?page=wc-settings&tab=shipping` — zones, methods, method settings
+- products:
+  - `edit.php?post_type=product` → product → **Shipping** tab for weight,
+    dimensions, shipping class, and per-carrier special services
+- verification:
+  - storefront `/cart/` and `/checkout/` for buyer-visible rates — the only
+    place they can genuinely be confirmed
+  - `admin.php?page=wc-status` for plugin versions and logs
 
 ## Carrier matrix
 

@@ -13,14 +13,14 @@ Use it for:
 ## Generic Rule
 
 - If a card names a carrier, treat it as carrier-specific.
-- If a card does not name a carrier, treat it as generic Woo platform behavior first.
-- Generic cards should prefer shared Woo flows:
-  - `ORDERS`
-  - `LABELS`
-  - `PICKUP`
-  - hamburger `Products`
-  - hamburger `Carriers`
-  - packaging / automation / request-log areas
+- If a card does not name a carrier, treat it as generic WooCommerce plugin behaviour first.
+- Generic cards should prefer the shared WooCommerce flows:
+  - `WooCommerce > Orders` and the order-screen shipment metabox
+  - `WooCommerce > Settings > Shipping` (zones, methods, classes)
+  - `Multi Carrier` plugin menu and the per-carrier registration screens
+  - `Products > <product> > Shipping` for per-product fields
+  - storefront `Cart` / `Checkout` for buyer-visible rates
+  - packing methods and the request/response logs
 
 ## Carrier Registry
 

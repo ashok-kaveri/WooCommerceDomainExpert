@@ -1,6 +1,7 @@
 from __future__ import annotations
 import logging
-from typing import Optional
+import os
+from typing import Any, Optional
 
 import chromadb
 from langchain_ollama import OllamaEmbeddings
@@ -82,8 +83,46 @@ def _recreate_collection(reason: str) -> None:
 
 
 # Smaller batch size prevents ChromaDB HNSW from pre-allocating huge link_lists.bin
-# (Python 3.14 + chromadb bug: large batches trigger oversized HNSW allocation)
-_CHROMA_BATCH_SIZE = 500
+# (Python 3.14 + chromadb bug: large batches trigger oversized HNSW allocation).
+# It also keeps the Ollama embedding runner alive: a 500-doc embed call reliably
+# kills it part-way through a large corpus like the KB mirror (~9.4k chunks),
+# surfacing as "connection reset by peer" from ollama's /tokenize.
+_CHROMA_BATCH_SIZE = int(os.getenv("CHROMA_BATCH_SIZE", "100"))
+
+# When a batch fails with a transport error rather than a corrupt index, retry it
+# in smaller pieces before giving up. Embedding backends fall over on batch size,
+# not on any individual document.
+_MIN_BATCH_SIZE = 10
+
+
+def _is_transient_embed_error(exc: Exception) -> bool:
+    text = str(exc).lower()
+    return any(
+        marker in text
+        for marker in (
+            "connection reset", "read tcp", "broken pipe", "connection refused",
+            "timed out", "timeout", "eof occurred", "remote end closed",
+        )
+    )
+
+
+def _add_with_backoff(vectorstore: Any, batch: list[Document], size: int) -> None:
+    """Insert `batch`, halving the chunk size on transient embedding failures."""
+    if size <= _MIN_BATCH_SIZE:
+        vectorstore.add_documents(batch)
+        return
+    try:
+        vectorstore.add_documents(batch)
+    except Exception as exc:
+        if not _is_transient_embed_error(exc):
+            raise
+        smaller = max(_MIN_BATCH_SIZE, size // 2)
+        logger.warning(
+            "Embedding backend dropped a batch of %d (%s) — retrying at %d per call",
+            len(batch), exc, smaller,
+        )
+        for i in range(0, len(batch), smaller):
+            _add_with_backoff(vectorstore, batch[i: i + smaller], smaller)
 
 
 def _deduplicate(documents: list[Document]) -> list[Document]:
@@ -114,7 +153,7 @@ def add_documents(documents: list[Document]) -> None:
     while start < total:
         batch = documents[start: start + _CHROMA_BATCH_SIZE]
         try:
-            vectorstore.add_documents(batch)
+            _add_with_backoff(vectorstore, batch, _CHROMA_BATCH_SIZE)
         except Exception as exc:
             if not _is_hnsw_index_error(exc):
                 raise
