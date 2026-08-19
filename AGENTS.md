@@ -165,6 +165,23 @@ Current automation execution scope:
 - Playwright automation generation and runs target the WooCommerce Woo automation repo only.
 - For cards explicitly scoped to WooCommerce, BigCommerce, Magento, or PrestaShop, ask QA before generating WooCommerce automation. Generate it only when QA confirms the shared behavior should be covered through the current WooCommerce automation repo.
 
+## Handoff Docs Rules
+
+Current intended handoff format:
+- take the guide title from the user prompt, not from Trello metadata
+- use only the prompt's plugin name as the guide title and single-guide file base
+- place `Version <no> – Released: <date>` directly under the H1
+- do not show an automatic `UPDATE` badge in the header
+- make the version/release line slightly more prominent in the header
+- show exactly these index columns: `Story Id`, `Title`, `Trello Card Link`
+- render `Included Story Cards` in the boxed section-heading style
+- keep the `Story Id` column wide enough to read cleanly
+- default to one Support Guide when the user says to generate the guide without naming a doc type
+- start each story card with a boxed title block for visual separation
+- keep normal sections free of internal or technical detail
+- keep developer-only cards in a trailing `Technical Cards` section
+- do not include feature-flag wording in handoff docs
+
 ## Toggle Rules
 
 Toggle flow is Woo-specific and already has live-state support.

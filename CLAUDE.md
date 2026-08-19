@@ -114,6 +114,23 @@ Important:
 - do not generate or review TCs only from stale `card.desc` when a newer AC draft exists
 - avoid duplicate Trello comments on retry after partial publish failure
 
+## Handoff Docs Rules
+
+Current intended handoff format:
+- take the guide title from the user prompt, not from Trello metadata
+- use only the prompt's plugin name as the guide title and single-guide file base
+- place `Version <no> – Released: <date>` directly under the H1
+- do not show an automatic `UPDATE` badge in the header
+- make the version/release line slightly more prominent in the header
+- show exactly these index columns: `Story Id`, `Title`, `Trello Card Link`
+- render `Included Story Cards` in the boxed section-heading style
+- keep the `Story Id` column wide enough to read cleanly
+- default to one Support Guide when the user says to generate the guide without naming a doc type
+- start each story card with a boxed title block for visual separation
+- keep normal sections free of internal or technical detail
+- keep developer-only cards in a trailing `Technical Cards` section
+- do not include feature-flag wording in handoff docs
+
 ## AI QA Rules
 
 Keep TC-first verification as the default path.

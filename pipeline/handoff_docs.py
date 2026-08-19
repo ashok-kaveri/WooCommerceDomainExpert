@@ -949,16 +949,16 @@ def render_pdf_bytes(title: str, markdown_text: str) -> bytes:
         return ParagraphStyle(name, **kw)
 
     # Fonts: Georgia for the big title impact, Arial everywhere else
-    hdr_badge  = _ps("HBadge", fontName=f"{SANS}-Bold",   fontSize=8.5, leading=11, textColor=C_GOLD,
-                               spaceAfter=2, tracking=60)
     hdr_title  = _ps("HTitle", fontName=f"{SERIF}-Bold",  fontSize=26,  leading=32, textColor=C_WHITE,
                                spaceAfter=4)
     hdr_sub    = _ps("HSub",   fontName=f"{SANS}-Bold",   fontSize=10.5,leading=14, textColor=C_GOLD,
                                spaceAfter=0)
-    hdr_desc   = _ps("HDesc",  fontName=f"{SANS}-Italic", fontSize=10,  leading=14, textColor=C_HDR_DESC)
+    hdr_desc   = _ps("HDesc",  fontName=f"{SANS}-BoldItalic", fontSize=11.5, leading=15, textColor=HexColor("#e2e8f0"))
     hdr_meta   = _ps("HMeta",  fontName=SANS,             fontSize=8.5, leading=12, textColor=C_META_TXT)
     h2_style   = _ps("H2",     fontName=f"{SANS}-Bold",   fontSize=12,  leading=16, textColor=C_BLUE,
                                spaceBefore=12, spaceAfter=2)
+    pkg_h2_style = _ps("PkgH2", fontName=f"{SANS}-Bold", fontSize=13, leading=17, textColor=C_BLUE)
+    card_h2_style = _ps("CardH2", fontName=f"{SANS}-Bold", fontSize=14, leading=18, textColor=C_BLUE)
     h3_style   = _ps("H3",     fontName=f"{SANS}-BoldItalic", fontSize=11, leading=14, textColor=C_BLUE,
                                spaceBefore=8, spaceAfter=3)
     body_style = _ps("Body",   fontName=SANS,             fontSize=10.5, leading=16, textColor=C_TEXT,
@@ -994,14 +994,53 @@ def render_pdf_bytes(title: str, markdown_text: str) -> bytes:
         ]))
         return [row, HRFlowable(width=CW, thickness=0.5, color=C_BORDER, spaceAfter=5)]
 
-    # ── Badge / subtitle detection ───────────────────────────────────────────
-    tl = title.lower()
-    if any(w in tl for w in ["delay", "fix", "bug", "error", "performance", "slow", "issue"]):
-        badge_txt = "PERFORMANCE FIX"
-    elif any(w in tl for w in ["new", "feature", "add", "introduc", "launch"]):
-        badge_txt = "NEW FEATURE"
-    else:
-        badge_txt = "UPDATE"
+    def _card_title_box(text: str):
+        bar = Table([[""]], colWidths=[5], rowHeights=[24])
+        bar.setStyle(TableStyle([
+            ("BACKGROUND",    (0, 0), (-1, -1), C_ACCENT),
+            ("TOPPADDING",    (0, 0), (-1, -1), 0),
+            ("BOTTOMPADDING", (0, 0), (-1, -1), 0),
+            ("LEFTPADDING",   (0, 0), (-1, -1), 0),
+            ("RIGHTPADDING",  (0, 0), (-1, -1), 0),
+        ]))
+        p = Paragraph(_md_to_rl(text), card_h2_style)
+        row = Table([[bar, p]], colWidths=[7, CW - 7])
+        row.setStyle(TableStyle([
+            ("BACKGROUND",    (0, 0), (-1, -1), HexColor("#f8fbff")),
+            ("BOX",           (0, 0), (-1, -1), 0.8, HexColor("#bfdbfe")),
+            ("VALIGN",        (0, 0), (-1, -1), "MIDDLE"),
+            ("TOPPADDING",    (0, 0), (-1, -1), 10),
+            ("BOTTOMPADDING", (0, 0), (-1, -1), 10),
+            ("LEFTPADDING",   (0, 0), (0, -1), 0),
+            ("RIGHTPADDING",  (0, 0), (0, -1), 0),
+            ("LEFTPADDING",   (1, 0), (1, -1), 12),
+            ("RIGHTPADDING",  (1, 0), (1, -1), 12),
+        ]))
+        return [row, Spacer(1, 0.08 * inch)]
+
+    def _package_title_box(text: str):
+        bar = Table([[""]], colWidths=[5], rowHeights=[20])
+        bar.setStyle(TableStyle([
+            ("BACKGROUND",    (0, 0), (-1, -1), C_ACCENT),
+            ("TOPPADDING",    (0, 0), (-1, -1), 0),
+            ("BOTTOMPADDING", (0, 0), (-1, -1), 0),
+            ("LEFTPADDING",   (0, 0), (-1, -1), 0),
+            ("RIGHTPADDING",  (0, 0), (-1, -1), 0),
+        ]))
+        p = Paragraph(_md_to_rl(text), pkg_h2_style)
+        row = Table([[bar, p]], colWidths=[7, CW - 7])
+        row.setStyle(TableStyle([
+            ("BACKGROUND",    (0, 0), (-1, -1), HexColor("#f8fbff")),
+            ("BOX",           (0, 0), (-1, -1), 0.8, HexColor("#dbe7ff")),
+            ("VALIGN",        (0, 0), (-1, -1), "MIDDLE"),
+            ("TOPPADDING",    (0, 0), (-1, -1), 8),
+            ("BOTTOMPADDING", (0, 0), (-1, -1), 8),
+            ("LEFTPADDING",   (0, 0), (0, -1), 0),
+            ("RIGHTPADDING",  (0, 0), (0, -1), 0),
+            ("LEFTPADDING",   (1, 0), (1, -1), 10),
+            ("RIGHTPADDING",  (1, 0), (1, -1), 12),
+        ]))
+        return [row, Spacer(1, 0.06 * inch)]
 
     clean_title = re.sub(r'\[#\d+\]', '', title).strip()
     clean_title = re.sub(r'From SL:\s*[A-Z]+-\d+\s*[—–-]\s*', '', clean_title).strip()
@@ -1017,11 +1056,12 @@ def render_pdf_bytes(title: str, markdown_text: str) -> bytes:
         if skip_h1 and line.startswith("# "):
             skip_h1 = False
             continue
+        s = line.strip()
+        if not desc_text and s and not s.startswith("#") and not s.startswith("-"):
+            desc_text = s[:170] + ("…" if len(s) > 170 else "")
+            if re.match(r"^Version\b.*\bReleased\s*:", s, flags=re.IGNORECASE):
+                continue
         content_lines.append(line)
-        if not desc_text:
-            s = line.strip()
-            if s and not s.startswith("#") and not s.startswith("-"):
-                desc_text = s[:170] + ("…" if len(s) > 170 else "")
 
     # ── Canvas footer ────────────────────────────────────────────────────────
     buf = io.BytesIO()
@@ -1049,23 +1089,19 @@ def render_pdf_bytes(title: str, markdown_text: str) -> bytes:
     story: list = []
 
     # ── Header panel (deep navy) ─────────────────────────────────────────────
-    badge_p = Paragraph(badge_txt, hdr_badge)
     title_p = Paragraph(clean_title, hdr_title)
     sub_p   = Paragraph(subtitle, hdr_sub)
     desc_p  = Paragraph(_md_to_rl(desc_text), hdr_desc) if desc_text else Spacer(1, 2)
 
-    hdr_tbl = Table([[badge_p], [title_p], [sub_p], [desc_p]], colWidths=[CW])
+    hdr_tbl = Table([[title_p], [sub_p], [desc_p]], colWidths=[CW])
     hdr_tbl.setStyle(TableStyle([
         ("BACKGROUND",    (0, 0), (-1, -1), C_NAVY_MID),
-        ("BACKGROUND",    (0, 0), (0, 0),   C_NAVY),
         ("TOPPADDING",    (0, 0), (0, 0), 18),
-        ("BOTTOMPADDING", (0, 0), (0, 0),  4),
-        ("TOPPADDING",    (0, 1), (0, 1),  4),
-        ("BOTTOMPADDING", (0, 1), (0, 1),  6),
+        ("BOTTOMPADDING", (0, 0), (0, 0),  6),
+        ("TOPPADDING",    (0, 1), (0, 1),  2),
+        ("BOTTOMPADDING", (0, 1), (0, 1),  8),
         ("TOPPADDING",    (0, 2), (0, 2),  2),
-        ("BOTTOMPADDING", (0, 2), (0, 2),  8),
-        ("TOPPADDING",    (0, 3), (0, 3),  2),
-        ("BOTTOMPADDING", (0, 3), (0, 3), 18),
+        ("BOTTOMPADDING", (0, 2), (0, 2), 18),
         ("LEFTPADDING",   (0, 0), (-1, -1), 22),
         ("RIGHTPADDING",  (0, 0), (-1, -1), 22),
     ]))
@@ -1164,7 +1200,7 @@ def render_pdf_bytes(title: str, markdown_text: str) -> bytes:
             # Release index page: Story ID | Story Title | Toggle Name | Trello card link
             col_ws = [0.09 * CW, 0.43 * CW, 0.29 * CW, 0.19 * CW]
         elif n_cols == 3:
-            col_ws = [0.06 * CW, 0.56 * CW, 0.38 * CW]
+            col_ws = [0.13 * CW, 0.62 * CW, 0.25 * CW]
         elif n_cols == 2:
             col_ws = [0.32 * CW, 0.68 * CW]
         else:
@@ -1188,6 +1224,8 @@ def render_pdf_bytes(title: str, markdown_text: str) -> bytes:
             ("RIGHTPADDING",  (0, 0), (-1, -1),  7),
             ("VALIGN",        (0, 0), (-1, -1),  "TOP"),
         ])
+        if n_cols >= 1:
+            ts.add("ALIGN", (0, 0), (0, -1), "CENTER")
         rl_tbl.setStyle(ts)
         story.append(rl_tbl)
         story.append(Spacer(1, 0.1 * inch))
@@ -1267,7 +1305,11 @@ def render_pdf_bytes(title: str, markdown_text: str) -> bytes:
             if is_card_section_heading(heading, combined_package):
                 story.append(PageBreak())
                 seen_card_section = True
-            story.extend(_h2_row(heading))
+                story.extend(_card_title_box(heading))
+            elif heading.lower() in {"included story cards", "included updates"}:
+                story.extend(_package_title_box(heading))
+            else:
+                story.extend(_h2_row(heading))
         elif clean.startswith("### "):
             story.append(Paragraph(_md_to_rl(clean[4:].strip()), h3_style))
         elif re.match(r"^- \[[ xX]\]", clean):

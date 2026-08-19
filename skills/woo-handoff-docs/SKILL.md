@@ -1,6 +1,6 @@
 ---
 name: woo-handoff-docs
-description: Use when working inside the WooCommerceDomainExpert project after cards are approved and the user wants professional release handoff documents like the dashboard Handoff Docs tab: Support Guide, Business Brief, or both, generated from approved US/AC, TCs, AI QA evidence, release/card metadata, toggles, and member ownership. If the user requests only one document, generate only that document and PDF.
+description: Use when working inside the WooCommerceDomainExpert project after cards are approved and the user wants professional release handoff documents like the dashboard Handoff Docs tab: Support Guide, Business Brief, or both, generated from approved US/AC, TCs, AI QA evidence, release/card metadata, prerequisites, and member ownership. If the user requests only one document, generate only that document and PDF.
 ---
 
 # Woo Handoff Docs
@@ -34,6 +34,47 @@ Use `woo-slack-operator` to send PDFs or messages to Slack when explicitly reque
 
 For release packages, always use full live Trello card context when available: description, comments, labels, attachments/checklist summaries, approved AC/TCs, and AI QA evidence. QA comments often contain late caveats and must not be skipped.
 
+## Document Title & Release Header
+
+The document title comes from the **user's prompt**, not from the Trello release list name, board name, or a card title. Expect the prompt to carry the plugin name, the version, and the release date, for example:
+
+```
+Plugin Name: Multi-Carrier Shipping Plugin for WooCommerce
+Version 3.4.2 – Released: Aug 18th, 2026
+```
+
+Build the document from exactly that:
+
+- H1 = `# <Plugin Name>`
+- the line immediately after the H1 = `Version <version> – Released: <release date>`
+- `--title` passed to the render script = `<Plugin Name>`
+- when generating a single requested guide, markdown/PDF filename base = `<Plugin Name>`
+
+Example opening of a combined Support Guide:
+
+```markdown
+# Multi-Carrier Shipping Plugin for WooCommerce
+
+Version 3.4.2 – Released: Aug 18th, 2026
+
+## Included Story Cards
+| Story Id | Title | Trello Card Link |
+|---|---|---|
+```
+
+Renderer behaviour this relies on, in `render_pdf_bytes`:
+
+- the H1 is stripped from the body, and the `--title` argument becomes the large header title
+- the first non-heading, non-bullet line after the H1 becomes the italic line inside the navy header panel — that is where the version/release-date line lands, so keep it to one short line
+- the gold subtitle strip is generated from the title and platform scope, so do not hand-write it
+
+Rules:
+
+- keep the version and release date exactly as the user wrote them, including the month format they used
+- state the version and release date once, in the header line only — never repeat them in a card section
+- never invent, infer, or bump a plugin name, version number, or release date. If the prompt is missing one, ask for it once before rendering; if the user says to proceed without it, write `Version not provided` rather than a guess
+- if the user gives a different title wording in the prompt, use their wording verbatim
+
 ## Excluded Cards
 
 Before anything else, drop cards that are not part of the release story set. Exclude any card carrying one of these labels:
@@ -49,44 +90,69 @@ Rules:
 - Exclude the card from the index table as well as the body. A card left out of the body but listed in the index reads as a missing section.
 - Include an excluded card only when the user names it or explicitly asks for it. Naming the card is the instruction — do not ask again.
 - Never drop the card silently. Always report which cards were excluded and which label triggered it, so a short release is visibly deliberate.
-- Excluded cards contribute no toggles to the `Toggle List Follow-Up` DM.
 
-Before writing any release package, do a toggle audit for every card:
+## Prerequisite Audit
 
-- Search the whole card for the toggle, not just the description: comments, checklists, attachments, approved AC, TCs, and QA evidence. The exact toggle key is often only in a QA or developer comment.
-- Put the exact key in the index table `Toggle Name` column. List every key comma-separated when a card has more than one, and `None` when the card needs no toggle.
-- Never guess or reconstruct a toggle key. If the card clearly needs one but no key is stated anywhere, write `Not stated` and flag it in the final response.
+Before writing a release package, check every card for prerequisites — anything that must already be true on the site before the feature can be seen or demoed.
 
-Before writing a release Support Guide, do a payload/log audit for every card:
+A prerequisite here is one of:
 
-- If the evidence asks support to inspect a carrier request, response, payload, request log, diagnostic log, invoice request, tracking payload, report source field, or automation-rule log, include the exact node/field name support must verify.
-- Put the callout immediately after the relevant walkthrough step, using one of these exact bullet labels so the PDF renderer highlights it:
-  - `Request node to verify: ...`
-  - `Request nodes to verify: ...`
-  - `Request/response nodes to verify: ...`
-  - `Request/log fields to verify: ...`
-- Do not add node callouts to UI-only, report-only, sync-only, or performance cards unless card evidence names an actual request/log field.
-- If the exact field is unknown after checking card comments/checklists and code/context, say what log to inspect in troubleshooting and do not invent a node name.
+- the plugin build the card needs
+- a plugin setting a merchant has to turn on
+- a WooCommerce store setting
+- a manual carrier registration in the WordPress admin
 
-Before writing Support Guide or Business Brief content, do a technical-card audit for every card:
+Rules:
 
-- A technical card is one only a developer cares about: an API-only change, a library or version upgrade, a refactor, an internal clean-up, or infrastructure work with nothing support or the merchant can see or do.
-- Move every technical card into a single `## Technical Cards` section placed after the last normal card section. Keep each entry to a few lines: what changed and why it matters.
-- Keep technical cards in their normal position in the index table — only the body section moves.
-- If a card has both a technical part and something support can see or demo, keep it as a normal card.
+- Search the whole card, not just the description: comments, checklists, attachments, approved AC, TCs, and QA evidence. A late prerequisite is often named only in a QA or developer comment.
+- Write prerequisites in the card's `Prerequisites` section in plain merchant language — the setting as a support person would read it on screen, plus where to find it.
+- Say so explicitly when a card needs nothing set up beforehand.
+- Never guess. If a card clearly needs something enabled but the card never says what, write `Not stated in the card` and flag it in the final response.
+- There is no prerequisite column in the index table. The index table stays three columns: `Story Id`, `Title`, `Trello Card Link`.
 
-Before writing Support Guide or Business Brief content, do a platform audit for every card:
+## No Internal Or Technical Detail In Normal Sections
+
+Both documents are written for people who have never seen the code. Keep internal and technical detail out of all normal card sections and the release overview.
+
+Not allowed anywhere outside the `## Technical Cards` section:
+
+- code, class, file, method, or function names
+- request or response field names, node names, payload or log field names
+- API, endpoint, schema, database, hook, or filter references
+- version strings used as an explanation, internal engineering terms, ticket-tracker jargon
+- callouts naming an exact request or log field, such as `Request node to verify:`. These belonged to the old format and must not appear
+
+Describe what support sees on screen and what the merchant experiences instead. When a card's evidence points at a carrier request or a log, say what support should look for in plain words — "the rate shown at checkout now includes the discounted price" — and where to look, without naming the field.
+
+Purely internal or developer-only cards still belong in the combined document, but only inside the trailing `## Technical Cards` section.
+
+## Technical Cards
+
+Use one trailing `## Technical Cards` section after all normal card sections.
+
+Rules:
+
+- Put every purely internal or developer-only card here
+- Keep the card in the index table in its normal release position
+- Use `### <Story ID> - <Card title>` for each entry
+- Keep each entry to two to four lines: what changed and why it matters
+- Avoid deep internals even here; mention an exact internal name only when the entry makes no sense without it
+- Do not add walkthrough, prerequisites, or expected-behaviour subsections inside this section
+
+## Platform Audit
+
+Before writing Support Guide or Business Brief content, run this audit for every card:
 
 - Detect the customer/test platform from the title, labels, description, comments, linked ticket, PR notes, AC, TCs, and QA evidence.
-- Supported platform names include WooCommerce (WordPress).
-- If no platform is explicit, default the QA/support platform to WooCommerce.
-- If a customer/ticket explicitly names WooCommerce, BigCommerce, Magento, or PrestaShop, use that platform in support steps, prerequisites, and business wording.
+- If no platform is explicit, default the QA/support platform to WooCommerce (WordPress).
+- If a customer/ticket explicitly names BigCommerce, Magento, or PrestaShop, use that platform in support steps, prerequisites, and business wording.
 - Treat the underlying feature as shared Woo behavior unless the card limits the implementation scope, but document/test on the customer-reported platform.
 
 ## Inputs
 
 Best input package:
 
+- plugin name, version, release date (from the prompt — see `Document Title & Release Header`)
 - card name/id/url
 - release name
 - approved US + AC
@@ -94,11 +160,11 @@ Best input package:
 - AI QA summary/evidence
 - support sign-off notes
 - developed by / tested by
-- toggles/prerequisites
+- prerequisites
 - known limitations
 - rollout notes
 
-If some inputs are missing, still generate a useful draft, but mark unknown fields clearly. Do not invent ownership, release numbers, toggles, or unsupported limitations.
+If some inputs are missing, still generate a useful draft, but mark unknown fields clearly. Do not invent ownership, release numbers, versions, dates, prerequisites, or unsupported limitations.
 
 ## Document Selection
 
@@ -109,25 +175,22 @@ Generate based on user request:
 - "handoff docs", "both docs", "support and business" -> both combined release PDFs
 - "single card", "only this card", or a specific card id/name -> single-card document for that card
 
-If unclear, ask which one: Support Guide, Business Brief, or both.
+If the user just says to generate the handoff/guide without naming a doc type, default to one combined Support Guide.
 
 ## Support Guide Purpose
 
 The Support Guide is for support/demo teams who need to understand the feature well enough to explain it to customers.
 
-It must be practical, professional, and support-friendly and very crisp and do not use any Technical jargon.
+It must be practical, professional, support-friendly, and very crisp, with no technical jargon at all outside `Technical Cards` — see `No Internal Or Technical Detail In Normal Sections`.
 
-Use no technical words anywhere in the body of either document: no code, class, file, or method names, no API or schema jargon, and no internal engineering terms. Write it the way you would explain the feature to someone who has never seen the code. Three places are exempt, because the exact string is the point: the request/log callouts described above, the `Technical Cards` section, and toggle keys in the index table and `Toggles & Prerequisites` tables.
-
-- Include the Index Page with exactly these columns: "Story ID", "Story Title", "Toggle Name", "Trello card link"
-- Explain"Brief Feature Summary" in a title called "Brief Description" Keep it very crisp
+- Include the Index Page with exactly these columns: "Story Id", "Title", "Trello Card Link"
+- Explain the brief feature summary under a heading called "Brief Description". Keep it very crisp
 - include where support can see it inside the relevant walkthrough steps
 - explain what the merchant should experience
 - include walkthrough steps
-- include toggles/prerequisites
+- include prerequisites
 
 Do not write vague release notes. This should be a real support enablement document.
-
 
 ## PDF Generation
 
@@ -137,6 +200,14 @@ When the user asks for PDF:
 2. Save the markdown under `data/handoff_docs/`.
 3. Render PDF using:
    `skills/woo-handoff-docs/scripts/render_handoff_pdf.py`
+
+Pass the prompt-derived title so the header panel matches the document:
+
+```bash
+python3 skills/woo-handoff-docs/scripts/render_handoff_pdf.py \
+  --markdown "data/handoff_docs/Multi-Carrier Shipping Plugin for WooCommerce.md" \
+  --title "Multi-Carrier Shipping Plugin for WooCommerce"
+```
 
 For one requested release document, create one combined PDF containing all selected/approved release cards.
 
@@ -170,57 +241,18 @@ Ask first only when:
 
 Always report the outcome: target, file id on success, or the exact Slack error on failure.
 
-## Prerequisite List Follow-Up
-
-After a release package is generated, send the consolidated prerequisite list as a
-Slack DM to `ashok@pluginhive.com`. This is a standing instruction from the doc
-owner, so it needs no fresh approval — but always show the message text before
-sending, then report the result.
-
-Rules:
-
-- Send the prerequisite list only. Never attach the document to this message;
-  document delivery stays under `Slack Delivery` above.
-- Skip the step entirely when no card in the release has a prerequisite. Say so in
-  the final response instead of sending an empty message.
-- Build the list with `woo-feature-prerequisites`, reusing the `Toggle Name` column
-  of the guide's index table as the source, and check it against the live site.
-- WooCommerce prerequisites are **not** `"<uuid>.<flag>": true` lines — that is the
-  MCSL/Shopify shape and it does not apply here. Send them grouped by kind:
-
-```
-Site: <site url>            Plugin: PH Multi Carrier Shipping <version>
-
-Plugin build
-  - needs >= 4.2.0 for MCSL-412 (site is on 4.1.6)
-
-Plugin settings to enable
-  - residential address detection   (Shipping > Multi Carrier > General)
-  - dry ice support                 (per-product, Shipping tab)
-
-Manual — cannot be set over REST
-  - UPS carrier registration
-    <site>/wp-admin/admin.php?page=ph_multi_carrier_ups_registration
-```
-
-- When a release spans more than one QA site, send one block per site, each headed
-  by its site URL.
-- Use `woo-slack-operator` for the DM, since this is a text message rather than a
-  file upload.
-- Carry over the `woo-feature-prerequisites` guardrails: never invent a
-  prerequisite, never report `unknown` as enabled, and list anything left out with
-  a one-line reason.
-
 ## Combined Release Package Structure
 
 Combined Support Guide:
 
 ```markdown
-# <Release> Support Guide
+# <Plugin Name>
+
+Version <version> – Released: <release date>
 
 ## Included Story Cards
-| Story ID | Story Title | Toggle Name | Trello card link |
-|---|---|---|---|
+| Story Id | Title | Trello Card Link |
+|---|---|---|
 
 ## <Story ID> - <Card title>
 ### Brief Description
@@ -236,14 +268,16 @@ Do not add a `How Support Should Use This Package` section. The index page is fo
 Combined Business Brief:
 
 ```markdown
-# What's New: <Release>
+# <Plugin Name>
+
+Version <version> – Released: <release date>
 
 ## Release Overview
 ...
 
 ## Included Updates
-| Story ID | Story Title | Toggle Name | Trello card link |
-|---|---|---|---|
+| Story Id | Title | Trello Card Link |
+|---|---|---|
 
 ## <Story ID> - <Card title>
 ### Brief Description
@@ -253,16 +287,6 @@ Combined Business Brief:
 ### <Story ID> - <Card title>
 ...
 ```
-
-## Technical Cards Section
-
-Layout rules, which follow how `render_pdf_bytes` breaks pages:
-
-- Use one H2 `## Technical Cards` after the last normal card section. Inside a combined package the renderer page-breaks before every non-package H2, so this section gets its own page automatically — never hand-place a break.
-- List each technical card under it as an H3 `### <Story ID> - <Card title>` so the short entries flow together instead of taking a page each.
-- Two to four lines per card: what changed, and why it matters for the product or the merchant. No walkthrough, no toggles section, no expected-behaviour section.
-- Plain wording still applies. Name a version, endpoint, or field only when the entry makes no sense without it.
-- Omit the section entirely when the release has no technical cards.
 
 ## Support Guide Structure
 
@@ -274,7 +298,7 @@ For each card section inside the combined Support Guide, follow the sample relea
 ## Brief Description
 ...
 
-## Toggles & Prerequisites
+## Prerequisites
 ...
 
 ## Step-by-Step Support Walkthrough
@@ -291,16 +315,17 @@ Do not add `Merchant-Safe Explanation`, `Common Questions & Troubleshooting`, or
 Before finalizing:
 
 - make it understandable for support people
-- remove internal/code jargon entirely from the body; the only exceptions are request/log callouts and the `Technical Cards` section
-- verify every card's toggle was searched for across comments, checklists, and QA evidence, not just the description
+- verify the header carries the prompt's plugin name, version, and release date, and that nothing about them was invented
+- verify the index table has exactly three columns: `Story Id`, `Title`, `Trello Card Link`
+- verify no internal setup shorthand or feature-flag wording appears anywhere in either document
+- verify no technical detail survived outside `Technical Cards` — no field, node, class, file, endpoint, or log-field names, and no `Request node to verify:` style callouts
 - verify no card labelled `SL: ON Hold`, `SL: Carrier Platform`, `Spill Over`, or `SL: Closed By Support` slipped into the index table or the body
-- verify technical-only cards sit in the `Technical Cards` section at the end, not mixed into the walkthrough cards
+- verify purely internal-only cards were moved to `Technical Cards`
 - keep merchant-facing wording safe and clear
 - do not expose implementation details that customers do not need
 - verify every claim comes from card/AC/TC/AI QA evidence or researched domain facts
 - verify every live Trello QA comment and checklist has been considered before finalizing a release package
 - do not add a generic `Where to Find This in Woo` section; include exact platform-aware navigation in the relevant walkthrough step instead
-- include highlighted exact request/log node names when the card requires request-payload, response, or diagnostic-log verification, such as `discount`, `declarationStatement`, `signature`, `classification_type`, or carrier-specific service fields
 - every story card starts on a new page, including the first — the index page stands alone and the renderer inserts the breaks, so never hand-place one
 - verify no card heading starts at the bottom of a page without its detail table/content following on the same page
 - keep the support guide thorough enough for a support call
@@ -311,9 +336,9 @@ Before finalizing:
 Return:
 
 - document(s) generated
+- the title, version, and release date used in the header
 - markdown path if saved
 - PDF path if rendered
-- whether the toggle list DM was sent, skipped because no card has a toggle, or failed
 - which cards were excluded and the label that triggered each exclusion
 - any missing inputs or assumptions
 
