@@ -21,21 +21,27 @@ def test_build_carrier_env_content_uses_expected_product_env_keys():
         woo_site_url="https://carrier-qa.example.com/wp-admin/",
         woo_consumer_secret="shpat_test",
         product_groups={
-            "simple": [WooProductRef(product_id=1, variant_id=11)],
-            "variable": [WooProductRef(product_id=2, variant_id=22)],
-            "digital": [WooProductRef(product_id=3, variant_id=33)],
-            "dangerous": [WooProductRef(product_id=4, variant_id=44)],
+            "simple": [WooProductRef(product_id=1)],
+            "variable": [WooProductRef(product_id=2, variation_id=22)],
+            "digital": [WooProductRef(product_id=3)],
+            "dangerous": [WooProductRef(product_id=4)],
         },
     )
 
     content = build_carrier_env_content(run)
 
     assert "CARRIER=newCarrierX" in content
-    assert "WOO_SITE_URL=new-carrier-store" in content
-    assert "SIMPLE_PRODUCTS_JSON='[{\"product_id\":1,\"variant_id\":11}]'" in content
-    assert "VARIABLE_PRODUCTS_JSON='[{\"product_id\":2,\"variant_id\":22}]'" in content
-    assert "DIGITAL_PRODUCTS_JSON='[{\"product_id\":3,\"variant_id\":33}]'" in content
-    assert "DANGEROUS_PRODUCTS_JSON='[{\"product_id\":4,\"variant_id\":44}]'" in content
+    # Key names must match ups-woo-automation/env_sample exactly.
+    assert "site_url=new-carrier-store" in content
+    assert "CONSUMER_KEY=" in content
+    assert "CONSUMER_SECRET=" in content
+    assert "userName=" in content
+    assert "pass=" in content
+    # Only variable products carry a variation_id; simple/digital/dangerous omit it.
+    assert "SIMPLE_PRODUCTS_JSON='[{\"product_id\":1}]'" in content
+    assert "VARIABLE_PRODUCTS_JSON='[{\"product_id\":2,\"variation_id\":22}]'" in content
+    assert "DIGITAL_PRODUCTS_JSON='[{\"product_id\":3}]'" in content
+    assert "DANGEROUS_PRODUCTS_JSON='[{\"product_id\":4}]'" in content
 
 
 def test_load_existing_carrier_env_returns_empty_for_missing_file():
@@ -48,7 +54,7 @@ def test_build_new_carrier_run_persists_checkpoint_and_suite_results():
         carrier_code="newCarrierX",
         store_name="new-carrier-store",
         product_groups={
-            "simple": [WooProductRef(product_id=1, variant_id=11)],
+            "simple": [WooProductRef(product_id=1)],
             "variable": [],
             "digital": [],
             "dangerous": [],
@@ -71,7 +77,7 @@ def test_save_and_load_new_carrier_run_round_trip():
         app_installed=True,
         app_url="https://carrier-qa.example.com/wp-admin/admin.php?page=ph_multi_carrier_admin_menu",
         product_groups={
-            "simple": [WooProductRef(product_id=1, variant_id=11)],
+            "simple": [WooProductRef(product_id=1)],
             "variable": [],
             "digital": [],
             "dangerous": [],

@@ -168,6 +168,12 @@ Important:
 - product provisioning must populate `SIMPLE_PRODUCTS_JSON`, `VARIABLE_PRODUCTS_JSON`,
   `DIGITAL_PRODUCTS_JSON`, `DANGEROUS_PRODUCTS_JSON`
 - use deterministic product templates matching the automation repo's `ensureStoreProducts()`
+- **carrier-env key names must match `ups-woo-automation/env_sample` exactly** —
+  `site_url`, `userName`, `pass`, `CONSUMER_KEY`, `CONSUMER_SECRET`, `CARRIER`,
+  `SLACK_WEBHOOK_URL`. The automation reads `process.env.<those names>`;
+  renaming any of them silently breaks every suite.
+- only variable products carry a `variation_id` in the `*_PRODUCTS_JSON` values;
+  simple, digital, and dangerous entries have `product_id` only
 - **step 4 cannot be scripted.** Carrier credentials are entered by a human on
   `admin.php?page=ph_multi_carrier_<carrier>_registration`. There is no REST
   endpoint. Say so rather than inventing a workaround.

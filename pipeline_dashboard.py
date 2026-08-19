@@ -68,7 +68,9 @@ from pipeline.new_carrier_onboarding import (
     DEFAULT_PARTNER_APPS_URL,
     DEFAULT_PARTNER_STORES_URL,
     create_store_and_install_app,
+    prepare_site_for_carrier,
 )
+from pipeline.woo_api import WooCredentials
 from pipeline.requirement_research import clear_requirement_research_cache
 from pipeline.woo_product_seed import create_seed_products
 from pipeline import woo_admin
@@ -6037,7 +6039,8 @@ def main() -> None:
                         group: [
                             {
                                 "product_id": item.product_id,
-                                "variant_id": item.variant_id,
+                                "variation_id": item.variation_id,
+                                "title": item.name,
                             }
                             for item in items
                         ]
@@ -6067,7 +6070,9 @@ def main() -> None:
                 group: [
                     WooProductRef(
                         product_id=int(item["product_id"]),
-                        variant_id=int(item["variant_id"]),
+                        variation_id=(int(item["variation_id"])
+                                      if item.get("variation_id") is not None else None),
+                        name=str(item.get("title") or ""),
                     )
                     for item in items
                 ]
@@ -6084,6 +6089,7 @@ def main() -> None:
                 user_email=_template_values.get("USER_EMAIL", ""),
                 user_password=_template_values.get("USER_PASSWORD", ""),
                 store_password=_template_values.get("STORE_PASSWORD", ""),
+                woo_consumer_key=st.session_state.get("new_carrier_woo_consumer_key", "").strip(),
                 woo_consumer_secret=st.session_state.get("new_carrier_woo_consumer_secret", "").strip(),
                 woo_api_version=st.session_state.get("new_carrier_woo_api_version", "").strip()
                 or _template_values.get("WOO_API_VERSION", ""),
@@ -6123,21 +6129,25 @@ def main() -> None:
                 help="Used for the generated carrier env filename.",
             ).strip()
             _store_name = st.text_input(
-                "WooCommerce store name",
+                "WooCommerce site URL",
                 key="new_carrier_store_name",
-                placeholder="e.g. packaging-woo-automation",
-                help="This store will be created first, then used for manual carrier setup and product seeding.",
+                placeholder="https://qa-site.example.com",
+                help=(
+                    "The QA WordPress site the plugins are installed on. WooCommerce has no "
+                    "store-creation step — the site already exists."
+                ),
             ).strip()
             st.text_input(
-                "Partner stores URL",
-                key="new_carrier_partner_stores_url",
-                placeholder=DEFAULT_PARTNER_STORES_URL,
+                "Shipping zone name (optional)",
+                key="new_carrier_zone_name",
+                placeholder="e.g. India",
+                help="Created if missing, then the PluginHive shipping method is attached to it.",
             )
         with _setup_col2:
             st.text_input(
-                "Partner apps URL",
-                key="new_carrier_partner_apps_url",
-                placeholder=DEFAULT_PARTNER_APPS_URL,
+                "Zone country code (optional)",
+                key="new_carrier_zone_country",
+                placeholder="e.g. IN",
             )
             _app_url = st.text_input(
                 "App URL",
@@ -6153,19 +6163,19 @@ def main() -> None:
         _onboard_col1, _onboard_col2 = st.columns([2, 1])
         with _onboard_col1:
             if st.button(
-                "🏪 Create Store & Install App",
+                "🔎 Check Site & Prepare Shipping",
                 key="new_carrier_create_store_install_app_btn",
                 use_container_width=True,
             ):
                 if not _store_name:
-                    st.error("WooCommerce store name is required.")
+                    st.error("WooCommerce site URL is required.")
                 else:
-                    with st.spinner("Creating WooCommerce store and installing the Woo app..."):
+                    with st.spinner("Checking the site, plugin version, and shipping zone..."):
                         try:
-                            _onboarding = create_store_and_install_app(
-                                store_name=_store_name,
-                                partner_stores_url=st.session_state.get("new_carrier_partner_stores_url", DEFAULT_PARTNER_STORES_URL),
-                                partner_apps_url=st.session_state.get("new_carrier_partner_apps_url", DEFAULT_PARTNER_APPS_URL),
+                            _onboarding = prepare_site_for_carrier(
+                                site_url=_store_name,
+                                zone_name=st.session_state.get("new_carrier_zone_name", "").strip(),
+                                zone_country=st.session_state.get("new_carrier_zone_country", "").strip(),
                             )
                             st.session_state["new_carrier_store_name"] = _onboarding.store_name
                             st.session_state["new_carrier_store_created"] = _onboarding.store_created
@@ -6174,20 +6184,29 @@ def main() -> None:
                             st.session_state["new_carrier_app_url"] = _onboarding.app_url
                             st.session_state["new_carrier_onboarding_stdout"] = _onboarding.stdout
                             st.session_state["new_carrier_onboarding_stderr"] = _onboarding.stderr
-                            _persist_new_carrier_run(notes="Created WooCommerce store and installed the Woo app.")
-                            st.success("Store created and app installation completed.")
+                            _persist_new_carrier_run(notes="Checked the WooCommerce site and prepared shipping.")
+                            if _onboarding.plugin_versions:
+                                st.success(
+                                    "Site reachable. Active PluginHive plugins: "
+                                    + ", ".join(f"{n} {v}" for n, v in _onboarding.plugin_versions.items())
+                                )
+                            else:
+                                st.warning(
+                                    "Site reachable, but no PluginHive plugin is active — "
+                                    "install and activate it before onboarding a carrier."
+                                )
                         except Exception as exc:
-                            st.error(f"Failed to create store and install app: {exc}")
+                            st.error(f"Failed to prepare the site: {exc}")
         with _onboard_col2:
             _store_ready = bool(st.session_state.get("new_carrier_store_created"))
             _app_ready = bool(st.session_state.get("new_carrier_app_installed"))
-            st.metric("Store", "Created" if _store_ready else "Pending")
-            st.metric("App", "Installed" if _app_ready else "Pending")
+            st.metric("Site", "Reachable" if _store_ready else "Pending")
+            st.metric("Plugin", "Active" if _app_ready else "Pending")
 
         _onboarding_stdout = st.session_state.get("new_carrier_onboarding_stdout", "").strip()
         _onboarding_stderr = st.session_state.get("new_carrier_onboarding_stderr", "").strip()
         if _onboarding_stdout or _onboarding_stderr:
-            with st.expander("Store/App setup logs", expanded=False):
+            with st.expander("Site preparation logs", expanded=False):
                 if _onboarding_stdout:
                     st.code(_onboarding_stdout, language="text")
                 if _onboarding_stderr:
@@ -6252,28 +6271,36 @@ def main() -> None:
             )
         with _nc_col2:
             _woo_consumer_secret = st.text_input(
-                "WooCommerce access token",
+                "WooCommerce consumer secret",
                 key="new_carrier_woo_consumer_secret",
                 type="password",
-                placeholder="Paste the Admin API token for this newly created store",
-                help="This token is store-specific. Do not reuse the global/default token unless it belongs to this exact store.",
+                placeholder="cs_… from WooCommerce > Settings > Advanced > REST API",
+                help=(
+                    "Site-specific, with Read/Write permission. The secret is shown once when "
+                    "the key is created and cannot be retrieved afterwards."
+                ),
+            ).strip()
+            _woo_consumer_key = st.text_input(
+                "WooCommerce consumer key",
+                key="new_carrier_woo_consumer_key",
+                placeholder="ck_…",
             ).strip()
             _woo_api_version = st.text_input(
                 "WooCommerce API version",
                 value=config.WOO_API_VERSION,
                 key="new_carrier_woo_api_version",
-                placeholder="2023-01",
+                placeholder="wc/v3",
             ).strip()
 
         _template_values = load_existing_carrier_env(_template_env) if _template_env else {}
         if _template_values:
             st.info(
                 "Template defaults loaded from "
-                f"`{_template_env}.env` for shared non-product fields like partner/app URLs and credentials. "
-                "The WooCommerce access token is not copied from the template."
+                f"`{_template_env}.env` for shared non-product fields like the site URL and admin login. "
+                "The consumer secret is not copied from the template."
             )
         if _store_setup_complete and not _store_specific_token_ready:
-            st.warning("Store created. Paste the Admin API token for this new store before creating products or generating the env file.")
+            st.warning("Site prepared. Paste this site's REST consumer key and secret before seeding products or generating the env file.")
 
         _act_col1, _act_col2 = st.columns(2)
         with _act_col1:
@@ -6284,30 +6311,39 @@ def main() -> None:
                 disabled=(not _store_setup_complete) or (not st.session_state.get("new_carrier_registration_done")) or (not _store_specific_token_ready),
             ):
                 if not _carrier_code or not _store_name or not _woo_consumer_secret:
-                    st.error("Carrier code, store name, and WooCommerce access token are required.")
+                    st.error("Carrier code, site URL, and the WooCommerce consumer secret are required.")
                 else:
-                    with st.spinner("Creating deterministic WooCommerce products for automation..."):
+                    with st.spinner("Seeding the deterministic WooCommerce catalogue..."):
                         try:
                             _products = create_seed_products(
                                 carrier_code=_carrier_code,
-                                store_name=_store_name,
-                                woo_consumer_secret=_woo_consumer_secret,
-                                woo_api_version=_woo_api_version,
+                                credentials=WooCredentials(
+                                    site_url=_store_name,
+                                    consumer_key=(_woo_consumer_key or config.WOO_CONSUMER_KEY),
+                                    consumer_secret=_woo_consumer_secret,
+                                    api_version=_woo_api_version or config.WOO_API_VERSION,
+                                ),
                             )
                             st.session_state["new_carrier_products"] = {
                                 group: [
                                     {
                                         "product_id": item.product_id,
-                                        "variant_id": item.variant_id,
-                                        "title": item.title,
+                                        "variation_id": item.variation_id,
+                                        "title": item.name,
+                                        "created": item.created,
                                     }
                                     for item in items
                                 ]
                                 for group, items in _products.items()
                             }
-                            st.success("Required WooCommerce products created.")
+                            _created = sum(1 for items in _products.values() for i in items if i.created)
+                            _reused = sum(1 for items in _products.values() for i in items if not i.created)
+                            st.success(
+                                f"Catalogue ready — {_created} created, {_reused} reused "
+                                "(seeding is find-or-create, so re-running is safe)."
+                            )
                         except Exception as exc:
-                            st.error(f"Failed to create WooCommerce products: {exc}")
+                            st.error(f"Failed to seed WooCommerce products: {exc}")
 
         with _act_col2:
             if st.button(
@@ -6327,7 +6363,9 @@ def main() -> None:
                             group: [
                                 WooProductRef(
                                     product_id=int(item["product_id"]),
-                                    variant_id=int(item["variant_id"]),
+                                    variation_id=(int(item["variation_id"])
+                                                  if item.get("variation_id") is not None else None),
+                                    name=str(item.get("title") or ""),
                                 )
                                 for item in items
                             ]
@@ -6346,6 +6384,7 @@ def main() -> None:
                             user_email=_template_values.get("USER_EMAIL", ""),
                             user_password=_template_values.get("USER_PASSWORD", ""),
                             store_password=_template_values.get("STORE_PASSWORD", ""),
+                            woo_consumer_key=_woo_consumer_key,
                             woo_consumer_secret=_woo_consumer_secret,
                             woo_api_version=_woo_api_version or _template_values.get("WOO_API_VERSION", ""),
                             slack_webhook_url=_template_values.get("SLACK_WEBHOOK_URL", ""),

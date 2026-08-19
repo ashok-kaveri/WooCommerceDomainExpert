@@ -73,14 +73,23 @@ def default_shipping_address(country_code: str) -> list[dict]:
 
 @dataclass(frozen=True)
 class WooProductRef:
-    product_id: int
-    variant_id: int
+    """One seeded product, as the automation repo expects to read it.
 
-    def to_env_dict(self) -> dict[str, int]:
-        return {
-            "product_id": int(self.product_id),
-            "variant_id": int(self.variant_id),
-        }
+    `variation_id` is None for simple, virtual, and downloadable products —
+    only variable products have one. It replaces MCSL's `variant_id`, which
+    was always present because every Shopify product has at least one variant.
+    """
+    product_id: int
+    variation_id: int | None = None
+    name: str = ""
+
+    def to_env_dict(self) -> dict[str, object]:
+        payload: dict[str, object] = {"product_id": int(self.product_id)}
+        if self.variation_id is not None:
+            payload["variation_id"] = int(self.variation_id)
+        if self.name:
+            payload["name"] = self.name
+        return payload
 
 
 @dataclass
@@ -96,8 +105,9 @@ class NewCarrierValidationRun:
     user_email: str = ""
     user_password: str = ""
     store_password: str = ""
+    woo_consumer_key: str = ""
     woo_consumer_secret: str = ""
-    woo_api_version: str = "2023-01"
+    woo_api_version: str = "wc/v3"
     slack_webhook_url: str = ""
     product_groups: dict[str, list[WooProductRef]] = field(default_factory=dict)
     env_path: str = ""
@@ -139,26 +149,25 @@ def build_carrier_env_content(run: NewCarrierValidationRun) -> str:
 
     # Per-field fallback to root .env values
     slack    = run.slack_webhook_url or defaults.get("SLACK_WEBHOOK_URL", "")
-    partner  = run.partner_url       or defaults.get("PARTNER_URL", "")
-    user_em  = run.user_email        or defaults.get("USER_EMAIL", "")
-    user_pw  = run.user_password     or defaults.get("USER_PASSWORD", "")
-    store_pw = run.store_password    or defaults.get("STORE_PASSWORD", "")
+    user_em  = run.user_email        or defaults.get("userName", "") or defaults.get("USER_EMAIL", "")
+    user_pw  = run.user_password     or defaults.get("pass", "") or defaults.get("USER_PASSWORD", "")
 
+    # Key names match ups-woo-automation/env_sample exactly — the automation
+    # reads process.env.site_url / userName / pass / CONSUMER_KEY /
+    # CONSUMER_SECRET. Renaming any of these silently breaks every suite.
     lines = [
         f"CARRIER={run.carrier_code}",
         f"SLACK_WEBHOOK_URL={slack}",
-        f"PARTNER_URL={partner}",
-        f"WOOURL={run.woo_site_url}",
-        f"APPURL={run.app_url}",
-        f"USER_EMAIL={user_em}",
-        f"USER_PASSWORD={user_pw}",
-        f"STORE_PASSWORD={store_pw}",
+        f"site_url={run.store_name}",
+        f"userName={user_em}",
+        f"pass={user_pw}",
+        f"CONSUMER_KEY={run.woo_consumer_key}",
+        # Do NOT fall back to config.WOO_CONSUMER_SECRET here — that is the
+        # default site's secret, and substituting it cross-site creates
+        # dangerous auth mix-ups. If the run has no secret, surface that.
+        f"CONSUMER_SECRET={run.woo_consumer_secret}",
         f"WOO_API_VERSION={run.woo_api_version or config.WOO_API_VERSION}",
-        f"WOO_SITE_URL={run.store_name}",
-        # Do NOT fall back to config.WOO_CONSUMER_SECRET here — that's the
-        # default-store token and substituting it cross-store creates dangerous
-        # auth mix-ups. If the run has no token, surface that explicitly.
-        f"WOO_CONSUMER_SECRET={run.woo_consumer_secret}",
+        f"ADMIN_URL={run.app_url}",
     ]
 
     for group_key in PRODUCT_GROUP_KEYS:
@@ -214,10 +223,12 @@ def _product_groups_from_payload(payload: dict) -> dict[str, list[WooProductRef]
         groups[key] = [
             WooProductRef(
                 product_id=int(item["product_id"]),
-                variant_id=int(item["variant_id"]),
+                variation_id=(int(item["variation_id"])
+                              if item.get("variation_id") is not None else None),
+                name=str(item.get("name") or ""),
             )
             for item in values
-            if item.get("product_id") is not None and item.get("variant_id") is not None
+            if item.get("product_id") is not None
         ]
     return groups
 
@@ -236,8 +247,9 @@ def build_new_carrier_run(
     user_email: str = "",
     user_password: str = "",
     store_password: str = "",
+    woo_consumer_key: str = "",
     woo_consumer_secret: str = "",
-    woo_api_version: str = "2023-01",
+    woo_api_version: str = "wc/v3",
     slack_webhook_url: str = "",
     env_path: str = "",
     notes: str = "",
@@ -259,6 +271,7 @@ def build_new_carrier_run(
         user_email=user_email,
         user_password=user_password,
         store_password=store_password,
+        woo_consumer_key=woo_consumer_key,
         woo_consumer_secret=woo_consumer_secret,
         woo_api_version=woo_api_version,
         slack_webhook_url=slack_webhook_url,
@@ -296,8 +309,9 @@ def load_new_carrier_run(path: str | Path) -> NewCarrierValidationRun:
         user_email=str(payload.get("user_email", "")),
         user_password=str(payload.get("user_password", "")),
         store_password=str(payload.get("store_password", "")),
+        woo_consumer_key=str(payload.get("woo_consumer_key", "")),
         woo_consumer_secret=str(payload.get("woo_consumer_secret", "")),
-        woo_api_version=str(payload.get("woo_api_version", "2023-01")),
+        woo_api_version=str(payload.get("woo_api_version", "wc/v3")),
         slack_webhook_url=str(payload.get("slack_webhook_url", "")),
         product_groups=_product_groups_from_payload(payload),
         env_path=str(payload.get("env_path", "")),
