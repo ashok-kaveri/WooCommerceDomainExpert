@@ -108,12 +108,15 @@ When dashboard behavior changes materially, update the matching skill alongside 
 - use only the prompt's plugin name as the guide title and single-guide file base
 - place `Version <no> – Released: <date>` directly under the H1
 - do not show an automatic `UPDATE` badge in the header
+- use `PluginHive: WooCommerce` as the header subtitle
 - make the version/release line slightly more prominent in the header
 - use exactly these index columns: `Story Id`, `Title`, `Trello Card Link`
 - render `Included Story Cards` in the boxed section-heading style
 - keep the `Story Id` column wide enough to read cleanly
 - default to one Support Guide when the user says to generate the guide without naming a doc type
 - start each story card with a boxed title block for visual separation
+- do not add an extra accent strip inside that boxed title block
+- do not add an extra accent strip inside the boxed `Included Story Cards` heading either
 - keep normal sections free of internal or technical detail
 - keep developer-only cards in the trailing `Technical Cards` section
 - do not include feature-flag wording in handoff docs

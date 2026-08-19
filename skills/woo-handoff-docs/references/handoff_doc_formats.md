@@ -41,6 +41,7 @@ How `render_pdf_bytes` consumes it:
 The attached release package uses:
 
 - branded PluginHive / WooCommerce Woo Shipping App release header
+- header subtitle should read `PluginHive: WooCommerce`
 - plugin name, release version and release date in the header
 - no automatic `UPDATE` badge in the header
 - a slightly more prominent version/release-date line in the header
@@ -115,6 +116,7 @@ Index page rules:
 
 - use exactly three columns: `Story Id`, `Title`, `Trello Card Link`
 - render `Included Story Cards` inside the boxed section-heading treatment
+- the package-level boxed heading should not have a separate accent strip inside the box
 - keep the `Story Id` column wide enough to avoid cramped header wrapping
 - `Story ID` is the story/card number only
 - `Title` is the card title
@@ -148,6 +150,7 @@ Do not add `Merchant-Safe Explanation`, `Common Questions & Troubleshooting`, or
 Card section heading rules:
 
 - each story card should start with a boxed heading for `<Story ID> - <Card title>` so the next card is visually distinct
+- the box alone is enough for card titles; do not add an extra accent strip inside that box
 - keep the boxed heading on the new page that opens that card
 
 ## Technical Cards Section Structure

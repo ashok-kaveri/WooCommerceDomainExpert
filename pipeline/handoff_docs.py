@@ -890,27 +890,12 @@ def _md_to_rl(text: str, sans: str = "Arial") -> str:
 
 # Brand line shown under the PDF title. Keep the handoff PDF styling identical
 # across the Woo / FedEx / AU Post repos — only this brand string differs.
-PDF_BRAND = "PluginHive Woo"
+PDF_BRAND = "PluginHive: WooCommerce"
 
 
 def _pdf_subtitle(title: str, markdown_text: str) -> str:
-    """Brand + platform/carrier scope line for the PDF header panel."""
-    parts = [PDF_BRAND]
-    platform_names = detect_platform_scope(title, markdown_text)
-    if platform_names:
-        parts.append(" / ".join(platform_names))
-    carriers_found = re.findall(
-        r'\b(Australia Post|eParcel|MyPost|FedEx|UPS|DHL|USPS|Stamps)\b', title, re.IGNORECASE,
-    )
-    if carriers_found:
-        canonical = {
-            "ups": "UPS", "dhl": "DHL", "usps": "USPS", "fedex": "FedEx",
-            "eparcel": "eParcel", "mypost": "MyPost", "stamps": "Stamps",
-            "australia post": "Australia Post",
-        }
-        names = [canonical.get(c.lower(), c.title()) for c in carriers_found]
-        parts.append("  /  ".join(dict.fromkeys(names)))
-    return "  ·  ".join(parts)
+    """Brand line for the PDF header panel."""
+    return PDF_BRAND
 
 
 def render_pdf_bytes(title: str, markdown_text: str) -> bytes:
@@ -995,50 +980,30 @@ def render_pdf_bytes(title: str, markdown_text: str) -> bytes:
         return [row, HRFlowable(width=CW, thickness=0.5, color=C_BORDER, spaceAfter=5)]
 
     def _card_title_box(text: str):
-        bar = Table([[""]], colWidths=[5], rowHeights=[24])
-        bar.setStyle(TableStyle([
-            ("BACKGROUND",    (0, 0), (-1, -1), C_ACCENT),
-            ("TOPPADDING",    (0, 0), (-1, -1), 0),
-            ("BOTTOMPADDING", (0, 0), (-1, -1), 0),
-            ("LEFTPADDING",   (0, 0), (-1, -1), 0),
-            ("RIGHTPADDING",  (0, 0), (-1, -1), 0),
-        ]))
         p = Paragraph(_md_to_rl(text), card_h2_style)
-        row = Table([[bar, p]], colWidths=[7, CW - 7])
+        row = Table([[p]], colWidths=[CW])
         row.setStyle(TableStyle([
             ("BACKGROUND",    (0, 0), (-1, -1), HexColor("#f8fbff")),
             ("BOX",           (0, 0), (-1, -1), 0.8, HexColor("#bfdbfe")),
             ("VALIGN",        (0, 0), (-1, -1), "MIDDLE"),
             ("TOPPADDING",    (0, 0), (-1, -1), 10),
             ("BOTTOMPADDING", (0, 0), (-1, -1), 10),
-            ("LEFTPADDING",   (0, 0), (0, -1), 0),
-            ("RIGHTPADDING",  (0, 0), (0, -1), 0),
-            ("LEFTPADDING",   (1, 0), (1, -1), 12),
-            ("RIGHTPADDING",  (1, 0), (1, -1), 12),
+            ("LEFTPADDING",   (0, 0), (-1, -1), 12),
+            ("RIGHTPADDING",  (0, 0), (-1, -1), 12),
         ]))
         return [row, Spacer(1, 0.08 * inch)]
 
     def _package_title_box(text: str):
-        bar = Table([[""]], colWidths=[5], rowHeights=[20])
-        bar.setStyle(TableStyle([
-            ("BACKGROUND",    (0, 0), (-1, -1), C_ACCENT),
-            ("TOPPADDING",    (0, 0), (-1, -1), 0),
-            ("BOTTOMPADDING", (0, 0), (-1, -1), 0),
-            ("LEFTPADDING",   (0, 0), (-1, -1), 0),
-            ("RIGHTPADDING",  (0, 0), (-1, -1), 0),
-        ]))
         p = Paragraph(_md_to_rl(text), pkg_h2_style)
-        row = Table([[bar, p]], colWidths=[7, CW - 7])
+        row = Table([[p]], colWidths=[CW])
         row.setStyle(TableStyle([
             ("BACKGROUND",    (0, 0), (-1, -1), HexColor("#f8fbff")),
             ("BOX",           (0, 0), (-1, -1), 0.8, HexColor("#dbe7ff")),
             ("VALIGN",        (0, 0), (-1, -1), "MIDDLE"),
             ("TOPPADDING",    (0, 0), (-1, -1), 8),
             ("BOTTOMPADDING", (0, 0), (-1, -1), 8),
-            ("LEFTPADDING",   (0, 0), (0, -1), 0),
-            ("RIGHTPADDING",  (0, 0), (0, -1), 0),
-            ("LEFTPADDING",   (1, 0), (1, -1), 10),
-            ("RIGHTPADDING",  (1, 0), (1, -1), 12),
+            ("LEFTPADDING",   (0, 0), (-1, -1), 12),
+            ("RIGHTPADDING",  (0, 0), (-1, -1), 12),
         ]))
         return [row, Spacer(1, 0.06 * inch)]
 
