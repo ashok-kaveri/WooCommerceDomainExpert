@@ -58,7 +58,7 @@ WOO_CHROME_AUTH_PATH = os.getenv(
 
 WIKI_PATH = os.getenv(
     "WIKI_PATH",
-    str(Path.home() / "Documents" / "Pluginhive" / "wiki"),
+    str(Path.home() / "Documents" / "Pluginhive" / "wiki" / "woocommerce-wiki"),
 )
 
 # ── WooCommerce plugin source repos ─────────────────────────────────
