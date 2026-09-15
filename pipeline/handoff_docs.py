@@ -697,7 +697,7 @@ def _demote_markdown(markdown_text: str) -> str:
 
 
 def _story_id(ctx: HandoffDocContext) -> str:
-    """Story/card number only, for the index page `Story ID` column."""
+    """Story/card number only, for the index page `Story Id` column."""
     name = ctx.card_name or ""
     story_id_match = re.search(r"\b([A-Z]{1,4}-\d{1,5})\b", name)
     if story_id_match:
@@ -709,7 +709,7 @@ def _story_id(ctx: HandoffDocContext) -> str:
 
 
 def _story_title(ctx: HandoffDocContext) -> str:
-    """Card title for the `Story Title` column.
+    """Card title for the `Title` column.
 
     Strips the StoryLab card-name boilerplate ("From SL: ZI-629 — ") so the
     column holds the title only; the id already has its own column.
@@ -740,7 +740,7 @@ def _table_cell(value: str) -> str:
 
 
 def _trello_link_cell(ctx: HandoffDocContext) -> str:
-    """Markdown link for the index page `Trello card link` column."""
+    """Markdown link for the index page `Trello Card Link` column."""
     url = (ctx.card_url or "").strip()
     if not url:
         return "-"
@@ -750,14 +750,13 @@ def _trello_link_cell(ctx: HandoffDocContext) -> str:
 
 def _release_summary_table(contexts: list[HandoffDocContext]) -> str:
     rows = [
-        "| Story ID | Story Title | Toggle Name | Trello card link |",
-        "|---|---|---|---|",
+        "| Story Id | Title | Trello Card Link |",
+        "|---|---|---|",
     ]
     for ctx in contexts:
-        toggles = ", ".join(ctx.toggle_names) if ctx.toggle_names else "None"
         rows.append(
             f"| {_table_cell(_story_id(ctx)) or '-'} | {_table_cell(_story_title(ctx))} "
-            f"| {_table_cell(toggles)} | {_trello_link_cell(ctx)} |"
+            f"| {_trello_link_cell(ctx)} |"
         )
     return "\n".join(rows)
 
@@ -1161,9 +1160,9 @@ def render_pdf_bytes(title: str, markdown_text: str) -> bytes:
         parsed = [r + [""] * (n_cols - len(r)) for r in parsed]
         # Auto column widths: first col narrower, last col narrower for status cols
         header_cells = [c.lower() for c in parsed[0]]
-        if n_cols == 4 and "story id" in header_cells[0]:
-            # Release index page: Story ID | Story Title | Toggle Name | Trello card link
-            col_ws = [0.09 * CW, 0.43 * CW, 0.29 * CW, 0.19 * CW]
+        if n_cols == 3 and "story id" in header_cells[0]:
+            # Release index page: Story Id | Title | Trello Card Link
+            col_ws = [0.14 * CW, 0.51 * CW, 0.35 * CW]
         elif n_cols == 3:
             col_ws = [0.13 * CW, 0.62 * CW, 0.25 * CW]
         elif n_cols == 2:

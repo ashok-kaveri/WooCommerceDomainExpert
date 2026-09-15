@@ -195,7 +195,7 @@ def test_combined_handoff_docs_include_multiple_cards():
     assert "## ZI-059 - UPS tracking sync" in business_doc
 
 
-def test_release_index_table_uses_story_id_title_and_toggle_columns():
+def test_release_index_table_uses_story_id_title_and_trello_columns():
     from pipeline.handoff_docs import build_handoff_context, generate_combined_support_guide
 
     cards = [
@@ -217,12 +217,11 @@ def test_release_index_table_uses_story_id_title_and_toggle_columns():
     with patch("pipeline.handoff_docs._invoke_doc_prompt", side_effect=RuntimeError("offline")):
         support_doc = generate_combined_support_guide(contexts, "Woo 378")
 
-    assert "| Story ID | Story Title | Toggle Name | Trello card link |" in support_doc
+    assert "| Story Id | Title | Trello Card Link |" in support_doc
     assert (
-        "| ZI-058 | eParcel bulk label generation delay "
-        "| australiaPost.skip.get.shipment.enabled | [ZI-058](https://trello.com/c/example1) |"
+        "| ZI-058 | eParcel bulk label generation delay | [ZI-058](https://trello.com/c/example1) |"
     ) in support_doc
-    assert "| ZI-059 | UPS tracking sync | None | [ZI-059](https://trello.com/c/example2) |" in support_doc
+    assert "| ZI-059 | UPS tracking sync | [ZI-059](https://trello.com/c/example2) |" in support_doc
     assert "Toggle / prerequisite signal" not in support_doc
     assert "How Support Should Use This Package" not in support_doc
 
@@ -372,9 +371,9 @@ def test_each_card_section_starts_on_a_new_pdf_page():
         "# Woo 384 Support Guide",
         "",
         "## Included Story Cards",
-        "| Story ID | Story Title | Toggle Name | Trello card link |",
-        "|---|---|---|---|",
-        "| ZI-001 | First card | None | - |",
+        "| Story Id | Title | Trello Card Link |",
+        "|---|---|---|",
+        "| ZI-001 | First card | - |",
         "",
         "## ZI-001 - First card",
         "### Brief Description",
@@ -415,10 +414,10 @@ def test_card_without_a_story_id_still_gets_its_own_page():
         "# FedEx App v2.3.122 Support Guide",
         "",
         "## Included Story Cards",
-        "| Story ID | Story Title | Toggle Name | Trello card link |",
-        "|---|---|---|---|",
-        "| FDX-1 | A | None | - |",
-        "| - | [F-DIM] Bulk Edit | None | - |",
+        "| Story Id | Title | Trello Card Link |",
+        "|---|---|---|",
+        "| FDX-1 | A | - |",
+        "| - | [F-DIM] Bulk Edit | - |",
         "",
         "## FDX-1 - A",
         "### Brief Description",

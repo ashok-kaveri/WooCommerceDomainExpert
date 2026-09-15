@@ -1,4 +1,4 @@
-# Multi-Carrier Shipping Plugin for WooCommerce
+# Multi-Carrier Shipping Plugin for WooCommerce — Support Guide
 
 Version 3.4.2 – Released: Aug 18th, 2026
 
@@ -17,11 +17,11 @@ Support can now offer an Extra Small FedEx box option in the built-in box list. 
 
 ### Prerequisites
 - FedEx should already be registered on the site.
-- The merchant should be using box packing in the shipping setup.
+- The merchant should be using box packing in the Multi-Carrier shipping method.
 - To demonstrate the One Rate behavior, use a domestic FedEx shipment that fits the Extra Small box and has One Rate enabled in the merchant's FedEx setup.
 
 ### Step-by-Step Support Walkthrough
-1. In WordPress admin, open `WooCommerce > Settings > Shipping > Multi-Carrier Shipping > Packaging`.
+1. In WordPress admin, open `WooCommerce > Settings > Shipping` and edit the Multi-Carrier shipping method.
 2. Open the box packing area and review the FedEx box list.
 3. Confirm the Extra Small box is available and appears before the Small box.
 4. Confirm it is off by default on a fresh setup or after an update.
@@ -36,12 +36,12 @@ The Extra Small box is available for FedEx box packing, stays off until the merc
 The plugin now stops the full rate request when any cart item is missing required shipping details. This prevents customers from seeing a partial shipping rate that looks valid but ignores one of the products in the cart.
 
 ### Prerequisites
-- Use a shipping setup that is set to one of the supported packing approaches.
+- Use a shipping method that is set to one of the supported packing approaches.
 - Create a test product with missing weight, or missing size details when testing box packing.
 - Add that product to the cart before checking rates.
 
 ### Step-by-Step Support Walkthrough
-1. In WordPress admin, open `WooCommerce > Settings > Shipping > Multi-Carrier Shipping > Packaging` and note which packing approach is active.
+1. In WordPress admin, open the Multi-Carrier shipping method and note which packing approach is active.
 2. Add a product to the cart that is missing the required shipping details for that setup.
 3. Go to cart or checkout and trigger shipping rate calculation.
 4. Confirm no shipping rate is shown while the product data is incomplete.
@@ -62,7 +62,7 @@ Carrier registrations are now protected from being lost when an older settings t
 
 ### Step-by-Step Support Walkthrough
 1. In WordPress admin, confirm the carrier account is already connected and returning rates.
-2. Open the main shipping settings screen in one browser tab and leave it open.
+2. Open the main Multi-Carrier settings screen in one browser tab and leave it open.
 3. In a second tab, register or reconnect a carrier account through the normal carrier registration flow.
 4. Return to the first, older tab and save the general settings without refreshing it.
 5. Go back to the carrier registration area and confirm the newly connected carrier is still shown as connected.
@@ -78,11 +78,11 @@ Support now has a faster recovery path when a merchant has removed or heavily ch
 
 ### Prerequisites
 - The merchant should be using FedEx or USPS box packing.
-- The box list should already be visible in the shipping settings.
-- This is easiest to demonstrate on a site where some default boxes were edited.
+- The box list should already be visible in the Multi-Carrier shipping method settings.
+- This is easiest to demonstrate on a site where some default boxes were removed or edited.
 
 ### Step-by-Step Support Walkthrough
-1. In WordPress admin, open `WooCommerce > Settings > Shipping > Multi-Carrier Shipping > Packaging`.
+1. In WordPress admin, open `WooCommerce > Settings > Shipping` and edit the Multi-Carrier shipping method.
 2. Go to the box packing section and review the current FedEx or USPS box list.
 3. Click `Reset Box(es)` and confirm the confirmation prompt appears before the reset runs.
 4. Complete the reset and review the refreshed box list.
@@ -107,6 +107,7 @@ FedEx rates now return correctly for countries and regions that use longer state
 2. Enter a shipping address that uses a longer state or province code.
 3. Trigger shipping rate calculation and confirm FedEx rates are returned.
 4. Repeat the same flow with a normal two-letter state code and confirm rates still return there as well.
+5. If the merchant also uses label creation after checkout, complete a test order and verify the FedEx shipment flow still proceeds normally for the longer-code address.
 
 ### Expected Behaviour
 FedEx rates should be returned for longer regional codes without blocking checkout, while normal two-letter state and province codes continue to work as before.
