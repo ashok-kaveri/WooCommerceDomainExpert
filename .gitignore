@@ -39,7 +39,8 @@ scripts/*_result.json
 *.swo
 
 # ── Claude Code internals ──────────────────────────────────────────
-.claude/
+.claude/*
+!.claude/agents/
 
 # ── Logs & temp ────────────────────────────────────────────────────
 *.log
