@@ -1,0 +1,256 @@
+{
+  "store_url": "https://woocommerce-432251-5542255.cloudwaysapps.com/",
+  "ticket_url": "https://pluginhive.zendesk.com/agent/tickets/405507",
+  "release_details": "Tested on 15-09-2026 against https://woocommerce-432251-5542255.cloudwaysapps.com/ — orders #5653–#5658.",
+  "overall_observation": "Working fine for the cases executed. TC-01, TC-02, TC-03, TC-04, TC-06 and TC-07 pass, and the TC-08 regression check passes for the NI path. TC-05, the EU-origin sub-scenarios of TC-08, and TC-09 were not executed — see the individual observations.",
+  "changelog": "[New Feature]\n• Added a new ph_ups_skip_commercial_invoice filter that lets store owners skip commercial invoice generation for orders going to regions not part of WooCommerce's countries list, without affecting the shipping label or destination country.",
+  "replicated": "Orders shipped to Northern Ireland are treated by WooCommerce as UK (GB) orders, so the plugin always generated a commercial invoice for them, even though shipments to Northern Ireland don't need one. There was no way for a merchant to change this behaviour.",
+  "prerequisites": "1. WooCommerce UPS Shipping Plugin with Print Label v6.6.4 active, with valid UPS REST credentials registered.\n2. Shipper address: REST_STORE, 1202 Chalet Lane, Harrison, AR 72601, United States.\n3. Code Snippets plugin active.\n4. Snippet \"Skip commercial invoice for NI orders\" active as a Function (PHP) snippet, global scope, priority 10, containing the ph_ups_skip_commercial_invoice add_filter block from the card. Activate or deactivate it per test case.\n5. Test product: \"Simple product - 2\" (ID 4619, $100).\n6. UPS plugin Debug Mode switched OFF for the run. With it on, the plugin prints the raw shipment request/response to the screen and the order page never records the tracking number or Print Label button.",
+  "prerequisite_screenshots": [
+    {
+      "caption": "Active plugins — WooCommerce UPS Shipping Plugin with Print Label v6.6.4",
+      "file": "prereq_01_plugins_active.png"
+    },
+    {
+      "caption": "Code Snippets — \"Skip commercial invoice for NI orders\" active",
+      "file": "prereq_02_snippet_active.png"
+    },
+    {
+      "caption": "Snippet content matching the ph_ups_skip_commercial_invoice filter from the card",
+      "file": "prereq_03_snippet_code.png"
+    }
+  ],
+  "groups": [
+    {
+      "name": "Northern Ireland orders (should skip commercial invoice)",
+      "items": [
+        {
+          "name": "Create an order shipped to a Northern Ireland postcode with the BT prefix (e.g. BT1 1AA) and a GB address, with the merchant's NI snippet active. Confirm no commercial invoice is generated for the UPS shipment.",
+          "steps": [
+            "In wp-admin go to Snippets → All Snippets and confirm \"Skip commercial invoice for NI orders\" is Active.",
+            "On the storefront, add the test product to the cart and go to Checkout.",
+            "Set the shipping address to: Country \"United Kingdom (UK)\", Street \"10 Donegall Square\", Town \"Belfast\", County \"Antrim\", Postcode \"BT1 5GS\".",
+            "Select a UPS Worldwide service from the returned rates and place the order.",
+            "Go to WooCommerce → Orders and open the newly created order.",
+            "In the UPS Shipment Label box, generate the packages and confirm the shipment.",
+            "Inspect the UPS Shipment Label box once the tracking number is returned."
+          ],
+          "expected": "The shipment is created and a tracking number is returned. Only the Print Label button is rendered — no Commercial Invoice button appears and no commercial invoice PDF is produced for the order.",
+          "screenshots": [
+            {
+              "caption": "NI snippet active in Code Snippets",
+              "file": "prereq_02_snippet_active.png"
+            },
+            {
+              "caption": "Checkout with Belfast BT1 5GS address and live UPS rates (Worldwide Express selected)",
+              "file": "tc01_01_checkout_belfast.png"
+            },
+            {
+              "caption": "Order #5653 — GB / Belfast BT1 5GS shipping address",
+              "file": "tc01_02_order_5653.png"
+            },
+            {
+              "caption": "Packages generated, before Confirm Shipment",
+              "file": "tc01_03_packages_before_confirm.png"
+            },
+            {
+              "caption": "Shipment confirm request — ShipTo CountryCode GB, postcode BT1 5GS, and no InternationalForms / commercial invoice node",
+              "file": "tc01_04_confirm_request_no_invoice.png"
+            },
+            {
+              "caption": "UPS Shipment Label box after confirmation — Tracking No and Print Label only, no Commercial Invoice button",
+              "file": "tc01_05_label_box_no_invoice.png"
+            }
+          ],
+          "observation": "No commercial invoice was generated for the UPS shipment to Northern Ireland. The shipment confirm request carried ShipTo CountryCode GB with postcode BT1 5GS and contained no InternationalForms / commercial invoice node, and after confirmation the UPS Shipment Label box shows only the Tracking No and Print Label button — the Commercial Invoice button is absent. Working fine.",
+          "status": "Pass"
+        },
+        {
+          "name": "Repeat the same test with a lowercase postcode entry (e.g. bt1 1aa). Confirm the invoice is still skipped.",
+          "steps": [
+            "Keep the NI snippet Active.",
+            "Place a second order to the same Belfast address, but type the postcode in lowercase as \"bt1 5gs\".",
+            "Open the order in wp-admin and confirm the shipment in the UPS Shipment Label box.",
+            "Inspect the UPS Shipment Label box and the printed label."
+          ],
+          "expected": "The case-insensitive BT match in the snippet still fires, so no commercial invoice is generated. The postcode is normalised to uppercase on the label.",
+          "screenshots": [
+            {
+              "caption": "Checkout with the postcode typed in lowercase as \"bt1 5gs\"",
+              "file": "tc02_01_checkout_lowercase.png"
+            },
+            {
+              "caption": "Order #5654 — UPS Shipment Label box shows Tracking No and Print Label only, no Commercial Invoice button",
+              "file": "tc02_02_label_box_no_invoice.png"
+            }
+          ],
+          "observation": "Order #5654 was placed with the postcode entered in lowercase (\"bt1 5gs\"). The snippet's case-insensitive /^BT/i match still fired and no commercial invoice was generated — the UPS Shipment Label box shows only Tracking No and Print Label. Working fine.",
+          "status": "Pass"
+        },
+        {
+          "name": "Confirm the UPS shipping label still shows GB as the destination country (the label/customs destination must not change, only the invoice generation).",
+          "steps": [
+            "Use the shipment created in TC-01.",
+            "Open the UPS label request/response log for that shipment (or the plugin debug log) and read the destination country code sent to UPS.",
+            "Open the generated label PDF and read the destination block."
+          ],
+          "expected": "The label request passes country code GB. The filter changes only whether the commercial invoice is generated — it must not alter the destination country or the customs destination.",
+          "screenshots": [
+            {
+              "caption": "Shipment confirm request for order #5653 — ShipTo CountryCode GB, PostalCode BT1 5GS, no InternationalForms node",
+              "file": "tc01_04_confirm_request_no_invoice.png"
+            }
+          ],
+          "observation": "Verified from the shipment confirm request captured for order #5653 (UPS plugin Debug Mode): ShipTo carries \"CountryCode\":\"GB\" with \"PostalCode\":\"BT1 5GS\", and the request contains no InternationalForms / commercial invoice node. The filter therefore suppresses only invoice generation and leaves the destination country untouched. Working fine. Note: per the dev comment on the card, the printed label renders the destination as \"Northern Ireland\" while the request still passes GB — that is determined by the postcode and is expected behaviour. The label PDF itself was not opened in this run.",
+          "status": "Pass"
+        }
+      ]
+    },
+    {
+      "name": "Other GB orders (should still generate commercial invoice as before)",
+      "items": [
+        {
+          "name": "Create an order shipped to a non-NI GB address (e.g. London, postcode starting with a non-BT prefix). Confirm the commercial invoice is generated exactly as before this change.",
+          "steps": [
+            "Keep the NI snippet Active.",
+            "Place an order to a non-NI GB address: Country \"United Kingdom (UK)\", Town \"London\", Postcode \"SW1A 1AA\".",
+            "Open the order in wp-admin and confirm the UPS shipment.",
+            "Inspect the UPS Shipment Label box and open the Commercial Invoice."
+          ],
+          "expected": "The snippet's BT prefix check does not match, so the filter returns the original skip flag. The Commercial Invoice button is rendered and the invoice PDF generates exactly as before the change.",
+          "screenshots": [
+            {
+              "caption": "Checkout with London SW1A 1AA address",
+              "file": "tc04_01_checkout_london.png"
+            },
+            {
+              "caption": "Order #5655 — Commercial Invoice button present alongside Print Label",
+              "file": "tc04_02_label_box_with_invoice.png"
+            }
+          ],
+          "observation": "Order #5655 (London, SW1A 1AA) was placed with the NI snippet active. The BT prefix check did not match, so the filter returned the original skip flag and the commercial invoice was generated exactly as before — both Print Label and Commercial Invoice buttons are rendered. This is the control proving the filter is selective. Working fine.",
+          "status": "Pass"
+        }
+      ]
+    },
+    {
+      "name": "EU orders (unaffected by this change)",
+      "items": [
+        {
+          "name": "Create an order from an EU origin to an EU destination with 'Skip commercial invoice for EU' setting enabled. Confirm the existing EU-to-EU skip behavior still works unchanged.",
+          "steps": [
+            "Set the UPS shipper address to an EU origin (e.g. Germany).",
+            "In the UPS plugin settings, enable \"Skip Commercial Invoice for EU Shipments\".",
+            "Place an order to another EU destination (e.g. France).",
+            "Open the order in wp-admin and confirm the UPS shipment.",
+            "Inspect the UPS Shipment Label box."
+          ],
+          "expected": "The pre-existing EU-to-EU skip continues to apply: no commercial invoice is generated. Behaviour is identical to the previous release.",
+          "screenshots": [
+            "UPS settings with \"Skip Commercial Invoice for EU Shipments\" enabled",
+            "Shipper address set to the EU origin",
+            "Order edit page with the EU destination",
+            "UPS Shipment Label box — no Commercial Invoice button"
+          ],
+          "observation": "NOT EXECUTED. This case needs the UPS shipper address switched from the current US origin (Harrison, AR) to an EU origin, which changes shared store configuration. \"Skip Commercial Invoice for EU Shipments\" is currently enabled on the store. To be run separately.",
+          "status": "Not run"
+        },
+        {
+          "name": "Create an order to a non-GB EU country (e.g. France) with the NI snippet active. Confirm the invoice behavior is unaffected by the new filter (only GB/NI orders are targeted).",
+          "steps": [
+            "Keep the NI snippet Active.",
+            "Restore the US shipper address.",
+            "Place an order to a French address (e.g. Paris, postcode 75001).",
+            "Open the order in wp-admin and confirm the UPS shipment.",
+            "Inspect the UPS Shipment Label box."
+          ],
+          "expected": "The snippet only matches GB orders with a BT postcode, so the filter returns the unchanged skip flag and the invoice behaviour for France is exactly as before.",
+          "screenshots": [
+            {
+              "caption": "Checkout with Paris 75001 (France) address",
+              "file": "tc06_01_checkout_france.png"
+            },
+            {
+              "caption": "Order #5656 — Commercial Invoice button present",
+              "file": "tc06_02_label_box_with_invoice.png"
+            }
+          ],
+          "observation": "Order #5656 (Paris, France) was placed with the NI snippet active. The snippet targets only GB orders with a BT postcode, so the invoice behaviour for France was unaffected and the Commercial Invoice button is rendered as before. Working fine.",
+          "status": "Pass"
+        }
+      ]
+    },
+    {
+      "name": "Non-EU orders (unaffected by this change)",
+      "items": [
+        {
+          "name": "Create an order shipped to a non-EU, non-GB destination (e.g. United States). Confirm the commercial invoice is generated as before, unaffected by the new filter.",
+          "steps": [
+            "Keep the NI snippet Active.",
+            "Place an order to a domestic/non-EU destination handled as an international shipment by the store's configuration (e.g. a United States address from a non-US shipper).",
+            "Open the order in wp-admin and confirm the UPS shipment.",
+            "Inspect the UPS Shipment Label box and open the Commercial Invoice."
+          ],
+          "expected": "The commercial invoice is generated as before. The new filter has no effect on non-GB destinations.",
+          "screenshots": [
+            {
+              "caption": "Checkout with Sydney NSW 2000 (Australia) address",
+              "file": "tc07_01_checkout_australia.png"
+            },
+            {
+              "caption": "Order #5657 — Commercial Invoice button present",
+              "file": "tc07_02_label_box_with_invoice.png"
+            }
+          ],
+          "observation": "Order #5657 was placed to Sydney, Australia — a non-EU, non-GB destination — with the NI snippet active. The commercial invoice was generated as before, unaffected by the new filter. Working fine. Note: Australia was used instead of the United States named in the checklist because the store's shipper is already a US address (Harrison, AR); a US destination would be a domestic shipment and would never generate a commercial invoice, so it would not exercise this case.",
+          "status": "Pass"
+        }
+      ]
+    },
+    {
+      "name": "Filter mechanics / regression check",
+      "items": [
+        {
+          "name": "With the NI snippet deactivated (no filter callback registered), confirm all order types behave exactly as they did before this update (no regression when the filter isn't used).",
+          "steps": [
+            "Go to Snippets → All Snippets and deactivate \"Skip commercial invoice for NI orders\".",
+            "Re-run each scenario below and record the commercial invoice outcome for each:",
+            "   a. EU→EU shipment with \"Skip Commercial Invoice for EU Shipments\" disabled.",
+            "   b. EU→EU shipment with \"Skip Commercial Invoice for EU Shipments\" enabled.",
+            "   c. EU→non-EU & non-GB shipment with \"Skip Commercial Invoice for EU Shipments\" disabled.",
+            "   d. US→NI shipment with \"Skip Commercial Invoice for EU Shipments\" disabled.",
+            "   e. US→NI shipment with \"Skip Commercial Invoice for EU Shipments\" enabled.",
+            "Compare each outcome against the pre-6.6.4 behaviour."
+          ],
+          "expected": "With no callback registered on ph_ups_skip_commercial_invoice the filter returns the computed flag untouched, so every scenario matches the previous release. In particular, US→NI shipments generate a commercial invoice again (the pre-fix behaviour).",
+          "screenshots": [
+            {
+              "caption": "Snippet \"Skip commercial invoice for NI orders\" deactivated",
+              "file": "tc08_01_snippet_inactive.png"
+            },
+            {
+              "caption": "Order #5658 — same Belfast BT1 5GS address with the snippet off: Commercial Invoice button returns",
+              "file": "tc08_02_ni_snippet_off_invoice_returns.png"
+            }
+          ],
+          "observation": "PARTIALLY EXECUTED. With the snippet deactivated, order #5658 was placed to the same Belfast BT1 5GS address used in TC-01. The Commercial Invoice button returned, i.e. the pre-6.6.4 behaviour is restored exactly when no callback is registered on ph_ups_skip_commercial_invoice — no regression from the filter itself. Compared directly against order #5653 (same address, snippet on, no invoice), this is a clean A/B. The four EU-origin sub-scenarios listed above (EU→EU and EU→non-EU with the EU skip setting toggled) were NOT run, as they require the shipper address to be switched to an EU origin.",
+          "status": "Partial"
+        },
+        {
+          "name": "Confirm no PHP warnings/notices appear in the debug log when placing orders across all the above destination types.",
+          "steps": [
+            "Enable WP_DEBUG and WP_DEBUG_LOG on the store and clear wp-content/debug.log.",
+            "Re-run one order per destination type: NI (BT), non-NI GB, EU, non-EU, with the snippet both active and inactive.",
+            "Open wp-content/debug.log and search for warnings or notices raised from class-ph-shipping-ups-rest-admin.php or the wf_ups_shipment_confirmrequest() path."
+          ],
+          "expected": "No PHP warnings, notices or deprecations are logged from the UPS plugin for any destination type, with the filter both registered and unregistered.",
+          "screenshots": [
+            "debug.log contents after the full run"
+          ],
+          "observation": "NOT EXECUTED. Enabling WP_DEBUG / WP_DEBUG_LOG requires editing wp-config.php, which is not reachable from wp-admin. No PHP warnings or notices were surfaced on screen during any of the orders placed in this run, but the debug log was not inspected.",
+          "status": "Not run"
+        }
+      ]
+    }
+  ]
+}

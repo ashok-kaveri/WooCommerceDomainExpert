@@ -134,6 +134,39 @@ Current intended handoff format:
 - keep developer-only cards in a trailing `Technical Cards` section
 - do not include feature-flag wording in handoff docs
 
+## Test Document Rules
+
+The QA **test-result document** is a separate artifact from the handoff docs
+above. It is the internal evidence doc: one test case per Trello checklist item,
+executed against a QA store, with screenshots and an `Observation:` per case.
+
+- skill: `skills/woo-test-document/`
+- renderer: [scripts/generate_test_document.py](scripts/generate_test_document.py)
+  (python-docx → `.docx`, then LibreOffice/Pages → PDF)
+- output: `data/test_documents/`, screenshots in
+  `data/test_documents/screenshots/`, per-card steps in
+  `data/test_documents/<card>_steps.json`
+- layout, palette and execution traps:
+  `skills/woo-test-document/references/test_document_format.md`
+
+Keep it separate from `pipeline/handoff_docs.py`. The two documents have
+different audiences, formats and renderers — do not converge them, and do not add
+test-document concerns (screenshot slots, per-case status, observations) to the
+handoff pipeline.
+
+Important:
+- the environment is **per card**. Expect the user to give `site_url` and
+  `userName` in the request; fall back to the card, then
+  `carrier-envs/<carrier>.env`, then the automation repo `.env`, then
+  `WOO_SITE_URL` — and always confirm which was used. These disagree in practice.
+- never write an observation or a status for a case that was not run; mark it
+  `Not run` and say why
+- a human signs in; credentials are never typed by the agent and never accepted
+  in chat
+- UPS **Debug Mode** dumps the request/response and halts the label flow, so the
+  order never records tracking. Check it before blaming the plugin, and restore
+  whatever you change.
+
 ## AI QA Rules
 
 Keep TC-first verification as the default path.
@@ -245,4 +278,9 @@ When carrier reasoning changes, also update:
 .venv/bin/python -m pytest -q tests/test_kb_loader.py
 .venv/bin/python scripts/scrape_woo_kb.py
 PYTHONPATH=. .venv/bin/streamlit run pipeline_dashboard.py
+
+# QA test-result document from a Trello card
+.venv/bin/python scripts/generate_test_document.py SI23TDil \
+  --steps data/test_documents/SI23TDil_steps.json \
+  --plugin "WooCommerce UPS Shipping Plugin with Print Label" --version 6.6.4
 ```

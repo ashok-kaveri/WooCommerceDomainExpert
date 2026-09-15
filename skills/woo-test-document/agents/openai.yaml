@@ -1,0 +1,25 @@
+display_name: Woo Test Document
+short_description: >-
+  Builds the internal QA test-result document from a Trello card or lane. Turns the
+  card's checklist into readable test cases, runs them against the QA store, captures
+  real screenshots as evidence, and renders .docx plus .pdf. Can send it to Slack when
+  told where. Not the Support Guide — that is woo-handoff-docs.
+default_prompt: |
+  Build the QA test document I asked for. Follow the woo-test-document skill.
+
+  1. This is the internal QA test-result document, not a Support Guide or Business Brief. If I say something vague like "generate the document", ask me which one I mean before starting.
+  2. I will give you a Trello card or a lane. For a lane, list the cards and ask me which to run before you execute anything — each card is a real store run.
+  3. I will normally give you the environment in my request, like `site_url: https://... / userName: someone@pluginhive.com`. Use exactly that. If I also paste a password, tell me you will not use it and that I should rotate it, then carry on with the sign-in step. Only if I did not give you a site_url, work it out per card — different cards live on different stores, so never carry one card's store over to the next. Look in this order: the card itself (comments and linked test docs usually name the store URL), then carrier-envs/<carrier>.env, then the automation repo's .env, then this repo's .env. Tell me which store you picked and which source it came from, and wait for me to confirm — the config files are often stale. For a lane, resolve every card first and group them by store before running anything. Also confirm it is a QA store and not production, that the plugin is active at the version on the card, and that I am fine with you creating real orders and carrier shipments on it. Tell me whether the carrier account is test or live.
+  4. For the session, check my own Chrome first: load the store's wp-admin there and see if I am already signed in. If I am, use Chrome for the whole run and do not ask me anything. If it bounces to the login, ask me which account to use and to sign in in that Chrome tab with Remember Me ticked, so it lasts 14 days and you stop having to ask. Use the built-in Browser pane only if Chrome is not available. Never ask me for my password and never accept one if I paste it — you cannot type it into a login form, so it only ends up sitting in the chat history; tell me to rotate it if I do. Verify I am actually signed in by loading an admin page before you start, and tell me whose name will end up on the order notes.
+  5. Read the whole card: description, checklists, comments, attachments, labels. The checklists are the test cases. Read the comments — dev notes and late caveats live there and often change what "expected" means.
+  6. Write one test case per checklist item, numbered TC-01 onward, keeping the checklist wording as the case title. Steps must be concrete and user friendly: real menu path, real field, real address, real button, so a tester who has never seen the card can follow them. Keep code and payload field names out of the steps.
+  7. Screenshots need Screen Recording permission for the Claude app. If screencapture fails, ask me to grant it rather than shipping a doc full of empty boxes.
+  8. Check the store is in the right state before running anything — plugin version, required snippets, relevant settings — and tell me what is missing instead of guessing. Ask before changing shared config like plugin settings or the shipper address, note every change you make, and restore it at the end.
+  9. Never write an observation or a status for a case you did not actually run. Mark it Not run and say why. Do not invent passes.
+  10. If I point you at a video instead of a live run, pull frames from it, and mark every case "Not run (from video)". Describe what the recording shows, not what you verified.
+  11. Render the .docx with scripts/generate_test_document.py, then the PDF. Look at the PDF before sending: statuses filled in, real screenshots showing, no case heading stranded at a page bottom.
+  12. Take the plugin name and version from my prompt or the card changelog. Never invent or bump a version.
+  13. Send to Slack only if I told you where. Tell me which Slack account the connector is signed in as before sending — it may not be mine. Lead the message with what passed, what did not run and why, and anything left changed on the store.
+  14. Never touch pipeline/handoff_docs.py, tests/test_handoff_docs.py, skills/woo-handoff-docs/, or data/handoff_docs/. If the renderer needs a change, change scripts/generate_test_document.py only.
+
+  At the end, tell me: the cases run and their statuses, the cases not run and why, the orders created, every store change and whether it was restored, the file paths, and where it was sent.
