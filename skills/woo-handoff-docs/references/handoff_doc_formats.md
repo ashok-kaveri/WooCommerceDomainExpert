@@ -218,14 +218,58 @@ Rules:
 - no technical detail
 - mention setup only when the merchant or rollout must act, and then in plain words
 
+## Observations vs. Release Content
+
+Card comments carry two different kinds of material, and only one of them belongs
+in a handoff document.
+
+**Release content — use it.** Anything the card's own change requires or affects:
+a setting that must be on for the feature to work, a build the store must be on,
+a caveat about how the new behaviour itself behaves, a limitation of this change.
+
+**Testing observations — leave them out.** Notes recording what someone happened
+to notice while testing the card. They are internal QA material, written for the
+team, and they do not describe this release. Never copy them into
+`Prerequisites`, `Expected Behaviour`, `Brief Description`, or a walkthrough
+step, and never rewrite one into a known limitation.
+
+Treat a comment as an observation when it does any of these:
+
+- says it is unrelated, pre-existing, separate, or "not addressed by this fix"
+- describes a defect or behaviour the card does not change
+- tells support how to triage a *different* problem ("if a merchant reports X,
+  first check Y")
+- reads as something seen in passing during testing rather than a property of
+  the change
+
+Two worked examples, both real, both wrongly promoted into `Prerequisites`
+before this rule existed:
+
+> "If a merchant reports UPS rates failing to return, first check that the Ship
+> From Address setting and the shipper address country are configured
+> consistently."
+
+Triage advice for an unrelated failure. Out.
+
+> "Known limitation, unrelated to this fix: if a service has been renamed to
+> include a Saturday Delivery prefix… This was observed while testing this card
+> but is a separate, pre-existing issue."
+
+Says outright that it is separate and pre-existing. Out.
+
+When a comment is genuinely ambiguous, leave it out of the document and raise it
+in the final response so the requester can decide. Silently including it is the
+worse failure: it reaches support and merchants as though it were part of the
+release.
+
 ## Release QA Guardrails
 
 - Build release packages from full live Trello card context when available: description, labels, comments, checklists, approved AC/TCs, and AI QA evidence.
-- Treat QA comments as required review input because late caveats often appear there.
+- Treat QA comments as required review input because late caveats often appear there. Read them for what this card's change requires or affects — not for testing observations, which stay out of the document (see `Observations vs. Release Content`).
 - Take the plugin name, version, and release date from the prompt and put them in the header exactly once, per `Document Header`.
 - Run a platform audit for every card. Detect WooCommerce, BigCommerce, Magento, or PrestaShop from the card/ticket evidence. If no platform is explicit, default to WooCommerce (WordPress). If a customer/ticket names a non-WooCommerce platform, use that platform in support steps and business wording while treating the feature as shared Woo behavior unless the card limits scope.
 - Exclude cards labelled `SL: ON Hold`, `SL: Carrier Platform`, `Spill Over`, or `SL: Closed By Support` from both the index table and the body, matching labels case-insensitively. Include one only when the user names it. Report every exclusion and the label behind it; never drop a card silently.
-- Run a prerequisite audit per card across the whole card, not only the description — a late prerequisite is often named only in a QA or developer comment. Write it in plain language in the card's `Prerequisites` section. Never guess; write `Not stated in the card` and flag it.
+- Run a prerequisite audit per card across the whole card, not only the description — a late prerequisite is often named only in a QA or developer comment. Write it in plain language in the card's `Prerequisites` section. Never guess; write `Not stated in the card` and flag it. Do not promote a testing observation into a prerequisite.
 - Run a technical-card audit per card and collect developer-only cards into the trailing `Technical Cards` section.
 - Keep every normal card section free of technical detail, including request, response, payload, and log field names. Say what support should observe on screen and where to look instead.
 - Do not include a generic `Where to Find This in Woo` section. The detailed walkthrough is the source of truth for where support should go.

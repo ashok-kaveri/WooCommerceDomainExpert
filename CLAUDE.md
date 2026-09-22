@@ -133,6 +133,17 @@ Current intended handoff format:
 - keep normal sections free of internal or technical detail
 - keep developer-only cards in a trailing `Technical Cards` section
 - do not include feature-flag wording in handoff docs
+- **ignore testing observations recorded in card comments.** A comment noting
+  what someone saw while testing — triage advice for an unrelated failure, a
+  defect this card does not change, anything called pre-existing, separate or
+  "unrelated to this fix" — is an internal QA note, not release content. It
+  never becomes a prerequisite, a caveat or a known limitation; raise it in the
+  final report instead. Comments are still read for genuine late prerequisites.
+  The rule lives in five parallel places — `skills/woo-handoff-docs/SKILL.md`,
+  `skills/woo-handoff-docs/references/handoff_doc_formats.md`
+  (`Observations vs. Release Content`), `skills/woo-handoff-docs/agents/openai.yaml`,
+  `.claude/agents/woo-handoff-docs.md`, and the dashboard's own prompt in
+  [pipeline/handoff_docs.py](pipeline/handoff_docs.py:1). Change all five together.
 
 ## Test Document Rules
 

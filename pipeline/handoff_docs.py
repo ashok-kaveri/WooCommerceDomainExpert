@@ -363,6 +363,11 @@ Accuracy rules:
   "weight, dimensions, and other fields".
 - When a card's human QA Notes conflict with generated test-case scenarios in the comments, trust the \
   QA Notes — the generated scenarios can contain invented specifics.
+- Testing observations in the comments are NOT release content. A comment recording what someone \
+  noticed while testing — how to triage an unrelated failure, a defect this card does not change, \
+  anything called pre-existing, separate, or "unrelated to this fix" — is an internal QA note. Never \
+  write it into Prerequisites, Expected Behaviour, or any other section, and never reshape it into a \
+  known limitation. Use a comment only when it states what this card's change requires or affects.
 - When the editable/affected fields are not enumerable from the evidence, say "the fields the card \
   makes editable" rather than guessing which ones.
 
@@ -447,6 +452,8 @@ def _context_text(ctx: HandoffDocContext) -> str:
         (ctx.acceptance_criteria or ctx.card_description or "").strip()[:7000],
         "",
         "LIVE TRELLO COMMENTS / QA NOTES:",
+        "(Use these only for what this card's change requires or affects. Testing observations "
+        "about unrelated or pre-existing issues stay out of the document.)",
         ("\n\n".join(ctx.card_comments or []) or "None").strip()[:7000],
         "",
         "LIVE TRELLO CHECKLISTS:",

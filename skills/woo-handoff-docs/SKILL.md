@@ -34,6 +34,8 @@ Use `woo-slack-operator` to send PDFs or messages to Slack when explicitly reque
 
 For release packages, always use full live Trello card context when available: description, comments, labels, attachments/checklist summaries, approved AC/TCs, and AI QA evidence. QA comments often contain late caveats and must not be skipped.
 
+**Testing observations in comments are not guide content.** QA and developer comments also record what someone noticed while testing: a troubleshooting tip, an unrelated defect, or a limitation the commenter explicitly calls separate from this card's change. Those are internal testing notes — never copy them into `Prerequisites`, `Expected Behaviour`, or any other section. A comment belongs in the guide only when it states something this card's change requires or affects. See `Observations vs. Release Content` in `references/handoff_doc_formats.md`.
+
 ## Document Title & Release Header
 
 The document title comes from the **user's prompt**, not from the Trello release list name, board name, or a card title. Expect the prompt to carry the plugin name, the version, and the release date, for example:
@@ -105,6 +107,7 @@ A prerequisite here is one of:
 Rules:
 
 - Search the whole card, not just the description: comments, checklists, attachments, approved AC, TCs, and QA evidence. A late prerequisite is often named only in a QA or developer comment.
+- A prerequisite is something the reader needs in place to use or verify *this card's change*. A testing observation is not a prerequisite, even when it appears in the same comment: a tip for diagnosing an unrelated failure, a defect seen in passing, or anything the commenter flags as pre-existing or unrelated stays out of the document. Report it in the final response instead.
 - Write prerequisites in the card's `Prerequisites` section in plain merchant language — the setting as a support person would read it on screen, plus where to find it.
 - Say so explicitly when a card needs nothing set up beforehand.
 - Never guess. If a card clearly needs something enabled but the card never says what, write `Not stated in the card` and flag it in the final response.
@@ -325,6 +328,7 @@ Before finalizing:
 - do not expose implementation details that customers do not need
 - verify every claim comes from card/AC/TC/AI QA evidence or researched domain facts
 - verify every live Trello QA comment and checklist has been considered before finalizing a release package
+- verify no testing observation from a comment has been written into the document as a prerequisite, caveat, or known limitation
 - do not add a generic `Where to Find This in Woo` section; include exact platform-aware navigation in the relevant walkthrough step instead
 - every story card starts on a new page, including the first — the index page stands alone and the renderer inserts the breaks, so never hand-place one
 - verify no card heading starts at the bottom of a page without its detail table/content following on the same page

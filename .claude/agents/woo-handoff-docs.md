@@ -30,6 +30,15 @@ with a clear report if something essential is missing:
 - Read the full live card: description, labels, comments, checklists,
   attachments, approved US/AC, test cases and AI QA notes. QA comments carry late
   caveats and must not be skipped.
+- **Testing observations in comments are not guide content.** A comment that
+  records what someone noticed while testing — triage advice for an unrelated
+  failure, a defect the card does not change, anything flagged pre-existing,
+  separate or "unrelated to this fix" — is an internal QA note. Never write it
+  into `Prerequisites`, `Expected Behaviour` or any other section, and never
+  reshape it into a known limitation. Use a comment only when it states what
+  this card's change requires or affects; when it is genuinely ambiguous, leave
+  it out and raise it in your final report. See `Observations vs. Release
+  Content` in the format reference.
 - Keep technical detail out of normal sections: no code, class or file names, no
   request/response or payload fields, no hooks, endpoints or internal terms.
   Write what support sees on screen and what the merchant experiences.
